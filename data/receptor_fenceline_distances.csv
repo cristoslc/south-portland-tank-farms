@@ -1,0 +1,172 @@
+receptor,category,address,lat,lon,dist_mi_Global,dist_mi_CITGO,dist_mi_Buckeye,dist_mi_GulfSunoco,dist_mi_Sprague,dist_mi_PPLC,nearest_farm,min_dist_mi,within_1mi_of_any
+Dora L. Small Elementary,public school,87 Thompson Street South Portland ME,43.6414104,-70.2334214,1.966,1.201,2.044,0.281,2.425,1.753,GulfSunoco,0.281,Y
+Frank I. Brown Elementary,public school,37 Highland Avenue South Portland ME,43.6347423,-70.2489153,1.125,0.482,1.368,0.675,1.628,0.853,CITGO,0.482,Y
+Skillin Elementary,public school,180 Wescott Road South Portland ME,43.6253478,-70.3051458,1.48,1.942,1.241,3.159,0.797,1.517,Sprague,0.797,Y
+Dyer Elementary,public school,52 Alfred Street South Portland ME,43.6221945,-70.2741861,0.521,0.903,1.019,2.039,0.969,0.164,PPLC,0.164,Y
+Kaler Elementary (closed as school; summer camp use 2026),public school,165 South Kelsey Street South Portland ME,43.6287422,-70.2685791,0.331,0.391,0.86,1.518,0.824,0.042,PPLC,0.042,Y
+South Portland Middle School,public school,120 Wescott Road South Portland ME,43.6266873,-70.3028653,1.351,1.802,1.094,3.017,0.653,1.386,Sprague,0.653,Y
+South Portland High School,public school,637 Highland Avenue South Portland ME,43.6219258,-70.2683263,0.658,0.856,1.194,1.873,1.171,0.18,PPLC,0.18,Y
+"Betsy Ross House (SPHA, 123 units, 62+)",senior housing,99 Preble Street Extension South Portland ME,43.6454468,-70.2354089,1.963,1.174,1.957,0.005,2.375,1.826,GulfSunoco,0.005,Y
+Ridgeland Estates (SPHA),senior housing,109 Ridgeland Avenue South Portland ME,43.6314837,-70.2863413,0.485,0.912,0.292,2.128,0.088,0.531,Sprague,0.088,Y
+"Thornton Heights Commons (SPHA, elderly preference)",senior housing,611 Main Street South Portland ME,43.622274,-70.302531,1.417,1.917,1.277,3.143,0.826,1.426,Sprague,0.826,Y
+"Linton Street Facility (assisted living, RCC610)",senior housing,66 Linton Street South Portland ME,43.6319459,-70.3049783,1.408,1.811,1.042,2.933,0.68,1.465,Sprague,0.68,Y
+"Albany Street (assisted living, RCC1301)",senior housing,49 Albany Street Extension South Portland ME,43.6155467,-70.3138748,2.125,2.64,2.006,3.869,1.555,2.11,Sprague,1.555,N
+Gordon Green (assisted living),senior housing,23 Third Street South Portland ME,43.641131,-70.2451573,1.399,0.619,1.458,0.256,1.841,1.262,GulfSunoco,0.256,Y
+Sawyer Street House (assisted living),senior housing,388 Sawyer Street South Portland ME,43.6384927,-70.2385382,1.672,0.931,1.806,0.499,2.149,1.433,GulfSunoco,0.499,Y
+One Willow Manor (residential care),senior housing,97 School Street South Portland ME,43.6477768,-70.2401054,1.826,1.04,1.751,0.133,2.192,1.763,GulfSunoco,0.133,Y
+"Colony Lane (assisted living, RCC213)",senior housing,19 Colony Lane South Portland ME,43.6285168,-70.3125609,1.813,2.23,1.474,3.379,1.078,1.849,Sprague,1.078,N
+Pride House (assisted living),senior housing,549 Westbrook Street South Portland ME,43.6360465,-70.3139515,1.865,2.238,1.459,3.226,1.018,1.945,Sprague,1.018,N
+Wescott (residential care),senior housing,194 Wescott Road South Portland ME,43.6254941,-70.3071526,1.577,2.032,1.319,3.246,0.881,1.613,Sprague,0.881,Y
+Wilson Street (assisted living),senior housing,15 Wilson Street South Portland ME,43.6218716,-70.3009243,1.353,1.86,1.243,3.089,0.796,1.355,Sprague,0.796,Y
+Youth &amp; Family Outreach,childcare-center,"1065 Broadway, South Portland, ME 04106",43.6288244,-70.2756892,0.06,0.561,0.594,1.78,0.572,0.121,Global,0.06,Y
+The Opportunity Alliance- Lydia Lane,childcare-center,"50 Lydia Ln., South Portland, ME 04106",43.637517,-70.3035987,1.352,1.723,0.949,2.706,0.494,1.467,Sprague,0.494,Y
+The Children's Nursery School,childcare-nursery,"159 State St, Portland, ME 04104",43.6526644,-70.265265,1.233,0.54,0.825,0.588,1.264,1.577,CITGO,0.54,Y
+Catherine Morrill Day Nursery,childcare-center,"96 Danforth St, Portland, ME 04101",43.6516254,-70.2599136,1.309,0.495,0.951,0.323,1.447,1.573,GulfSunoco,0.323,Y
+Stacie Archibald,childcare-family,"68 Jordan Ave, South Portland, ME 04106",43.6321839,-70.246956,1.229,0.664,1.53,0.847,1.746,0.876,CITGO,0.664,Y
+Goldman Family Preschool,childcare-center,"1342 Congress St, Portland, ME 04103",43.6583698,-70.2952702,1.765,1.668,1.263,2.129,1.227,2.125,Sprague,1.227,N
+Spring Point Childrens Center,childcare-center,"36 Broadway, South Portland, ME 04106",43.6463949,-70.2334247,2.08,1.29,2.063,0.009,2.487,1.944,GulfSunoco,0.009,Y
+The Opportuinity Alliance- East End,childcare-center,"215 Congress St, Portland, ME 04101",43.6635893,-70.2509426,2.24,1.429,1.856,0.46,2.292,2.471,GulfSunoco,0.46,Y
+"Bright Horizons Children's Center, LLC.",childcare-center,"2195 Congress St, Portland, ME 04102",43.6525497,-70.3292301,2.853,3.069,2.479,3.789,2.047,3.063,Sprague,2.047,N
+The Children's Center-Minis,childcare-center,"1006 Forest Ave, Portland, ME 04103",43.6818669,-70.2904215,3.188,2.86,2.695,2.646,2.76,3.575,GulfSunoco,2.646,N
+The Children's Center - Portland,childcare-center,"721 Stevens Ave, Portland, ME 04103",43.683088,-70.2935183,3.306,2.999,2.811,2.818,2.86,3.692,Buckeye,2.811,N
+Children's Odyssey,childcare-center,"19 Libby St, Portland, ME 04103",43.6951459,-70.3020856,4.221,3.93,3.724,3.697,3.751,4.604,GulfSunoco,3.697,N
+First Lutheran Children's Program,childcare-center,"132 Auburn St, Portland, ME 04103",43.7049261,-70.2900039,4.744,4.325,4.257,3.855,4.339,5.132,GulfSunoco,3.855,N
+St. Elizabeths Child Dev Center,childcare-center,"6 Two Lights Rd, Cape Elizabeth, ME 04107",43.5726211,-70.2200642,4.819,4.835,5.354,5.05,5.319,4.21,PPLC,4.21,N
+Jennifer Wescott,childcare-family,"42 Constitution Dr, Westbrook, ME 04092",43.6959146,-70.3322635,4.936,4.801,4.435,4.898,4.345,5.285,Sprague,4.345,N
+Julie Higgins,childcare-family,"18 Constitution Dr, Westbrook, ME 04092",43.6980247,-70.3350777,5.136,5.003,4.635,5.096,4.541,5.483,Sprague,4.541,N
+Love &amp; Laughter Daycare,childcare-center,"15 Madison St, Westbrook, ME 04092",43.6723784,-70.3837925,5.9,6.07,5.503,6.66,5.096,6.112,Sprague,5.096,N
+THREE LITTLE BIRDS PRESCHOOL,childcare-family,"4 Saco St, Scarborough, ME 04074",43.6401944,-70.3995201,6.157,6.522,5.751,7.356,5.299,6.228,Sprague,5.299,N
+Winfield Children's House,childcare-center,"161 Field Rd, Falmouth, ME 04105",43.7627312,-70.2759213,8.666,8.119,8.192,7.382,8.318,9.051,GulfSunoco,7.382,N
+Breakwater School,childcare-center,"856 Brighton Ave, Portland, ME 04102",43.6725407,-70.3134751,3.084,2.994,2.586,3.304,2.486,3.427,Sprague,2.486,N
+Glickman Lauder Ctr. Of Excellence In Autism &amp; Developmental Disorders,childcare-center,"37 Andover Rd, Portland, ME 04102",43.6533487,-70.3398168,3.367,3.599,2.994,4.319,2.545,3.559,Sprague,2.545,N
+Children's Enrichment On The Cape,childcare-center,"119 Old Ocean House Rd, Cape Elizabeth, ME 04107",43.5793672,-70.2189019,4.488,4.461,5.025,4.602,4.999,3.855,PPLC,3.855,N
+Art Play Nursery School,childcare-nursery,"524 Allen Ave, Portland, ME 04103",43.704407,-70.283089,4.672,4.201,4.192,3.656,4.3,5.059,GulfSunoco,3.656,N
+Brilliant Stars Montessori Home,childcare-family,"5 Bartley Ave., Portland, ME 04103",43.7070394,-70.2898382,4.886,4.462,4.4,3.976,4.483,5.275,GulfSunoco,3.976,N
+Ketcha Outdoors,childcare-center,"336 Black Point Rd, Scarborough, ME 04074",43.5592156,-70.3031088,5.023,5.464,5.324,6.491,4.957,4.719,PPLC,4.719,N
+Portside Learning Center,childcare-center,"1976 Washington Ave, Portland, ME 04103",43.7167988,-70.3014186,5.649,5.282,5.156,4.849,5.209,6.036,GulfSunoco,4.849,N
+Pine Grove Montessori School Falmouth,childcare-center,"32 Foreside Rd, Falmouth, ME 04105",43.7124761,-70.2303665,5.696,4.928,5.276,3.941,5.585,5.983,GulfSunoco,3.941,N
+Blais Nursery School,childcare-nursery,"600 Cumberland St, Westbrook, ME 04092",43.6946438,-70.3704434,6.16,6.173,5.692,6.526,5.447,6.451,Sprague,5.447,N
+Davinci Childcare,childcare-center,"267 Falmouth Rd, Falmouth, ME 04105",43.7335258,-70.278861,6.661,6.136,6.185,5.455,6.307,7.047,GulfSunoco,5.455,N
+APPLE BLOSSOM CHILDCARE,childcare-family,"10 Brookside Dr, Falmouth, ME 04105",43.729713,-70.3141706,6.668,6.342,6.172,5.939,6.2,7.052,GulfSunoco,5.939,N
+Sunny Days Childcare &amp; Education Center,childcare-center,"8 Elkins Rd, Gorham, ME 04038",43.6784471,-70.4208069,7.766,7.958,7.384,8.558,6.947,7.959,Sprague,6.947,N
+Julia Churchill,childcare-family,"295 Libby Ave, Gorham, ME 04038",43.6967063,-70.4252355,8.504,8.623,8.082,9.111,7.719,8.737,Sprague,7.719,N
+Creative Explorations- Brook Campus,childcare-center,"10 Wentworth Dr, Gorham, ME 04038",43.6899929,-70.4330795,8.644,8.801,8.242,9.345,7.84,8.855,Sprague,7.84,N
+Kidz Go Eco,childcare-center,"80 Flag Pond Rd, Saco, ME 04072",43.5515977,-70.4165927,8.851,9.382,8.774,10.613,8.322,8.771,Sprague,8.322,N
+Storeytime Learning Center &amp; Aftercare,childcare-center,"133 Middle Rd, Cumberland, ME 04021",43.7661301,-70.2088355,9.516,8.763,9.09,7.778,9.361,9.821,GulfSunoco,7.778,N
+Toddle Inn Day Care - South Portland,childcare-center,"57 Gary L Maietta Pkwy, South Portland, ME 04106",43.6053643,-70.2869812,1.754,2.221,2.074,3.342,1.756,1.485,PPLC,1.485,N
+Chickadee Toddler Care &amp; Preschool Units  B1-B2-F,childcare-center,"209 Western Ave Units B1 &amp; B2 &amp; F, South Portland, ME 04106",43.637455,-70.32158,2.252,2.622,1.845,3.557,1.394,2.338,Sprague,1.394,N
+Community Montessori Of Greater Portland,childcare-center,"26 Johansen St, Portland, ME 04103",43.6824109,-70.2638952,3.212,2.578,2.769,1.883,2.992,3.582,GulfSunoco,1.883,N
+Waypoint Little Dolphin School Scarborough,childcare-center,"183 US Route 1, Scarborough, ME 04074",43.5555407,-70.4036774,8.174,8.706,8.111,9.935,7.659,8.087,Sprague,7.659,N
+Cape Care Part Of Ce Community Services,childcare-center,"343 Ocean House Rd, Cape Elizabeth, ME 04107",43.5925071,-70.2270399,3.542,3.48,4.078,3.65,4.049,2.891,PPLC,2.891,N
+Toddle Inn Child Care - Westbrook,childcare-center,"969 Spring St, Westbrook, ME 04092",43.6455838,-70.3566617,4.054,4.377,3.66,5.183,3.198,4.174,Sprague,3.198,N
+Karen Kullman,childcare-family,"41 Little Ave, Westbrook, ME 04092",43.6716177,-70.3624207,4.922,5.053,4.503,5.606,4.142,5.161,Sprague,4.142,N
+Toddle Inn Child Care - Scarborough,childcare-center,"9 Lincoln Ave, Scarborough, ME 04074",43.5829017,-70.3578293,5.204,5.736,5.149,6.965,4.697,5.123,Sprague,4.697,N
+Falmouth Corner Preschool,childcare-nursery,"190 Middle Rd, Falmouth, ME 04105",43.7239576,-70.2456054,6.199,5.504,5.763,4.61,5.986,6.561,GulfSunoco,4.61,N
+Helena Nime,childcare-family,"2 Stonewall Way, Westbrook, ME 04092",43.7284161,-70.3363238,6.98,6.747,6.477,6.536,6.451,7.35,Sprague,6.451,N
+Falmouth Elementary School,childcare-center,"58 Woodville Rd, Falmouth, ME 04105",43.7392666,-70.2745817,7.055,6.507,6.582,5.787,6.715,7.44,GulfSunoco,5.787,N
+Toddle Inn Child Care Center - Gorham,childcare-center,"79 Libby Ave, Gorham, ME 04038",43.683115,-70.4179906,7.761,7.929,7.365,8.493,6.954,7.969,Sprague,6.954,N
+Imagination Station,childcare-center,"381 Main St, Gorham, ME 04038",43.6863584,-70.4189232,7.897,8.052,7.493,8.596,7.097,8.113,Sprague,7.097,N
+FRIENDS SCHOOL OF PORTLAND,childcare-center,"11 US RT 1, CUMBERLAND FORESIDE, ME 04110",43.7469293,-70.2125208,8.222,7.456,7.8,6.46,8.091,8.506,GulfSunoco,6.46,N
+Summit Community Church,childcare-center,"26 Cressey Rd, Gorham, ME 04038",43.6770822,-70.4615649,9.662,9.897,9.286,10.545,8.823,9.823,Sprague,8.823,N
+Creative Beginnings Childcare Ctr,childcare-center,"2401 Broadway, Building 2, South Portland, ME 04106",43.633867,-70.256817,0.729,0.305,1.044,0.871,1.24,0.495,CITGO,0.305,Y
+WISHING TREE PRESCHOOL,childcare-family,"11 Hutchinson St, South Portland, ME 04106",43.6337608,-70.284656,0.39,0.788,0.122,1.985,0.045,0.488,Sprague,0.045,Y
+Children's Adventure Center Inc.,childcare-center,"1156 Broadway, South Portland, ME 04106",43.6281256,-70.2801839,0.23,0.757,0.527,1.986,0.473,0.278,Global,0.23,Y
+Growing Learners @ Harding Street,childcare-center,"9 Harding St, South Portland, ME 04106",43.6349646,-70.28969,0.652,1.027,0.25,2.169,0.0,0.753,Sprague,0.0,Y
+Caroline Kleiman,childcare-family,"37 Arbutus Ave, South Portland, ME 04106",43.6298077,-70.2600155,0.64,0.434,1.106,1.192,1.159,0.204,PPLC,0.204,Y
+Lighthouse School &amp; Child Care Center,childcare-center,"525 Highland Ave, South Portland, ME 04106",43.6240548,-70.2655275,0.653,0.708,1.181,1.674,1.15,0.064,PPLC,0.064,Y
+WAYNFLETE SCHOOL,childcare-center,"360 SPRING ST, PORTLAND, ME 04102",43.6459931,-70.2705287,0.708,0.205,0.3,0.957,0.79,1.063,CITGO,0.205,Y
+"Kiddie Garden, L.L.C.",childcare-center,"251 Danforth St, Portland, ME 04102",43.6474241,-70.2661185,0.895,0.201,0.528,0.716,1.024,1.225,CITGO,0.201,Y
+Kiddie Garden LLC,childcare-center,"237 Spring St, Portland, ME 04102",43.6492162,-70.2664728,0.994,0.322,0.6,0.683,1.083,1.334,CITGO,0.322,Y
+Suzanne Kahill,childcare-family,"236 Highland Ave, South Portland, ME 04106",43.6297875,-70.2540774,0.915,0.606,1.322,1.066,1.438,0.486,PPLC,0.486,Y
+ALPHABET TREE EARLY LEARNING ACADEMY,childcare-family,"18 Brigham St, South Portland, ME 04106",43.6344263,-70.3014369,1.231,1.616,0.837,2.696,0.44,1.309,Sprague,0.44,Y
+Caroline Whitten,childcare-family,"92 Fessenden Ave, South Portland, ME 04106",43.630217,-70.248973,1.152,0.693,1.51,0.985,1.675,0.74,CITGO,0.693,Y
+Pearlite Montessori Home,childcare-center,"440 Ocean St, South Portland, ME 04106",43.626922,-70.2501691,1.17,0.858,1.599,1.216,1.69,0.661,PPLC,0.661,Y
+Serina Holbrook,childcare-family,"118 Fellows St, South Portland, ME 04106",43.6337624,-70.3035981,1.337,1.727,0.95,2.814,0.557,1.408,Sprague,0.557,Y
+Ready Set Grow Learning Center,childcare-center,"100 Westbrook St, South Portland, ME 04106",43.6226843,-70.306686,1.603,2.088,1.412,3.311,0.962,1.624,Sprague,0.962,Y
+Discovery Center,childcare-nursery,"301 Cottage Rd, South Portland, ME 04106",43.6348433,-70.239237,1.61,0.929,1.824,0.748,2.111,1.3,GulfSunoco,0.748,Y
+Ocean House On The Farm LLC,childcare-center,"185 Spurwink Ave, Cape Elizabeth, ME 04107",43.6151117,-70.2490755,1.68,1.577,2.206,2.021,2.172,1.0,PPLC,1.0,Y
+Chickadee Infant &amp; Toddler Care,childcare-center,"72 Macarthur Cir E, South Portland, ME 04106",43.6374485,-70.3166518,2.005,2.375,1.599,3.322,1.148,2.097,Sprague,1.148,N
+Kids World At Willard Beach,childcare-center,"91 Thompson St, South Portland, ME 04106",43.6412234,-70.234974,1.887,1.123,1.967,0.281,2.346,1.68,GulfSunoco,0.281,Y
+Christine Wheeler,childcare-family,"18 Cheverus Rd, Cape Elizabeth, ME 04107",43.6215479,-70.2368083,1.933,1.54,2.351,1.635,2.451,1.372,PPLC,1.372,N
+Children's House,childcare-center,"415 Forest Ave, Portland, ME 04101",43.6655145,-70.2751467,1.99,1.523,1.521,1.373,1.71,2.374,GulfSunoco,1.373,N
+Trina Carroll,childcare-center,"400 Deering Ave., Portland, ME 04103",43.6658133,-70.2837882,2.041,1.717,1.553,1.764,1.65,2.429,Buckeye,1.553,N
+Katherine Folan,childcare-family,"16 Snowberry Dr, South Portland, ME 04106",43.6020961,-70.2844403,1.938,2.376,2.291,3.455,1.994,1.631,PPLC,1.631,N
+Madeline Chisholm,childcare-family,"202 Stevens Ave, Portland, ME 04102",43.6656799,-70.2966111,2.237,2.065,1.734,2.341,1.724,2.607,Sprague,1.724,N
+Trinity Day School,childcare-center,"113 Coyle St, Portland, ME 04103",43.6689409,-70.2821005,2.241,1.88,1.759,1.791,1.87,2.63,Buckeye,1.759,N
+Baby Steps Nursery &amp; Child Care,childcare-center,"1729 Congress St, Portland, ME 04102",43.6584827,-70.3121246,2.329,2.388,1.868,2.962,1.64,2.628,Sprague,1.64,N
+Hinda Wilansky,childcare-family,"39 Belfield St, Portland, ME 04103",43.6683228,-70.2961843,2.392,2.191,1.89,2.397,1.892,2.766,Buckeye,1.89,N
+Skills for Life,childcare-center,"9 Donald B Dean Dr, South Portland, ME 04106",43.6296531,-70.3275561,2.548,2.953,2.18,4.021,1.778,2.594,Sprague,1.778,N
+Clara Allen,childcare-family,"36 Nevens St, Portland, ME 04103",43.6722183,-70.287709,2.512,2.199,2.019,2.146,2.089,2.899,Buckeye,2.019,N
+Shining Star Child Development Center,childcare-center,"60 Darling Ave, South Portland, ME 04106",43.641795,-70.3300749,2.7,3.044,2.304,3.9,1.843,2.821,Sprague,1.843,N
+Maiden Cove Child Center,childcare-center,"21 Cottage Ln, Cape Elizabeth, ME 04107",43.6273522,-70.215285,2.846,2.228,3.124,1.583,3.365,2.406,GulfSunoco,1.583,N
+Anne Salamone,childcare-family,"6 Richardson St, Portland, ME 04103",43.6764726,-70.2968684,2.923,2.672,2.426,2.689,2.443,3.303,Buckeye,2.426,N
+Comfy Cape Children's Center,childcare-center,"111 Scott Dyer Rd, Cape Elizabeth, ME 04107",43.5951298,-70.2409872,2.952,2.981,3.488,3.406,3.463,2.345,PPLC,2.345,N
+Growing Learners At Stevens Square,childcare-center,"631 Stevens Ave, Portland, ME 04103",43.6799639,-70.2936578,3.101,2.807,2.605,2.689,2.649,3.486,Buckeye,2.605,N
+Growing Learners Child Care Center,childcare-center,"970 Forest Ave., Portland, ME 04103",43.680733,-70.2899753,3.107,2.78,2.614,2.578,2.68,3.494,GulfSunoco,2.578,N
+Gentle Wings,childcare-center,"1001 Forest Ave, Portland, ME 04103",43.6820617,-70.289917,3.196,2.86,2.703,2.636,2.771,3.583,GulfSunoco,2.636,N
+Diane Gervais,childcare-family,"21 Cumberland Way, Scarborough, ME 04074",43.6112879,-70.3352328,3.219,3.717,3.03,4.942,2.586,3.214,Sprague,2.586,N
+Bright Eyes Early Learning Center,childcare-center,"280 Ocean House Rd, Cape Elizabeth, ME 04107",43.5980268,-70.2299264,3.173,3.086,3.706,3.258,3.675,2.51,PPLC,2.51,N
+Back Cove School,childcare-center,"535 Ocean Ave, Portland, ME 04103",43.6851078,-70.2687534,3.357,2.775,2.898,2.15,3.09,3.735,GulfSunoco,2.15,N
+String Bean Farm School,childcare-center,"1231 Shore Rd, Cape Elizabeth, ME 04107",43.5969495,-70.2275638,3.31,3.206,3.843,3.343,3.812,2.645,PPLC,2.645,N
+The Academy For Active Learners LLC,childcare-center,"134 Warren Ave, Portland, ME 04102",43.6878721,-70.3023625,3.753,3.489,3.255,3.368,3.268,4.133,Buckeye,3.255,N
+United 4 childcare Growing Learners Gannett Drive,childcare-center,"236 Gannett Dr, South Portland, ME 04106",43.6404174,-70.3576426,4.065,4.427,3.66,5.276,3.206,4.151,Sprague,3.206,N
+Bethel Kids Care DBA The Children's Ark Learning Academy,childcare-center,"36 Patrick Dr, Westbrook, ME 04092",43.6767981,-70.3364397,4.074,4.078,3.6,4.474,3.386,4.378,Sprague,3.386,N
+Roselyn North Academy- Patrick Drive- Westbrook,childcare-center,"18 Patrick Dr, Westbrook, ME 04092",43.6766769,-70.3376551,4.113,4.123,3.641,4.528,3.42,4.414,Sprague,3.42,N
+Peaks Island Children's Workshop,childcare-center,"71 Herman Ave, Peaks Island, ME 04108",43.6577102,-70.1946842,4.167,3.378,4.121,1.822,4.564,3.992,GulfSunoco,1.822,N
+Sholeh Misaghian,childcare-family,"11 Gertrude Ave, Portland, ME 04103",43.6972949,-70.2852486,4.194,3.755,3.712,3.285,3.809,4.582,GulfSunoco,3.285,N
+Portside Infant and Toddler Center,childcare-center,"1364 Washington Ave, Portland, ME 04103",43.6989615,-70.2879648,4.324,3.904,3.839,3.455,3.925,4.712,GulfSunoco,3.455,N
+COLLEEN SNYDER,childcare-center,"2 HIGHLAND AVE, SCARBOROUGH, ME 04074",43.5781133,-70.3220026,4.221,4.735,4.367,5.899,3.948,4.025,Sprague,3.948,N
+Pied Piper Preschool,childcare-nursery,"167 Black Point Road, Scarborough, ME 04074",43.5753548,-70.3202803,4.337,4.843,4.504,5.993,4.09,4.125,Sprague,4.09,N
+Brenda Keites,childcare-family,"21 Gray St, Westbrook, ME 04092",43.6773985,-70.3483533,4.555,4.602,4.097,5.046,3.831,4.838,Sprague,3.831,N
+"Lil' Folk Farm, Inc.",childcare-center,"192 Black Point Rd, Scarborough, ME 04074",43.5730009,-70.3175501,4.41,4.908,4.602,6.042,4.195,4.181,PPLC,4.181,N
+Nilo Hejabian,childcare-family,"453 Ray St, Portland, ME 04103",43.704256,-70.2823442,4.659,4.182,4.18,3.63,4.291,5.046,GulfSunoco,3.63,N
+Brandi Lawrence,childcare-family,"89 Lynn St, Portland, ME 04103",43.7006895,-70.3070643,4.661,4.38,4.164,4.144,4.18,5.042,GulfSunoco,4.144,N
+Roselyn North Academy- Main Westbrook,childcare-center,"596 Main St, Westbrook, ME 04092",43.6787891,-70.3549194,4.874,4.934,4.422,5.387,4.138,5.15,Sprague,4.138,N
+Mary Casey,childcare-family,"9 Channel View Rd, Cape Elizabeth, ME 04107",43.5734715,-70.2089684,5.119,5.068,5.657,5.105,5.629,4.478,PPLC,4.478,N
+Joanne (Jody) Richardson,childcare-family,"343 E Bridge St, Westbrook, ME 04092",43.6958708,-70.3421653,5.229,5.138,4.734,5.316,4.601,5.564,Sprague,4.601,N
+Rebecca Hansen,childcare-family,"156 W Pleasant St, Westbrook, ME 04092",43.6704639,-70.3719397,5.308,5.468,4.905,6.053,4.511,5.528,Sprague,4.511,N
+Naila Matkevich,childcare-family,"1837 Washington Ave, Portland, ME 04103",43.7125539,-70.2990055,5.339,4.967,4.846,4.538,4.903,5.726,GulfSunoco,4.538,N
+Christina Arroyo,childcare-family,"17 Hillside Rd, Portland, ME 04103",43.7156623,-70.2912831,5.483,5.051,4.997,4.531,5.078,5.871,GulfSunoco,4.531,N
+Little Steps Childcare,childcare-center,"476 Summit St., Portland, ME 04103",43.7178769,-70.2960791,5.67,5.265,5.18,4.778,5.249,6.058,GulfSunoco,4.778,N
+Mbiko Family Learning Center,childcare-center,"1340 Riverside Dr, Portland, ME 04103",42.8645242,-84.9095276,743.749,744.15,743.362,745.025,742.919,743.795,Sprague,742.919,N
+Little Stars Infant &amp; Toddlers,childcare-center,"406 Cumberland St, Westbrook, ME 04092",43.6899776,-70.3642261,5.715,5.735,5.249,6.109,5.001,6.005,Sprague,5.001,N
+Maine Nature Academy dba Growing Tree Childcare,childcare-center,"110 Davis Farm Rd., Portland, ME 04103",43.7188025,-70.3013937,5.784,5.411,5.29,4.965,5.344,6.171,GulfSunoco,4.965,N
+"Little Stars Preschool, Developmental Concepts, LLC",childcare-center,"449 Cumberland St, Westbrook, ME 04092",43.6914762,-70.3654078,5.827,5.842,5.359,6.206,5.115,6.118,Sprague,5.115,N
+St. Mary's Child Care Center dba Caring Hearts Childcare Center,childcare-center,"43 Foreside Road, Falmouth, ME 04105",43.713733,-70.2279436,5.823,5.051,5.405,4.056,5.72,6.1,GulfSunoco,4.056,N
+My First School,childcare-nursery,"235 Pride St, Westbrook, ME 04092",43.7088707,-70.3369258,5.811,5.64,5.308,5.618,5.241,6.168,Sprague,5.241,N
+OMAR GHOSHEH,childcare-family,"40 Beech Ridge Rd., Scarborough, ME 04074",43.5903757,-70.3885456,6.246,6.751,6.057,7.976,5.617,6.23,Sprague,5.617,N
+Falmouth Kindervillage,childcare-center,"190 Middle Rd, Falmouth, ME 04105",43.7239576,-70.2456054,6.199,5.504,5.763,4.61,5.986,6.561,GulfSunoco,4.61,N
+Seedlings To Sunflowers-Industrial Parkway,childcare-center,"3 Gorham Industrial Pkwy, Gorham, ME 04038",43.6834624,-70.3845001,6.285,6.394,5.856,6.891,5.511,6.53,Sprague,5.511,N
+Growing Learners @ Rich Way,childcare-center,"6 Rich Way, Falmouth, ME 04105",43.7276926,-70.238705,6.538,5.821,6.106,4.894,6.347,6.895,GulfSunoco,4.894,N
+Cradle Inn Daycare,childcare-center,"658 Main St, Gorham, ME 04038",43.6866083,-70.3879412,6.544,6.643,6.111,7.122,5.775,6.793,Sprague,5.775,N
+Leah Kane,childcare-family,"160 Holmes Rd, Scarborough, ME 04074",43.6078743,-70.4044436,6.597,7.043,6.289,8.153,5.886,6.625,Sprague,5.886,N
+LITTLE WILLOW SCHOOL HOUSE,childcare-center,"239 MIDDLE RD, FALMOUTH, ME 04105",43.7303489,-70.2407712,6.686,5.979,6.252,5.065,6.481,7.045,GulfSunoco,5.065,N
+Melanie Collins,childcare-family,"257 Middle Rd, Falmouth, ME 04105",43.731954,-70.238886,6.817,6.105,6.384,5.184,6.617,7.175,GulfSunoco,5.184,N
+Little Hands Daycare,childcare-center,"72 Gray Rd, Falmouth, ME 04105",43.7347093,-70.2976963,6.824,6.397,6.335,5.85,6.407,7.212,GulfSunoco,5.85,N
+Scarborough Childrens Academy,childcare-center,"605 Us Route 1, Scarborough, ME 04074",43.5555407,-70.4036774,8.174,8.706,8.111,9.935,7.659,8.087,Sprague,7.659,N
+Sun Catchers Childcare,childcare-center,"628 Us Route 1, Scarborough, ME 04074",43.5555407,-70.4036774,8.174,8.706,8.111,9.935,7.659,8.087,Sprague,7.659,N
+Seedlings To Sunflowers-South Gorham,childcare-center,"11 S Gorham Xing, Gorham, ME 04038",43.6401424,-70.4217635,7.267,7.636,6.863,8.463,6.412,7.336,Sprague,6.412,N
+Mountainside Community Church,childcare-center,"18 Mountain Rd, Falmouth, ME 04105",43.7463895,-70.3019303,7.649,7.227,7.16,6.67,7.227,8.038,GulfSunoco,6.67,N
+Carla Fickett,childcare-family,"41 WATERHOUSE RD, GORHAM, ME 04038",43.6537914,-70.4365712,8.092,8.404,7.696,9.161,7.235,8.201,Sprague,7.235,N
+Roselyn North Academy- Saco,childcare-center,"8 Waterfall Dr, Saco, ME 04072",43.5531462,-70.4033539,8.265,8.798,8.211,10.026,7.76,8.173,Sprague,7.76,N
+Roselyn North Academy- North Gorham,childcare-center,"17 Railroad Ave, Gorham, ME 04038",43.6790371,-70.437144,8.544,8.751,8.171,9.366,7.717,8.726,Sprague,7.717,N
+Katelyn Cain,childcare-family,"249 County Rd, Gorham, ME 04038",42.8362839,-77.2132999,356.066,356.482,355.698,357.443,355.271,356.099,Sprague,355.271,N
+Rebecca Armstrong,childcare-family,"31 Middle Rd, Cumberland Center, ME 04021",43.7542651,-70.2192481,8.573,7.831,8.145,6.861,8.405,8.897,GulfSunoco,6.861,N
+Jill Ball,childcare-family,"60 Running Springs Rd, Gorham, ME 04038",43.6692006,-70.4434371,8.643,8.895,8.263,9.572,7.799,8.794,Sprague,7.799,N
+Children's Adventure Day Care &amp; Learning Center,childcare-center,"39 School St, Gorham, ME 04038",43.6806562,-70.4433025,8.872,9.078,8.498,9.69,8.045,9.053,Sprague,8.045,N
+Gorham Arts Alliance,childcare-center,"34 School St, Gorham, ME 04038",43.680291,-70.4435457,8.875,9.083,8.501,9.697,8.047,9.055,Sprague,8.047,N
+Dayle Footer,childcare-family,"7 Access Rd, Gorham, ME 04038",43.6739712,-70.4499537,9.045,9.283,8.669,9.938,8.205,9.205,Sprague,8.205,N
+Amy Toney- Bolduc,childcare-family,"1 Strawberry Ln, Saco, ME 04072",43.5682199,-70.4338729,8.962,9.475,8.791,10.703,8.348,8.936,Sprague,8.348,N
+Ashley Bubar,childcare-family,"10 Vanessa Dr, Windham, ME 04062",43.769188,-70.3635343,10.092,9.854,9.589,9.571,9.558,10.462,Sprague,9.558,N
+Watch Us Grow Preschool,childcare-nursery,"81 Cressey Rd, Gorham, ME 04038",43.6785014,-70.4606167,9.645,9.875,9.27,10.514,8.808,9.81,Sprague,8.808,N
+Willow School- Cumberland,childcare-center,"10 Corey Rd, Cumberland, ME 04021",43.7761955,-70.2528031,9.664,9.035,9.204,8.194,9.374,10.041,GulfSunoco,8.194,N
+Kids Place Child Care Center,childcare-center,"374 North Rd, Chebeague Island, ME 04017",43.7298041,-70.1282725,9.716,8.92,9.444,7.337,9.92,9.698,GulfSunoco,7.337,N
+Denise Dyer,childcare-family,"128 Land Of Nod Rd, Windham, ME 04062",43.7551394,-70.3851023,9.784,9.625,9.282,9.542,9.188,10.133,Sprague,9.188,N
+Camilla Taylor,childcare-license,"107 Mussey St Apt C, South Portland , ME 04106",43.640725,-70.244397,1.426,0.651,1.498,0.299,1.875,1.273,GulfSunoco,0.299,Y
+"Jacobs, Maija",childcare-license,"134 Cumberland St , Westbrook , ME 04092",43.6837539,-70.3545564,5.071,5.096,4.605,5.494,4.357,5.36,Sprague,4.357,N
+Michelle McClure,childcare-family,"20 Mcclure Dr, Buxton, ME 04093",43.6216329,-70.4789581,10.149,10.548,9.77,11.484,9.339,10.194,Sprague,9.339,N
+Nichole Reasoner,childcare-family,"20 Parker Hill Rd, Gorham, ME 04038",43.7339341,-70.4298,10.166,10.161,9.695,10.415,9.455,10.459,Sprague,9.455,N
+Sara Wiggs,childcare-family,"200 Jenkins Rd, Saco, ME 04072",43.5476387,-70.4415798,10.028,10.555,9.916,11.787,9.466,9.965,Sprague,9.466,N
+Toddle Inn Day Care - Cumberland Foreside,childcare-center,"10 Thomas Dr, Cumberland Foreside, ME 04110",43.7803421,-70.1918355,10.737,9.967,10.316,8.941,10.605,11.01,GulfSunoco,8.941,N
+FINCH &amp; FIDDLE,childcare-family,"286 Princes Point Rd, Yarmouth, ME 04096",43.780214,-70.1670727,11.269,10.467,10.862,9.283,11.199,11.466,GulfSunoco,9.283,N
+Darcey James,childcare-family,"295 Tuttle Rd, Cumberland, ME 04021",43.7910802,-70.2456689,10.725,10.081,10.268,9.217,10.444,11.099,GulfSunoco,9.217,N

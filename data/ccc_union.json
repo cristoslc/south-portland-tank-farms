@@ -1,0 +1,998 @@
+[
+ {
+  "name": "Youth &amp; Family Outreach",
+  "address": "1065 Broadway, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Opportunity Alliance- Lydia Lane",
+  "address": "50 Lydia Ln., South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Children's Nursery School",
+  "address": "159 State St, Portland, ME 04104",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Catherine Morrill Day Nursery",
+  "address": "96 Danforth St, Portland, ME 04101",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Stacie Archibald",
+  "address": "68 Jordan Ave, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Goldman Family Preschool",
+  "address": "1342 Congress St, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Spring Point Childrens Center",
+  "address": "36 Broadway, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Opportuinity Alliance- East End",
+  "address": "215 Congress St, Portland, ME 04101",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Bright Horizons Children's Center, LLC.",
+  "address": "2195 Congress St, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Children's Center-Minis",
+  "address": "1006 Forest Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Children's Center - Portland",
+  "address": "721 Stevens Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Children's Odyssey",
+  "address": "19 Libby St, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "WOODFORDS FAMILY SERVICES - WESTBROOK/SAUNDERS WAY",
+  "address": "15 SAUNDERS WAY STE 720, WESTBROOK, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "First Lutheran Children's Program",
+  "address": "132 Auburn St, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Heidi's House Child Care",
+  "address": "300 Enterprise Business Park, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "St. Elizabeths Child Dev Center",
+  "address": "6 Two Lights Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Jennifer Wescott",
+  "address": "42 Constitution Dr, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Julie Higgins",
+  "address": "18 Constitution Dr, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Love &amp; Laughter Daycare",
+  "address": "15 Madison St, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "THREE LITTLE BIRDS PRESCHOOL",
+  "address": "4 Saco St, Scarborough, ME 04074",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Winfield Children's House",
+  "address": "161 Field Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Breakwater School",
+  "address": "856 Brighton Ave, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Glickman Lauder Ctr. Of Excellence In Autism &amp; Developmental Disorders",
+  "address": "37 Andover Rd, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "SHOOTING STARS PROGRAM",
+  "address": "152 US ROUTE ONE, SUITE 4 &amp; 5, SCARBOROUGH, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Children's Enrichment On The Cape",
+  "address": "119 Old Ocean House Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Art Play Nursery School",
+  "address": "524 Allen Ave, Portland, ME 04103",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Brilliant Stars Montessori Home",
+  "address": "5 Bartley Ave., Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Ketcha Outdoors",
+  "address": "336 Black Point Rd, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Portside Learning Center",
+  "address": "1976 Washington Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Pine Grove Montessori School Falmouth",
+  "address": "32 Foreside Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Blais Nursery School",
+  "address": "600 Cumberland St, Westbrook, ME 04092",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Davinci Childcare",
+  "address": "267 Falmouth Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "APPLE BLOSSOM CHILDCARE",
+  "address": "10 Brookside Dr, Falmouth, ME 04105",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Sunny Days Childcare &amp; Education Center",
+  "address": "8 Elkins Rd, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Julia Churchill",
+  "address": "295 Libby Ave, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Creative Explorations- Brook Campus",
+  "address": "10 Wentworth Dr, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kidz Go Eco",
+  "address": "80 Flag Pond Rd, Saco, ME 04072",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Storeytime Learning Center &amp; Aftercare",
+  "address": "133 Middle Rd, Cumberland, ME 04021",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Toddle Inn Day Care - South Portland",
+  "address": "57 Gary L Maietta Pkwy, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Chickadee Toddler Care &amp; Preschool Units  B1-B2-F",
+  "address": "209 Western Ave Units B1 &amp; B2 &amp; F, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Community Montessori Of Greater Portland",
+  "address": "26 Johansen St, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Southern Maine Children's Academy Ii",
+  "address": "125 Presumpscott St, Unit 10, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Waypoint Little Dolphin School Scarborough",
+  "address": "183 US Route 1, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Cape Care Part Of Ce Community Services",
+  "address": "343 Ocean House Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Waypoint Little Dolphin School Westbrook",
+  "address": "101 County Rd, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Toddle Inn Child Care - Westbrook",
+  "address": "969 Spring St, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Karen Kullman",
+  "address": "41 Little Ave, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Toddle Inn Child Care - Scarborough",
+  "address": "9 Lincoln Ave, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Falmouth Corner Preschool",
+  "address": "190 Middle Rd, Falmouth, ME 04105",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Helena Nime",
+  "address": "2 Stonewall Way, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Falmouth Elementary School",
+  "address": "58 Woodville Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Toddle Inn Child Care Center - Gorham",
+  "address": "79 Libby Ave, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Imagination Station",
+  "address": "381 Main St, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "FRIENDS SCHOOL OF PORTLAND",
+  "address": "11 US RT 1, CUMBERLAND FORESIDE, ME 04110",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Summit Community Church",
+  "address": "26 Cressey Rd, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Creative Beginnings Childcare Ctr",
+  "address": "2401 Broadway, Building 2, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "WISHING TREE PRESCHOOL",
+  "address": "11 Hutchinson St, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Children's Adventure Center Inc.",
+  "address": "1156 Broadway, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Growing Learners @ Harding Street",
+  "address": "9 Harding St, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Caroline Kleiman",
+  "address": "37 Arbutus Ave, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Lighthouse School &amp; Child Care Center",
+  "address": "525 Highland Ave, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "WAYNFLETE SCHOOL",
+  "address": "360 SPRING ST, PORTLAND, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kiddie Garden, L.L.C.",
+  "address": "251 Danforth St, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kiddie Garden LLC",
+  "address": "237 Spring St, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Suzanne Kahill",
+  "address": "236 Highland Ave, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "ALPHABET TREE EARLY LEARNING ACADEMY",
+  "address": "18 Brigham St, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Caroline Whitten",
+  "address": "92 Fessenden Ave, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Pearlite Montessori Home",
+  "address": "440 Ocean St, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Serina Holbrook",
+  "address": "118 Fellows St, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Ready Set Grow Learning Center",
+  "address": "100 Westbrook St, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Discovery Center",
+  "address": "301 Cottage Rd, South Portland, ME 04106",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Ocean House On The Farm LLC",
+  "address": "185 Spurwink Ave, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Chickadee Infant &amp; Toddler Care",
+  "address": "72 Macarthur Cir E, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kids World At Willard Beach",
+  "address": "91 Thompson St, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Christine Wheeler",
+  "address": "18 Cheverus Rd, Cape Elizabeth, ME 04107",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Children's House",
+  "address": "415 Forest Ave, Portland, ME 04101",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Trina Carroll",
+  "address": "400 Deering Ave., Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Katherine Folan",
+  "address": "16 Snowberry Dr, South Portland, ME 04106",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Madeline Chisholm",
+  "address": "202 Stevens Ave, Portland, ME 04102",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Trinity Day School",
+  "address": "113 Coyle St, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Baby Steps Nursery &amp; Child Care",
+  "address": "1729 Congress St, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Hinda Wilansky",
+  "address": "39 Belfield St, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Skills for Life",
+  "address": "9 Donald B Dean Dr, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Clara Allen",
+  "address": "36 Nevens St, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Shining Star Child Development Center",
+  "address": "60 Darling Ave, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Maiden Cove Child Center",
+  "address": "21 Cottage Ln, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Anne Salamone",
+  "address": "6 Richardson St, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Comfy Cape Children's Center",
+  "address": "111 Scott Dyer Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Growing Learners At Stevens Square",
+  "address": "631 Stevens Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Growing Learners Child Care Center",
+  "address": "970 Forest Ave., Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Gentle Wings",
+  "address": "1001 Forest Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Diane Gervais",
+  "address": "21 Cumberland Way, Scarborough, ME 04074",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Bright Eyes Early Learning Center",
+  "address": "280 Ocean House Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "St. Brigid School",
+  "address": "695 Stevens Ave/Father Hayes, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Back Cove School",
+  "address": "535 Ocean Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "String Bean Farm School",
+  "address": "1231 Shore Rd, Cape Elizabeth, ME 04107",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Play",
+  "address": "874 Washington Ave #1, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "The Academy For Active Learners LLC",
+  "address": "134 Warren Ave, Portland, ME 04102",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "United 4 childcare Growing Learners Gannett Drive",
+  "address": "236 Gannett Dr, South Portland, ME 04106",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Bethel Kids Care DBA The Children's Ark Learning Academy",
+  "address": "36 Patrick Dr, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Roselyn North Academy- Patrick Drive- Westbrook",
+  "address": "18 Patrick Dr, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Peaks Island Children's Workshop",
+  "address": "71 Herman Ave, Peaks Island, ME 04108",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Sholeh Misaghian",
+  "address": "11 Gertrude Ave, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Portside Infant and Toddler Center",
+  "address": "1364 Washington Ave, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "COLLEEN SNYDER",
+  "address": "2 HIGHLAND AVE, SCARBOROUGH, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Pied Piper Preschool",
+  "address": "167 Black Point Road, Scarborough, ME 04074",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Brenda Keites",
+  "address": "21 Gray St, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Lil' Folk Farm, Inc.",
+  "address": "192 Black Point Rd, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Nilo Hejabian",
+  "address": "453 Ray St, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Brandi Lawrence",
+  "address": "89 Lynn St, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Roselyn North Academy- Main Westbrook",
+  "address": "596 Main St, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Michelle Douglass",
+  "address": "10 Doyle St, 1st Floor, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Mary Casey",
+  "address": "9 Channel View Rd, Cape Elizabeth, ME 04107",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Joanne (Jody) Richardson",
+  "address": "343 E Bridge St, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Rebecca Hansen",
+  "address": "156 W Pleasant St, Westbrook, ME 04092",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Naila Matkevich",
+  "address": "1837 Washington Ave, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Christina Arroyo",
+  "address": "17 Hillside Rd, Portland, ME 04103",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Little Steps Childcare",
+  "address": "476 Summit St., Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Mbiko Family Learning Center",
+  "address": "1340 Riverside Dr, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Little Stars Infant &amp; Toddlers",
+  "address": "406 Cumberland St, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Maine Nature Academy dba Growing Tree Childcare",
+  "address": "110 Davis Farm Rd., Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Little Stars Preschool, Developmental Concepts, LLC",
+  "address": "449 Cumberland St, Westbrook, ME 04092",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "St. Mary's Child Care Center dba Caring Hearts Childcare Center",
+  "address": "43 Foreside Road, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "My First School",
+  "address": "235 Pride St, Westbrook, ME 04092",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "OMAR GHOSHEH",
+  "address": "40 Beech Ridge Rd., Scarborough, ME 04074",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Falmouth Kindervillage",
+  "address": "190 Middle Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Seedlings To Sunflowers-Industrial Parkway",
+  "address": "3 Gorham Industrial Pkwy, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Growing Learners @ Rich Way",
+  "address": "6 Rich Way, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Cradle Inn Daycare",
+  "address": "658 Main St, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Leah Kane",
+  "address": "160 Holmes Rd, Scarborough, ME 04074",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "LITTLE WILLOW SCHOOL HOUSE",
+  "address": "239 MIDDLE RD, FALMOUTH, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Melanie Collins",
+  "address": "257 Middle Rd, Falmouth, ME 04105",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Little Hands Daycare",
+  "address": "72 Gray Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Scarborough Childrens Academy",
+  "address": "605 Us Route 1, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Sun Catchers Childcare",
+  "address": "628 Us Route 1, Scarborough, ME 04074",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Seedlings To Sunflowers-South Gorham",
+  "address": "11 S Gorham Xing, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Mountainside Community Church",
+  "address": "18 Mountain Rd, Falmouth, ME 04105",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Carla Fickett",
+  "address": "41 WATERHOUSE RD, GORHAM, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Roselyn North Academy- Saco",
+  "address": "8 Waterfall Dr, Saco, ME 04072",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Roselyn North Academy- North Gorham",
+  "address": "17 Railroad Ave, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Little Footsteps Child Care Center LLC.",
+  "address": "985 Portland Rd Ste 103, Saco, ME 04072",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Katelyn Cain",
+  "address": "249 County Rd, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Rebecca Armstrong",
+  "address": "31 Middle Rd, Cumberland Center, ME 04021",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Jill Ball",
+  "address": "60 Running Springs Rd, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Gorham Cooperative Pre-School",
+  "address": "28 Ballpark Rd, Gorham, ME 04038",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Children's Adventure Day Care &amp; Learning Center",
+  "address": "39 School St, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Gorham Arts Alliance",
+  "address": "34 School St, Gorham, ME 04038",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Dayle Footer",
+  "address": "7 Access Rd, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Amy Toney- Bolduc",
+  "address": "1 Strawberry Ln, Saco, ME 04072",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Ashley Bubar",
+  "address": "10 Vanessa Dr, Windham, ME 04062",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Watch Us Grow Preschool",
+  "address": "81 Cressey Rd, Gorham, ME 04038",
+  "type": "NURSERY",
+  "star": null
+ },
+ {
+  "name": "Willow School- Cumberland",
+  "address": "10 Corey Rd, Cumberland, ME 04021",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kids Place Child Care Center",
+  "address": "374 North Rd, Chebeague Island, ME 04017",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Denise Dyer",
+  "address": "128 Land Of Nod Rd, Windham, ME 04062",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Driscoll Child Development Center, LLC",
+  "address": "1037 Forest Ave, Suite 6, Portland, ME 04103",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Camilla Taylor",
+  "address": "107 Mussey St Apt C, South Portland , ME 04106",
+  "type": "LICENSE",
+  "star": null
+ },
+ {
+  "name": "Jacobs, Maija",
+  "address": "134 Cumberland St , Westbrook , ME 04092",
+  "type": "LICENSE",
+  "star": null
+ },
+ {
+  "name": "Gorham Rec Department",
+  "address": "75 South St Suite 1 , Gorham , ME 04038",
+  "type": "LICENSE",
+  "star": null
+ },
+ {
+  "name": "Fairy Forest",
+  "address": "4 Bonfire Dr, Saco, ME 04072",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "Kelly Roberts",
+  "address": "91 Lover'S Ln, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Michelle McClure",
+  "address": "20 Mcclure Dr, Buxton, ME 04093",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Nichole Reasoner",
+  "address": "20 Parker Hill Rd, Gorham, ME 04038",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Sara Wiggs",
+  "address": "200 Jenkins Rd, Saco, ME 04072",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Toddle Inn Day Care - Cumberland Foreside",
+  "address": "10 Thomas Dr, Cumberland Foreside, ME 04110",
+  "type": "CENTER",
+  "star": null
+ },
+ {
+  "name": "FINCH &amp; FIDDLE",
+  "address": "286 Princes Point Rd, Yarmouth, ME 04096",
+  "type": "FAMILY",
+  "star": null
+ },
+ {
+  "name": "Darcey James",
+  "address": "295 Tuttle Rd, Cumberland, ME 04021",
+  "type": "FAMILY",
+  "star": null
+ }
+]

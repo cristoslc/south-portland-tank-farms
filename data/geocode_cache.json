@@ -1,0 +1,2778 @@
+{
+  "1 Clark Road South Portland ME": {
+    "query": "1 Clark Road South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6346648,
+        "lon": -70.2753809,
+        "display_name": "South Portland Northeast Gasoline Supply Reserve, 1, Clark Road, Ligonia, South Portland, Cumberland County, Maine, 04102, United States",
+        "type": "works",
+        "class": "man_made"
+      },
+      {
+        "lat": 43.634469,
+        "lon": -70.2841256,
+        "display_name": "1, Clark Road, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "102 Mechanic Street South Portland ME": {
+    "query": "102 Mechanic Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6373898,
+        "lon": -70.2676868,
+        "display_name": "102, Mechanic Street, Turner Island, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "170 Lincoln Street South Portland ME": {
+    "query": "170 Lincoln Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6365513,
+        "lon": -70.2851183,
+        "display_name": "170, Lincoln Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.6370702,
+        "lon": -70.2861967,
+        "display_name": "170, Lincoln Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "175 Front Street South Portland ME": {
+    "query": "175 Front Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6504446,
+        "lon": -70.2385832,
+        "display_name": "175, Front Street, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "yes",
+        "class": "building"
+      },
+      {
+        "lat": 43.6499881,
+        "lon": -70.240448,
+        "display_name": "175, Front Street, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "59 Main Street South Portland ME": {
+    "query": "59 Main Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6372167,
+        "lon": -70.2864032,
+        "display_name": "59, Main Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.6356595,
+        "lon": -70.2869688,
+        "display_name": "59, Main Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "30 Hill Street South Portland ME": {
+    "query": "30 Hill Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6290257,
+        "lon": -70.2710682,
+        "display_name": "30, Hill Street, Pleasantdale, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "Pier 2 Spring Point South Portland ME": {
+    "query": "Pier 2 Spring Point South Portland ME",
+    "label": null,
+    "results": []
+  },
+  "87 Thompson Street South Portland ME": {
+    "query": "87 Thompson Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6414104,
+        "lon": -70.2334214,
+        "display_name": "Dora L. Small School, 87, Thompson Street, Willard Square, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6413808,
+        "lon": -70.2339646,
+        "display_name": "87, Thompson Street, Willard Square, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "52 Alfred Street South Portland ME": {
+    "query": "52 Alfred Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6221945,
+        "lon": -70.2741861,
+        "display_name": "Helena H. Dyer School, 52, Alfred Street, Broadview Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6220695,
+        "lon": -70.2749161,
+        "display_name": "52, Alfred Street, Broadview Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "37 Highland Avenue South Portland ME": {
+    "query": "37 Highland Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6347423,
+        "lon": -70.2489153,
+        "display_name": "37, Highland Avenue, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "165 South Kelsey Street South Portland ME": {
+    "query": "165 South Kelsey Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6287422,
+        "lon": -70.2685791,
+        "display_name": "James Otis Kaler School, 165, South Kelsey Street, Pleasantdale, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6288217,
+        "lon": -70.2686887,
+        "display_name": "Kaler Elementary School, 165, South Kelsey Street, Pleasantdale, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "637 Highland Avenue South Portland ME": {
+    "query": "637 Highland Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6219258,
+        "lon": -70.2683263,
+        "display_name": "637, Highland Avenue, Stanwood Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      },
+      {
+        "lat": 43.6227748,
+        "lon": -70.2678753,
+        "display_name": "South Portland High School, 637, Highland Avenue, Stanwood Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      }
+    ]
+  },
+  "120 Wescott Road South Portland ME": {
+    "query": "120 Wescott Road South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6266873,
+        "lon": -70.3028653,
+        "display_name": "South Portland Middle School, 120, Wescott Road, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.626165,
+        "lon": -70.3032929,
+        "display_name": "120, Wescott Road, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "180 Wescott Road South Portland ME": {
+    "query": "180 Wescott Road South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6253478,
+        "lon": -70.3051458,
+        "display_name": "Dr. Waldo T. Skillin Elementary School, 180, Wescott Road, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6256992,
+        "lon": -70.3053036,
+        "display_name": "180, Wescott Road, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "100 Westbrook Street South Portland ME": {
+    "query": "100 Westbrook Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6226843,
+        "lon": -70.306686,
+        "display_name": "Thornton Heights United Methodist Church, 100, Westbrook Street, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "9 Harding Street South Portland ME": {
+    "query": "9 Harding Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6349646,
+        "lon": -70.28969,
+        "display_name": "9, Harding Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1065 Broadway South Portland ME": {
+    "query": "1065 Broadway South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6288244,
+        "lon": -70.2756892,
+        "display_name": "1065, Broadway, Pleasantdale, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "310 Broadway South Portland ME": {
+    "query": "310 Broadway South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6398479,
+        "lon": -70.2428339,
+        "display_name": "Peoples United Methodist Church, 310, Broadway, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "30 Emery Street South Portland ME": {
+    "query": "30 Emery Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.636111,
+        "lon": -70.2470125,
+        "display_name": "30, Emery Street, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "525 Highland Avenue South Portland ME": {
+    "query": "525 Highland Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6240548,
+        "lon": -70.2655275,
+        "display_name": "525, Highland Avenue, Stanwood Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "4 Gerry Avenue South Portland ME": {
+    "query": "4 Gerry Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6215983,
+        "lon": -70.3016001,
+        "display_name": "4, Gerry Avenue, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "60 Darling Avenue South Portland ME": {
+    "query": "60 Darling Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.641795,
+        "lon": -70.3300749,
+        "display_name": "60, Darling Avenue, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "57 Gary L Maietta Parkway South Portland ME": {
+    "query": "57 Gary L Maietta Parkway South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6053643,
+        "lon": -70.2869812,
+        "display_name": "57, Gary L Maietta Parkway, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "28 Jennies Court South Portland ME": {
+    "query": "28 Jennies Court South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6242399,
+        "lon": -70.2745663,
+        "display_name": "28, Jennies Court, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "building"
+      }
+    ]
+  },
+  "301 Cottage Road South Portland ME": {
+    "query": "301 Cottage Road South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6348433,
+        "lon": -70.239237,
+        "display_name": "First Congregational Church, 301, Cottage Road, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "72 MacArthur Circle East South Portland ME": {
+    "query": "72 MacArthur Circle East South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6374485,
+        "lon": -70.3166518,
+        "display_name": "72, Macarthur Circle East, South Portland Gardens, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "36 Broadway South Portland ME": {
+    "query": "36 Broadway South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6463949,
+        "lon": -70.2334247,
+        "display_name": "36, Broadway, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "99 Preble Street Extension South Portland ME": {
+    "query": "99 Preble Street Extension South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6454468,
+        "lon": -70.2354089,
+        "display_name": "Preble Street Extension, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "residential",
+        "class": "highway"
+      }
+    ]
+  },
+  "109 Ridgeland Avenue South Portland ME": {
+    "query": "109 Ridgeland Avenue South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6314837,
+        "lon": -70.2863413,
+        "display_name": "109, Ridgeland Avenue, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "apartments",
+        "class": "building"
+      }
+    ]
+  },
+  "611 Main Street South Portland ME": {
+    "query": "611 Main Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.622274,
+        "lon": -70.302531,
+        "display_name": "611, Main Street, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "66 Linton Street South Portland ME": {
+    "query": "66 Linton Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6319459,
+        "lon": -70.3049783,
+        "display_name": "66, Linton Street, Crocketts Corner, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "49 Albany Street Extension South Portland ME": {
+    "query": "49 Albany Street Extension South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6155467,
+        "lon": -70.3138748,
+        "display_name": "49, Albany Street Extension, Sunset Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "23 Third Street South Portland ME": {
+    "query": "23 Third Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.641131,
+        "lon": -70.2451573,
+        "display_name": "23, Third Street, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "388 Sawyer Street South Portland ME": {
+    "query": "388 Sawyer Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6384927,
+        "lon": -70.2385382,
+        "display_name": "388, Sawyer Street, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "97 School Street South Portland ME": {
+    "query": "97 School Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6477768,
+        "lon": -70.2401054,
+        "display_name": "97, School Street, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "19 Colony Lane South Portland ME": {
+    "query": "19 Colony Lane South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6285168,
+        "lon": -70.3125609,
+        "display_name": "19, Colony Lane, Crocketts Corner, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "549 Westbrook Street South Portland ME": {
+    "query": "549 Westbrook Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6360465,
+        "lon": -70.3139515,
+        "display_name": "549, Westbrook Street, South Portland Gardens, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "residential",
+        "class": "building"
+      },
+      {
+        "lat": 43.6346642,
+        "lon": -70.3151286,
+        "display_name": "549, Westbrook Street, South Portland Gardens, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "194 Wescott Road South Portland ME": {
+    "query": "194 Wescott Road South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6254941,
+        "lon": -70.3071526,
+        "display_name": "194, Wescott Road, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "building"
+      }
+    ]
+  },
+  "15 Wilson Street South Portland ME": {
+    "query": "15 Wilson Street South Portland ME",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6218716,
+        "lon": -70.3009243,
+        "display_name": "15, Wilson Street, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1 Strawberry Ln, Saco, ME 04072": {
+    "query": "1 Strawberry Ln, Saco, ME 04072",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5682199,
+        "lon": -70.4338729,
+        "display_name": "1, Strawberry Lane, Saco, York County, Maine, 04072, United States",
+        "type": "detached",
+        "class": "building"
+      }
+    ]
+  },
+  "10 Brookside Dr, Falmouth, ME 04105": {
+    "query": "10 Brookside Dr, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.729713,
+        "lon": -70.3141706,
+        "display_name": "10, Brookside Drive, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "10 Doyle St, 1st Floor, Westbrook, ME 04092": {
+    "query": "10 Doyle St, 1st Floor, Westbrook, ME 04092",
+    "label": null,
+    "results": []
+  },
+  "10 Vanessa Dr, Windham, ME 04062": {
+    "query": "10 Vanessa Dr, Windham, ME 04062",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.769188,
+        "lon": -70.3635343,
+        "display_name": "10, Vanessa Drive, Windham, Cumberland County, Maine, 04062, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "10 Wentworth Dr, Gorham, ME 04038": {
+    "query": "10 Wentworth Dr, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6899929,
+        "lon": -70.4330795,
+        "display_name": "Gorham Savings Bank Operations Center, 10, Wentworth Drive, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "office",
+        "class": "building"
+      }
+    ]
+  },
+  "100 Westbrook St, South Portland, ME 04106": {
+    "query": "100 Westbrook St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6226843,
+        "lon": -70.306686,
+        "display_name": "Thornton Heights United Methodist Church, 100, Westbrook Street, Thornton Heights, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "1001 Forest Ave, Portland, ME 04103": {
+    "query": "1001 Forest Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6820617,
+        "lon": -70.289917,
+        "display_name": "1001, Forest Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1006 Forest Ave, Portland, ME 04103": {
+    "query": "1006 Forest Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6818669,
+        "lon": -70.2904215,
+        "display_name": "1006, Forest Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "101 County Rd, Westbrook, ME 04092": {
+    "query": "101 County Rd, Westbrook, ME 04092",
+    "label": null,
+    "results": []
+  },
+  "1037 Forest Ave, Suite 6, Portland, ME 04103": {
+    "query": "1037 Forest Ave, Suite 6, Portland, ME 04103",
+    "label": null,
+    "results": []
+  },
+  "1065 Broadway, South Portland, ME 04106": {
+    "query": "1065 Broadway, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6288244,
+        "lon": -70.2756892,
+        "display_name": "1065, Broadway, Pleasantdale, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "107 Mussey St Apt C, South Portland , ME 04106": {
+    "query": "107 Mussey St Apt C, South Portland , ME 04106",
+    "label": null,
+    "results": []
+  },
+  "11 Gertrude Ave, Portland, ME 04103": {
+    "query": "11 Gertrude Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6972949,
+        "lon": -70.2852486,
+        "display_name": "11, Gertrude Avenue, North Deering, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "11 Hutchinson St, South Portland, ME 04106": {
+    "query": "11 Hutchinson St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6337608,
+        "lon": -70.284656,
+        "display_name": "11, Hutchinson Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "11 S Gorham Xing, Gorham, ME 04038": {
+    "query": "11 S Gorham Xing, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6401424,
+        "lon": -70.4217635,
+        "display_name": "Seedlings To Sunflowers, 11, South Gorham Crossing, South Gorham, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "social_facility",
+        "class": "amenity"
+      }
+    ]
+  },
+  "11 US RT 1, CUMBERLAND FORESIDE, ME 04110": {
+    "query": "11 US RT 1, CUMBERLAND FORESIDE, ME 04110",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7469293,
+        "lon": -70.2125208,
+        "display_name": "Friends School of Portland, 11, Route 1, Cumberland Foreside, Falmouth Foreside, Cumberland, Cumberland County, Maine, 04110, United States",
+        "type": "school",
+        "class": "amenity"
+      }
+    ]
+  },
+  "110 Davis Farm Rd., Portland, ME 04103": {
+    "query": "110 Davis Farm Rd., Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7188025,
+        "lon": -70.3013937,
+        "display_name": "110, Davis Farm Road, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "111 Scott Dyer Rd, Cape Elizabeth, ME 04107": {
+    "query": "111 Scott Dyer Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5951298,
+        "lon": -70.2409872,
+        "display_name": "111, Scott Dyer Road, Pond Cove, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "113 Coyle St, Portland, ME 04103": {
+    "query": "113 Coyle St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6689409,
+        "lon": -70.2821005,
+        "display_name": "113, Coyle Street, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1156 Broadway, South Portland, ME 04106": {
+    "query": "1156 Broadway, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6281256,
+        "lon": -70.2801839,
+        "display_name": "Children's Adventure Center, 1156, Broadway, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "118 Fellows St, South Portland, ME 04106": {
+    "query": "118 Fellows St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6337624,
+        "lon": -70.3035981,
+        "display_name": "118, Fellows Street, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "119 Old Ocean House Rd, Cape Elizabeth, ME 04107": {
+    "query": "119 Old Ocean House Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5793672,
+        "lon": -70.2189019,
+        "display_name": "119, Old Ocean House Road, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1231 Shore Rd, Cape Elizabeth, ME 04107": {
+    "query": "1231 Shore Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5969495,
+        "lon": -70.2275638,
+        "display_name": "1231, Shore Road, Pond Cove, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "125 Presumpscott St, Unit 10, Portland, ME 04103": {
+    "query": "125 Presumpscott St, Unit 10, Portland, ME 04103",
+    "label": null,
+    "results": []
+  },
+  "132 Auburn St, Portland, ME 04103": {
+    "query": "132 Auburn St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7049261,
+        "lon": -70.2900039,
+        "display_name": "132, Auburn Street, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "133 Middle Rd, Cumberland, ME 04021": {
+    "query": "133 Middle Rd, Cumberland, ME 04021",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7661301,
+        "lon": -70.2088355,
+        "display_name": "133, Middle Road, Cumberland, Cumberland County, Maine, 04021, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "134 Cumberland St , Westbrook , ME 04092": {
+    "query": "134 Cumberland St , Westbrook , ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6837539,
+        "lon": -70.3545564,
+        "display_name": "134, Cumberland Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "134 Warren Ave, Portland, ME 04102": {
+    "query": "134 Warren Ave, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6878721,
+        "lon": -70.3023625,
+        "display_name": "134, Warren Avenue, Morrills Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1340 Riverside Dr, Portland, ME 04103": {
+    "query": "1340 Riverside Dr, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 42.8645242,
+        "lon": -84.9095276,
+        "display_name": "Riverside Drive, Portland, Ionia County, Michigan, 48875, United States",
+        "type": "residential",
+        "class": "highway"
+      }
+    ]
+  },
+  "1342 Congress St, Portland, ME 04103": {
+    "query": "1342 Congress St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6583698,
+        "lon": -70.2952702,
+        "display_name": "Jewish Community Alliance, 1342, Congress Street, Bradleys Corner, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "community_centre",
+        "class": "amenity"
+      }
+    ]
+  },
+  "1364 Washington Ave, Portland, ME 04103": {
+    "query": "1364 Washington Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6989615,
+        "lon": -70.2879648,
+        "display_name": "1364, Washington Avenue, North Deering, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "15 Madison St, Westbrook, ME 04092": {
+    "query": "15 Madison St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6723784,
+        "lon": -70.3837925,
+        "display_name": "15, Madison Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "15 SAUNDERS WAY STE 720, WESTBROOK, ME 04092": {
+    "query": "15 SAUNDERS WAY STE 720, WESTBROOK, ME 04092",
+    "label": null,
+    "results": []
+  },
+  "152 US ROUTE ONE, SUITE 4 &amp; 5, SCARBOROUGH, ME 04074": {
+    "query": "152 US ROUTE ONE, SUITE 4 &amp; 5, SCARBOROUGH, ME 04074",
+    "label": null,
+    "results": []
+  },
+  "156 W Pleasant St, Westbrook, ME 04092": {
+    "query": "156 W Pleasant St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6704639,
+        "lon": -70.3719397,
+        "display_name": "156, West Pleasant Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "159 State St, Portland, ME 04104": {
+    "query": "159 State St, Portland, ME 04104",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6526644,
+        "lon": -70.265265,
+        "display_name": "State Street Church, 159, State Street, Parkside, West End, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6528664,
+        "lon": -70.2656822,
+        "display_name": "Vajra Vidya Portland, 159, State Street, Parkside, West End, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "16 Snowberry Dr, South Portland, ME 04106": {
+    "query": "16 Snowberry Dr, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6020961,
+        "lon": -70.2844403,
+        "display_name": "16, Snowberry Drive, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "160 Holmes Rd, Scarborough, ME 04074": {
+    "query": "160 Holmes Rd, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6078743,
+        "lon": -70.4044436,
+        "display_name": "160, Holmes Road, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "161 Field Rd, Falmouth, ME 04105": {
+    "query": "161 Field Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7627312,
+        "lon": -70.2759213,
+        "display_name": "161, Field Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "167 Black Point Road, Scarborough, ME 04074": {
+    "query": "167 Black Point Road, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5753548,
+        "lon": -70.3202803,
+        "display_name": "167, Black Point Road, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "church",
+        "class": "building"
+      },
+      {
+        "lat": 43.5753654,
+        "lon": -70.3202731,
+        "display_name": "First Congregational Church, 167, Black Point Road, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "17 Hillside Rd, Portland, ME 04103": {
+    "query": "17 Hillside Rd, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7156623,
+        "lon": -70.2912831,
+        "display_name": "17, Hillside Road, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "17 Railroad Ave, Gorham, ME 04038": {
+    "query": "17 Railroad Ave, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6790371,
+        "lon": -70.437144,
+        "display_name": "17, Railroad Avenue, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "yes",
+        "class": "building"
+      },
+      {
+        "lat": 43.6789863,
+        "lon": -70.4372871,
+        "display_name": "My-Fit-24, 17, Railroad Avenue, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "fitness_centre",
+        "class": "leisure"
+      },
+      {
+        "lat": 43.6789338,
+        "lon": -70.4388645,
+        "display_name": "17, Railroad Avenue, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1729 Congress St, Portland, ME 04102": {
+    "query": "1729 Congress St, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6584827,
+        "lon": -70.3121246,
+        "display_name": "Stroudwater Baptist Church, 1729, Congress Street, Stroudwater, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "18 Brigham St, South Portland, ME 04106": {
+    "query": "18 Brigham St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6344263,
+        "lon": -70.3014369,
+        "display_name": "18, Brigham Street, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "18 Cheverus Rd, Cape Elizabeth, ME 04107": {
+    "query": "18 Cheverus Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6215479,
+        "lon": -70.2368083,
+        "display_name": "18, Cheverus Road, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "18 Constitution Dr, Westbrook, ME 04092": {
+    "query": "18 Constitution Dr, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6980247,
+        "lon": -70.3350777,
+        "display_name": "18, Constitution Drive, Colonial Acres, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "18 Mountain Rd, Falmouth, ME 04105": {
+    "query": "18 Mountain Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7463895,
+        "lon": -70.3019303,
+        "display_name": "West Falmouth Baptist Church, 18, Mountain Road, West Falmouth Corner, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.7463968,
+        "lon": -70.3019214,
+        "display_name": "Apple Blossom Childcare, 18, Mountain Road, West Falmouth Corner, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "18 Patrick Dr, Westbrook, ME 04092": {
+    "query": "18 Patrick Dr, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6766769,
+        "lon": -70.3376551,
+        "display_name": "18, Patrick Drive, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "183 US Route 1, Scarborough, ME 04074": {
+    "query": "183 US Route 1, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5555407,
+        "lon": -70.4036774,
+        "display_name": "Portland Road, Saco, York County, Maine, 04072, United States",
+        "type": "primary",
+        "class": "highway"
+      }
+    ]
+  },
+  "1837 Washington Ave, Portland, ME 04103": {
+    "query": "1837 Washington Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7125539,
+        "lon": -70.2990055,
+        "display_name": "1837, Washington Avenue, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "185 Spurwink Ave, Cape Elizabeth, ME 04107": {
+    "query": "185 Spurwink Ave, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6151117,
+        "lon": -70.2490755,
+        "display_name": "Ocean House Child Development Center, 185, Spurwink Avenue, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "19 Libby St, Portland, ME 04103": {
+    "query": "19 Libby St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6951459,
+        "lon": -70.3020856,
+        "display_name": "19, Libby Street, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "190 Middle Rd, Falmouth, ME 04105": {
+    "query": "190 Middle Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7239576,
+        "lon": -70.2456054,
+        "display_name": "190, Middle Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.7259668,
+        "lon": -70.2435294,
+        "display_name": "190, Middle Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "192 Black Point Rd, Scarborough, ME 04074": {
+    "query": "192 Black Point Rd, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5730009,
+        "lon": -70.3175501,
+        "display_name": "192, Black Point Road, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "1976 Washington Ave, Portland, ME 04103": {
+    "query": "1976 Washington Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7167988,
+        "lon": -70.3014186,
+        "display_name": "1976, Washington Avenue, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "2 HIGHLAND AVE, SCARBOROUGH, ME 04074": {
+    "query": "2 HIGHLAND AVE, SCARBOROUGH, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5781133,
+        "lon": -70.3220026,
+        "display_name": "2, Highland Avenue, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "2 Stonewall Way, Westbrook, ME 04092": {
+    "query": "2 Stonewall Way, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7284161,
+        "lon": -70.3363238,
+        "display_name": "2, Stonewall Way, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "202 Stevens Ave, Portland, ME 04102": {
+    "query": "202 Stevens Ave, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6656799,
+        "lon": -70.2966111,
+        "display_name": "202, Stevens Avenue, Brighton Corner, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "209 Western Ave Units B1 &amp; B2 &amp; F, South Portland, ME 04106": {
+    "query": "209 Western Ave Units B1 &amp; B2 &amp; F, South Portland, ME 04106",
+    "label": null,
+    "results": []
+  },
+  "21 Cottage Ln, Cape Elizabeth, ME 04107": {
+    "query": "21 Cottage Ln, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6273522,
+        "lon": -70.215285,
+        "display_name": "21, Cottage Lane, Cape Cottage, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "21 Cumberland Way, Scarborough, ME 04074": {
+    "query": "21 Cumberland Way, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6112879,
+        "lon": -70.3352328,
+        "display_name": "21, Cumberland Way, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "21 Gray St, Westbrook, ME 04092": {
+    "query": "21 Gray St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6773985,
+        "lon": -70.3483533,
+        "display_name": "21, Gray Street, Cumberland Mills, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "215 Congress St, Portland, ME 04101": {
+    "query": "215 Congress St, Portland, ME 04101",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6635893,
+        "lon": -70.2509426,
+        "display_name": "215, Congress Street, Munjoy Hill, East End, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "commercial",
+        "class": "building"
+      }
+    ]
+  },
+  "2195 Congress St, Portland, ME 04102": {
+    "query": "2195 Congress St, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6525497,
+        "lon": -70.3292301,
+        "display_name": "2195, Congress Street, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "235 Pride St, Westbrook, ME 04092": {
+    "query": "235 Pride St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7088707,
+        "lon": -70.3369258,
+        "display_name": "235, Pride Street, Prides Corner, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "236 Gannett Dr, South Portland, ME 04106": {
+    "query": "236 Gannett Dr, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6404174,
+        "lon": -70.3576426,
+        "display_name": "236, Gannett Drive, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "236 Highland Ave, South Portland, ME 04106": {
+    "query": "236 Highland Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6297875,
+        "lon": -70.2540774,
+        "display_name": "236, Highland Avenue, Knightville, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "237 Spring St, Portland, ME 04102": {
+    "query": "237 Spring St, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6492162,
+        "lon": -70.2664728,
+        "display_name": "237, Spring Street, West End, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "apartments",
+        "class": "building"
+      }
+    ]
+  },
+  "239 MIDDLE RD, FALMOUTH, ME 04105": {
+    "query": "239 MIDDLE RD, FALMOUTH, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7303489,
+        "lon": -70.2407712,
+        "display_name": "239, Middle Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "2401 Broadway, Building 2, South Portland, ME 04106": {
+    "query": "2401 Broadway, Building 2, South Portland, ME 04106",
+    "label": null,
+    "results": []
+  },
+  "249 County Rd, Gorham, ME 04038": {
+    "query": "249 County Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 42.8362839,
+        "lon": -77.2132999,
+        "display_name": "Depew Road, Reed Corners, Town of Gorham, Ontario County, New York, 14424, United States",
+        "type": "tertiary",
+        "class": "highway"
+      },
+      {
+        "lat": 42.7960207,
+        "lon": -77.271788,
+        "display_name": "East Lake Road, Cottage City, Town of Gorham, Ontario County, New York, 14544, United States",
+        "type": "tertiary",
+        "class": "highway"
+      },
+      {
+        "lat": 42.7759583,
+        "lon": -77.2926631,
+        "display_name": "East Lake Road, Town of Gorham, Ontario County, New York, 14544, United States",
+        "type": "tertiary",
+        "class": "highway"
+      }
+    ]
+  },
+  "251 Danforth St, Portland, ME 04102": {
+    "query": "251 Danforth St, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6474241,
+        "lon": -70.2661185,
+        "display_name": "251, Danforth Street, West End, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "257 Middle Rd, Falmouth, ME 04105": {
+    "query": "257 Middle Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.731954,
+        "lon": -70.238886,
+        "display_name": "257, Middle Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "26 Cressey Rd, Gorham, ME 04038": {
+    "query": "26 Cressey Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6770822,
+        "lon": -70.4615649,
+        "display_name": "26, Cressey Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.6722431,
+        "lon": -70.4585691,
+        "display_name": "26, Cressey Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "26 Johansen St, Portland, ME 04103": {
+    "query": "26 Johansen St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6824109,
+        "lon": -70.2638952,
+        "display_name": "26, Johansen Street, Lunts Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "267 Falmouth Rd, Falmouth, ME 04105": {
+    "query": "267 Falmouth Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7335258,
+        "lon": -70.278861,
+        "display_name": "Falmouth Congregational Church, 267, Falmouth Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "28 Ballpark Rd, Gorham, ME 04038": {
+    "query": "28 Ballpark Rd, Gorham, ME 04038",
+    "label": null,
+    "results": []
+  },
+  "280 Ocean House Rd, Cape Elizabeth, ME 04107": {
+    "query": "280 Ocean House Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5980268,
+        "lon": -70.2299264,
+        "display_name": "Cape Elizabeth United Methodist Church, 280, Ocean House Road, Pond Cove, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "295 Libby Ave, Gorham, ME 04038": {
+    "query": "295 Libby Ave, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6967063,
+        "lon": -70.4252355,
+        "display_name": "295, Libby Avenue, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "3 Gorham Industrial Pkwy, Gorham, ME 04038": {
+    "query": "3 Gorham Industrial Pkwy, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6834624,
+        "lon": -70.3845001,
+        "display_name": "3, Gorham Industrial Parkway, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "300 Enterprise Business Park, Scarborough, ME 04074": {
+    "query": "300 Enterprise Business Park, Scarborough, ME 04074",
+    "label": null,
+    "results": []
+  },
+  "301 Cottage Rd, South Portland, ME 04106": {
+    "query": "301 Cottage Rd, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6348433,
+        "lon": -70.239237,
+        "display_name": "First Congregational Church, 301, Cottage Road, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "31 Middle Rd, Cumberland Center, ME 04021": {
+    "query": "31 Middle Rd, Cumberland Center, ME 04021",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7542651,
+        "lon": -70.2192481,
+        "display_name": "31, Middle Road, Cumberland, Cumberland County, Maine, 04021, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "32 Foreside Rd, Falmouth, ME 04105": {
+    "query": "32 Foreside Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7124761,
+        "lon": -70.2303665,
+        "display_name": "32, Foreside Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "336 Black Point Rd, Scarborough, ME 04074": {
+    "query": "336 Black Point Rd, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5592156,
+        "lon": -70.3031088,
+        "display_name": "Camp Ketcha, 336, Black Point Road, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "summer_camp",
+        "class": "leisure"
+      }
+    ]
+  },
+  "34 School St, Gorham, ME 04038": {
+    "query": "34 School St, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.680291,
+        "lon": -70.4435457,
+        "display_name": "Gorham Arts Alliance, 34, School Street, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "arts_centre",
+        "class": "amenity"
+      }
+    ]
+  },
+  "343 E Bridge St, Westbrook, ME 04092": {
+    "query": "343 E Bridge St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6958708,
+        "lon": -70.3421653,
+        "display_name": "343, East Bridge Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "343 Ocean House Rd, Cape Elizabeth, ME 04107": {
+    "query": "343 Ocean House Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5925071,
+        "lon": -70.2270399,
+        "display_name": "343, Ocean House Road, Pond Cove, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "36 Broadway, South Portland, ME 04106": {
+    "query": "36 Broadway, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6463949,
+        "lon": -70.2334247,
+        "display_name": "36, Broadway, Ferry Village, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "36 Nevens St, Portland, ME 04103": {
+    "query": "36 Nevens St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6722183,
+        "lon": -70.287709,
+        "display_name": "36, Nevens Street, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "36 Patrick Dr, Westbrook, ME 04092": {
+    "query": "36 Patrick Dr, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6767981,
+        "lon": -70.3364397,
+        "display_name": "36, Patrick Drive, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "360 SPRING ST, PORTLAND, ME 04102": {
+    "query": "360 SPRING ST, PORTLAND, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6459931,
+        "lon": -70.2705287,
+        "display_name": "360, Spring Street, West End, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "gymnasium",
+        "class": "building"
+      }
+    ]
+  },
+  "37 Andover Rd, Portland, ME 04102": {
+    "query": "37 Andover Rd, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6533487,
+        "lon": -70.3398168,
+        "display_name": "Glickman Lauder Center of Excellence in Autism and Developmental Disorders, 37, Andover Road, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "centre",
+        "class": "healthcare"
+      }
+    ]
+  },
+  "37 Arbutus Ave, South Portland, ME 04106": {
+    "query": "37 Arbutus Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6298077,
+        "lon": -70.2600155,
+        "display_name": "37, Arbutus Avenue, Knightville, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "374 North Rd, Chebeague Island, ME 04017": {
+    "query": "374 North Rd, Chebeague Island, ME 04017",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7298041,
+        "lon": -70.1282725,
+        "display_name": "374, North Road, Sunset Landing, Chebeague Island, Cumberland County, Maine, 04017, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "381 Main St, Gorham, ME 04038": {
+    "query": "381 Main St, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6863584,
+        "lon": -70.4189232,
+        "display_name": "381, Main Street, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "commercial",
+        "class": "building"
+      }
+    ]
+  },
+  "39 Belfield St, Portland, ME 04103": {
+    "query": "39 Belfield St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6683228,
+        "lon": -70.2961843,
+        "display_name": "39, Belfield Street, Brighton Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "39 School St, Gorham, ME 04038": {
+    "query": "39 School St, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6806562,
+        "lon": -70.4433025,
+        "display_name": "39, School Street, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "4 Saco St, Scarborough, ME 04074": {
+    "query": "4 Saco St, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6401944,
+        "lon": -70.3995201,
+        "display_name": "4, Saco Street, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "40 Beech Ridge Rd., Scarborough, ME 04074": {
+    "query": "40 Beech Ridge Rd., Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5903757,
+        "lon": -70.3885456,
+        "display_name": "40, Beech Ridge Road, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "400 Deering Ave., Portland, ME 04103": {
+    "query": "400 Deering Ave., Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6658133,
+        "lon": -70.2837882,
+        "display_name": "Temple Beth El, 400, Deering Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6658285,
+        "lon": -70.2835199,
+        "display_name": "Levey Hebrew Day School, 400, Deering Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "school",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6656928,
+        "lon": -70.2840803,
+        "display_name": "Common Floor Contra Dance, 400, Deering Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "dance",
+        "class": "leisure"
+      }
+    ]
+  },
+  "406 Cumberland St, Westbrook, ME 04092": {
+    "query": "406 Cumberland St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6899776,
+        "lon": -70.3642261,
+        "display_name": "406, Cumberland Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "41 Little Ave, Westbrook, ME 04092": {
+    "query": "41 Little Ave, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6716177,
+        "lon": -70.3624207,
+        "display_name": "41, Little Avenue, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "41 WATERHOUSE RD, GORHAM, ME 04038": {
+    "query": "41 WATERHOUSE RD, GORHAM, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6537914,
+        "lon": -70.4365712,
+        "display_name": "41, Waterhouse Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "415 Forest Ave, Portland, ME 04101": {
+    "query": "415 Forest Ave, Portland, ME 04101",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6655145,
+        "lon": -70.2751467,
+        "display_name": "The Children's House, 415, Forest Avenue, Oakdale, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "childcare",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6654147,
+        "lon": -70.2750702,
+        "display_name": "Leonardo's Pizza, 415, Forest Avenue, Oakdale, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "restaurant",
+        "class": "amenity"
+      },
+      {
+        "lat": 43.6655921,
+        "lon": -70.2753841,
+        "display_name": "Oasis Nails and Spa, 415, Forest Avenue, Oakdale, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "beauty",
+        "class": "shop"
+      }
+    ]
+  },
+  "42 Constitution Dr, Westbrook, ME 04092": {
+    "query": "42 Constitution Dr, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6959146,
+        "lon": -70.3322635,
+        "display_name": "42, Constitution Drive, Colonial Acres, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "43 Foreside Road, Falmouth, ME 04105": {
+    "query": "43 Foreside Road, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.713733,
+        "lon": -70.2279436,
+        "display_name": "43, Foreside Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "440 Ocean St, South Portland, ME 04106": {
+    "query": "440 Ocean St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.626922,
+        "lon": -70.2501691,
+        "display_name": "440, Ocean Street, Knightville, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "449 Cumberland St, Westbrook, ME 04092": {
+    "query": "449 Cumberland St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6914762,
+        "lon": -70.3654078,
+        "display_name": "449, Cumberland Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "453 Ray St, Portland, ME 04103": {
+    "query": "453 Ray St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.704256,
+        "lon": -70.2823442,
+        "display_name": "453, Ray Street, North Deering, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "476 Summit St., Portland, ME 04103": {
+    "query": "476 Summit St., Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7178769,
+        "lon": -70.2960791,
+        "display_name": "Grace Baptist Church, 476, Summit Street, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "5 Bartley Ave., Portland, ME 04103": {
+    "query": "5 Bartley Ave., Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7070394,
+        "lon": -70.2898382,
+        "display_name": "5, Bartley Avenue, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "50 Lydia Ln., South Portland, ME 04106": {
+    "query": "50 Lydia Ln., South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.637517,
+        "lon": -70.3035987,
+        "display_name": "50, Lydia Lane, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "524 Allen Ave, Portland, ME 04103": {
+    "query": "524 Allen Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.704407,
+        "lon": -70.283089,
+        "display_name": "524, Allen Avenue, North Deering, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.7056622,
+        "lon": -70.283618,
+        "display_name": "Allen Avenue Unitarian Universalist Church, 524, Allen Avenue, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "525 Highland Ave, South Portland, ME 04106": {
+    "query": "525 Highland Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6240548,
+        "lon": -70.2655275,
+        "display_name": "525, Highland Avenue, Stanwood Park, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "535 Ocean Ave, Portland, ME 04103": {
+    "query": "535 Ocean Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6851078,
+        "lon": -70.2687534,
+        "display_name": "535, Ocean Avenue, Lunts Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "57 Gary L Maietta Pkwy, South Portland, ME 04106": {
+    "query": "57 Gary L Maietta Pkwy, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6053643,
+        "lon": -70.2869812,
+        "display_name": "57, Gary L Maietta Parkway, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "58 Woodville Rd, Falmouth, ME 04105": {
+    "query": "58 Woodville Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7392666,
+        "lon": -70.2745817,
+        "display_name": "Falmouth Elementary School, 58, Woodville Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "596 Main St, Westbrook, ME 04092": {
+    "query": "596 Main St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6787891,
+        "lon": -70.3549194,
+        "display_name": "Little Red Schoolhouse Child Care Center, 596, Main Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "kindergarten",
+        "class": "amenity"
+      }
+    ]
+  },
+  "6 Rich Way, Falmouth, ME 04105": {
+    "query": "6 Rich Way, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7276926,
+        "lon": -70.238705,
+        "display_name": "6, Rich Way, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "6 Richardson St, Portland, ME 04103": {
+    "query": "6 Richardson St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6764726,
+        "lon": -70.2968684,
+        "display_name": "6, Richardson Street, Deering Center, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "6 Two Lights Rd, Cape Elizabeth, ME 04107": {
+    "query": "6 Two Lights Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5726211,
+        "lon": -70.2200642,
+        "display_name": "6, Two Lights Road, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "60 Darling Ave, South Portland, ME 04106": {
+    "query": "60 Darling Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.641795,
+        "lon": -70.3300749,
+        "display_name": "60, Darling Avenue, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "60 Running Springs Rd, Gorham, ME 04038": {
+    "query": "60 Running Springs Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6692006,
+        "lon": -70.4434371,
+        "display_name": "60, Running Springs Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "building"
+      }
+    ]
+  },
+  "600 Cumberland St, Westbrook, ME 04092": {
+    "query": "600 Cumberland St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6946438,
+        "lon": -70.3704434,
+        "display_name": "600, Cumberland Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "605 Us Route 1, Scarborough, ME 04074": {
+    "query": "605 Us Route 1, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5555407,
+        "lon": -70.4036774,
+        "display_name": "Portland Road, Saco, York County, Maine, 04072, United States",
+        "type": "primary",
+        "class": "highway"
+      }
+    ]
+  },
+  "628 Us Route 1, Scarborough, ME 04074": {
+    "query": "628 Us Route 1, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5555407,
+        "lon": -70.4036774,
+        "display_name": "Portland Road, Saco, York County, Maine, 04072, United States",
+        "type": "primary",
+        "class": "highway"
+      }
+    ]
+  },
+  "631 Stevens Ave, Portland, ME 04103": {
+    "query": "631 Stevens Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6799639,
+        "lon": -70.2936578,
+        "display_name": "Stevens Square Community Center, 631, Stevens Avenue, Deering Center, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "yes",
+        "class": "building"
+      }
+    ]
+  },
+  "658 Main St, Gorham, ME 04038": {
+    "query": "658 Main St, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6866083,
+        "lon": -70.3879412,
+        "display_name": "658, Main Street, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "68 Jordan Ave, South Portland, ME 04106": {
+    "query": "68 Jordan Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6321839,
+        "lon": -70.246956,
+        "display_name": "68, Jordan Avenue, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "695 Stevens Ave/Father Hayes, Portland, ME 04103": {
+    "query": "695 Stevens Ave/Father Hayes, Portland, ME 04103",
+    "label": null,
+    "results": []
+  },
+  "7 Access Rd, Gorham, ME 04038": {
+    "query": "7 Access Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6739712,
+        "lon": -70.4499537,
+        "display_name": "7, Access Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.6747778,
+        "lon": -70.4511604,
+        "display_name": "7, Access Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "71 Herman Ave, Peaks Island, ME 04108": {
+    "query": "71 Herman Ave, Peaks Island, ME 04108",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6577102,
+        "lon": -70.1946842,
+        "display_name": "71, Herman Avenue, Peaks Island, Portland, Cumberland County, Maine, 04108, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "72 Gray Rd, Falmouth, ME 04105": {
+    "query": "72 Gray Rd, Falmouth, ME 04105",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7347093,
+        "lon": -70.2976963,
+        "display_name": "72, Gray Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.7357695,
+        "lon": -70.2970813,
+        "display_name": "72, Gray Road, Falmouth, Cumberland County, Maine, 04105, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "72 Macarthur Cir E, South Portland, ME 04106": {
+    "query": "72 Macarthur Cir E, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6374485,
+        "lon": -70.3166518,
+        "display_name": "72, Macarthur Circle East, South Portland Gardens, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "721 Stevens Ave, Portland, ME 04103": {
+    "query": "721 Stevens Ave, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.683088,
+        "lon": -70.2935183,
+        "display_name": "The Children's Center, 721, Stevens Avenue, Deering Center, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "75 South St Suite 1 , Gorham , ME 04038": {
+    "query": "75 South St Suite 1 , Gorham , ME 04038",
+    "label": null,
+    "results": []
+  },
+  "79 Libby Ave, Gorham, ME 04038": {
+    "query": "79 Libby Ave, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.683115,
+        "lon": -70.4179906,
+        "display_name": "79, Libby Avenue, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "8 Elkins Rd, Gorham, ME 04038": {
+    "query": "8 Elkins Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6784471,
+        "lon": -70.4208069,
+        "display_name": "Gorham Christian Assembly Church, 8, Elkins Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "8 Waterfall Dr, Saco, ME 04072": {
+    "query": "8 Waterfall Dr, Saco, ME 04072",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5531462,
+        "lon": -70.4033539,
+        "display_name": "8, Waterfall Drive, Saco, York County, Maine, 04072, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "80 Flag Pond Rd, Saco, ME 04072": {
+    "query": "80 Flag Pond Rd, Saco, ME 04072",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5515977,
+        "lon": -70.4165927,
+        "display_name": "80, Flag Pond Road, Saco, York County, Maine, 04072, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "856 Brighton Ave, Portland, ME 04102": {
+    "query": "856 Brighton Ave, Portland, ME 04102",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6725407,
+        "lon": -70.3134751,
+        "display_name": "856, Brighton Avenue, Nasons Corner, Portland, Cumberland County, Maine, 04102, United States",
+        "type": "school",
+        "class": "building"
+      }
+    ]
+  },
+  "874 Washington Ave #1, Portland, ME 04103": {
+    "query": "874 Washington Ave #1, Portland, ME 04103",
+    "label": null,
+    "results": []
+  },
+  "89 Lynn St, Portland, ME 04103": {
+    "query": "89 Lynn St, Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7006895,
+        "lon": -70.3070643,
+        "display_name": "89, Lynn Street, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "9 Channel View Rd, Cape Elizabeth, ME 04107": {
+    "query": "9 Channel View Rd, Cape Elizabeth, ME 04107",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5734715,
+        "lon": -70.2089684,
+        "display_name": "9, Channel View Road, Cape Elizabeth, Cumberland County, Maine, 04107, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "9 Donald B Dean Dr, South Portland, ME 04106": {
+    "query": "9 Donald B Dean Dr, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6296531,
+        "lon": -70.3275561,
+        "display_name": "9, Donald B Dean Drive, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "yes",
+        "class": "building"
+      },
+      {
+        "lat": 43.629805,
+        "lon": -70.3282588,
+        "display_name": "9, Donald B Dean Drive, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "9 Harding St, South Portland, ME 04106": {
+    "query": "9 Harding St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6349646,
+        "lon": -70.28969,
+        "display_name": "9, Harding Street, Ligonia, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "9 Lincoln Ave, Scarborough, ME 04074": {
+    "query": "9 Lincoln Ave, Scarborough, ME 04074",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5829017,
+        "lon": -70.3578293,
+        "display_name": "Toddle Inn Child Care, 9, Lincoln Avenue, Oak Hill, Scarborough, Cumberland County, Maine, 04074, United States",
+        "type": "childcare",
+        "class": "amenity"
+      }
+    ]
+  },
+  "91 Thompson St, South Portland, ME 04106": {
+    "query": "91 Thompson St, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6412234,
+        "lon": -70.234974,
+        "display_name": "91, Thompson Street, Willard Square, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "92 Fessenden Ave, South Portland, ME 04106": {
+    "query": "92 Fessenden Ave, South Portland, ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.630217,
+        "lon": -70.248973,
+        "display_name": "92, Fessenden Avenue, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "96 Danforth St, Portland, ME 04101": {
+    "query": "96 Danforth St, Portland, ME 04101",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6516254,
+        "lon": -70.2599136,
+        "display_name": "96, Danforth Street, Arts District, Portland, Cumberland County, Maine, 04101, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "969 Spring St, Westbrook, ME 04092": {
+    "query": "969 Spring St, Westbrook, ME 04092",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6455838,
+        "lon": -70.3566617,
+        "display_name": "969, Spring Street, Westbrook, Cumberland County, Maine, 04092, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "970 Forest Ave., Portland, ME 04103": {
+    "query": "970 Forest Ave., Portland, ME 04103",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.680733,
+        "lon": -70.2899753,
+        "display_name": "970, Forest Avenue, Woodfords Corner, Portland, Cumberland County, Maine, 04103, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "985 Portland Rd Ste 103, Saco, ME 04072": {
+    "query": "985 Portland Rd Ste 103, Saco, ME 04072",
+    "label": null,
+    "results": []
+  },
+  "209 Western Ave South Portland ME 04106": {
+    "query": "209 Western Ave South Portland ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6374546,
+        "lon": -70.3215799,
+        "display_name": "209, Western Avenue, South Portland Gardens, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "107 Mussey St South Portland ME 04106": {
+    "query": "107 Mussey St South Portland ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6407247,
+        "lon": -70.2443966,
+        "display_name": "107, Mussey Street, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "apartments",
+        "class": "building"
+      }
+    ]
+  },
+  "2401 Broadway South Portland ME 04106": {
+    "query": "2401 Broadway South Portland ME 04106",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6338673,
+        "lon": -70.2568173,
+        "display_name": "Broadway, Knightville, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "primary",
+        "class": "highway"
+      },
+      {
+        "lat": 43.636205,
+        "lon": -70.2481423,
+        "display_name": "Broadway, Meeting House Hill, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "secondary",
+        "class": "highway"
+      },
+      {
+        "lat": 43.6298274,
+        "lon": -70.29411,
+        "display_name": "Broadway, Cash Corner, South Portland, Cumberland County, Maine, 04106, United States",
+        "type": "primary",
+        "class": "highway"
+      }
+    ]
+  },
+  "300 Enterprise Business Park Scarborough ME 04074": {
+    "query": "300 Enterprise Business Park Scarborough ME 04074",
+    "label": null,
+    "results": []
+  },
+  "10 Corey Rd, Cumberland, ME 04021": {
+    "query": "10 Corey Rd, Cumberland, ME 04021",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7761955,
+        "lon": -70.2528031,
+        "display_name": "10, Corey Road, Cumberland, Cumberland County, Maine, 04021, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "10 Thomas Dr, Cumberland Foreside, ME 04110": {
+    "query": "10 Thomas Dr, Cumberland Foreside, ME 04110",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7803421,
+        "lon": -70.1918355,
+        "display_name": "Toddle Inn Childcare, 10, Thomas Drive, Cumberland, Cumberland County, Maine, 04110, United States",
+        "type": "kindergarten",
+        "class": "amenity"
+      }
+    ]
+  },
+  "128 Land Of Nod Rd, Windham, ME 04062": {
+    "query": "128 Land Of Nod Rd, Windham, ME 04062",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7551394,
+        "lon": -70.3851023,
+        "display_name": "128, Land Of Nod Road, Windham, Cumberland County, Maine, 04062, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "20 Mcclure Dr, Buxton, ME 04093": {
+    "query": "20 Mcclure Dr, Buxton, ME 04093",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6216329,
+        "lon": -70.4789581,
+        "display_name": "McClure Drive, Buxton, York County, Maine, 04093, United States",
+        "type": "service",
+        "class": "highway"
+      }
+    ]
+  },
+  "20 Parker Hill Rd, Gorham, ME 04038": {
+    "query": "20 Parker Hill Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7339341,
+        "lon": -70.4298,
+        "display_name": "20, Parker Hill Road, Little Falls, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "200 Jenkins Rd, Saco, ME 04072": {
+    "query": "200 Jenkins Rd, Saco, ME 04072",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.5476387,
+        "lon": -70.4415798,
+        "display_name": "200, Jenkins Road, Amari Springs, Saco, York County, Maine, 04072, United States",
+        "type": "detached",
+        "class": "building"
+      }
+    ]
+  },
+  "286 Princes Point Rd, Yarmouth, ME 04096": {
+    "query": "286 Princes Point Rd, Yarmouth, ME 04096",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.780214,
+        "lon": -70.1670727,
+        "display_name": "286, Princes Point Road, Yarmouth, Cumberland County, Maine, 04096, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "295 Tuttle Rd, Cumberland, ME 04021": {
+    "query": "295 Tuttle Rd, Cumberland, ME 04021",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.7910802,
+        "lon": -70.2456689,
+        "display_name": "295, Tuttle Road, Cumberland Center, Cumberland, Cumberland County, Maine, 04021, United States",
+        "type": "house",
+        "class": "place"
+      },
+      {
+        "lat": 43.8977283,
+        "lon": -70.1572301,
+        "display_name": "295, Tuttle Road, Pownal, Cumberland County, Maine, 04069, United States",
+        "type": "house",
+        "class": "place"
+      }
+    ]
+  },
+  "4 Bonfire Dr, Saco, ME 04072": {
+    "query": "4 Bonfire Dr, Saco, ME 04072",
+    "label": null,
+    "results": []
+  },
+  "81 Cressey Rd, Gorham, ME 04038": {
+    "query": "81 Cressey Rd, Gorham, ME 04038",
+    "label": null,
+    "results": [
+      {
+        "lat": 43.6785014,
+        "lon": -70.4606167,
+        "display_name": "81, Cressey Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "yes",
+        "class": "building"
+      },
+      {
+        "lat": 43.6785145,
+        "lon": -70.4606532,
+        "display_name": "Cressey Road Christian Church, 81, Cressey Road, Gorham, Cumberland County, Maine, 04038, United States",
+        "type": "place_of_worship",
+        "class": "amenity"
+      }
+    ]
+  },
+  "91 Lover'S Ln, Gorham, ME 04038": {
+    "query": "91 Lover'S Ln, Gorham, ME 04038",
+    "label": null,
+    "results": []
+  }
+}

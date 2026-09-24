@@ -1,0 +1,258 @@
+OSM structures loaded: 150 (113 tanks, 37 parcels)
+Global      10 tanks, 1 parcel polygons
+CITGO       16 tanks, 2 parcel polygons
+Buckeye     20 tanks, 1 parcel polygons
+GulfSunoco  13 tanks, 9 parcel polygons
+Sprague     29 tanks, 3 parcel polygons
+PPLC        20 tanks, 1 parcel polygons
+
+receptor                                          cat                      Global      CITGO    Buckeye GulfSunoco    Sprague       PPLC
+Dora L. Small Elementary                          school                     1.97       1.20       2.04      0.28Y       2.42       1.75
+Frank I. Brown Elementary                         school                     1.13      0.48Y       1.37      0.68Y       1.63      0.85Y
+Skillin Elementary                                school                     1.48       1.94       1.24       3.16      0.80Y       1.52
+Dyer Elementary                                   school                    0.52Y      0.90Y       1.02       2.04      0.97Y      0.16Y
+Kaler Elementary (summer camp 2026)               school                    0.33Y      0.39Y      0.86Y       1.52      0.82Y      0.04Y
+South Portland Middle School                      school                     1.35       1.80       1.09       3.02      0.65Y       1.39
+South Portland High School                        school                    0.66Y      0.86Y       1.19       1.87       1.17      0.18Y
+Betsy Ross House (SPHA)                           senior                     1.96       1.17       1.96      0.01Y       2.37       1.83
+Ridgeland Estates (SPHA)                          senior                    0.49Y      0.91Y      0.29Y       2.13      0.09Y      0.53Y
+Thornton Heights Commons (SPHA)                   senior                     1.42       1.92       1.28       3.14      0.83Y       1.43
+Linton Street Facility                            senior                     1.41       1.81       1.04       2.93      0.68Y       1.46
+Albany Street (AL)                                senior                     2.13       2.64       2.01       3.87       1.55       2.11
+Gordon Green                                      senior                     1.40      0.62Y       1.46      0.26Y       1.84       1.26
+Sawyer Street House                               senior                     1.67      0.93Y       1.81      0.50Y       2.15       1.43
+One Willow Manor                                  senior                     1.83       1.04       1.75      0.13Y       2.19       1.76
+Colony Lane                                       senior                     1.81       2.23       1.47       3.38       1.08       1.85
+Pride House                                       senior                     1.87       2.24       1.46       3.23       1.02       1.94
+Wescott                                           senior                     1.58       2.03       1.32       3.25      0.88Y       1.61
+Wilson Street                                     senior                     1.35       1.86       1.24       3.09      0.80Y       1.36
+Youth &amp; Family Outreach                       childcare-center          0.06Y      0.56Y      0.59Y       1.78      0.57Y      0.12Y
+The Opportunity Alliance- Lydia Lane              childcare-center           1.35       1.72      0.95Y       2.71      0.49Y       1.47
+The Children's Nursery School                     childcare-nursery          1.23      0.54Y      0.82Y      0.59Y       1.26       1.58
+Catherine Morrill Day Nursery                     childcare-center           1.31      0.50Y      0.95Y      0.32Y       1.45       1.57
+Stacie Archibald                                  childcare-family           1.23      0.66Y       1.53      0.85Y       1.75      0.88Y
+Goldman Family Preschool                          childcare-center           1.77       1.67       1.26       2.13       1.23       2.12
+Spring Point Childrens Center                     childcare-center           2.08       1.29       2.06      0.01Y       2.49       1.94
+The Opportuinity Alliance- East End               childcare-center           2.24       1.43       1.86      0.46Y       2.29       2.47
+Bright Horizons Children's Center, LLC.           childcare-center           2.85       3.07       2.48       3.79       2.05       3.06
+The Children's Center-Minis                       childcare-center           3.19       2.86       2.70       2.65       2.76       3.58
+The Children's Center - Portland                  childcare-center           3.31       3.00       2.81       2.82       2.86       3.69
+Children's Odyssey                                childcare-center           4.22       3.93       3.72       3.70       3.75       4.60
+First Lutheran Children's Program                 childcare-center           4.74       4.33       4.26       3.86       4.34       5.13
+St. Elizabeths Child Dev Center                   childcare-center           4.82       4.83       5.35       5.05       5.32       4.21
+Jennifer Wescott                                  childcare-family           4.94       4.80       4.44       4.90       4.35       5.29
+Julie Higgins                                     childcare-family           5.14       5.00       4.63       5.10       4.54       5.48
+Love &amp; Laughter Daycare                       childcare-center           5.90       6.07       5.50       6.66       5.10       6.11
+THREE LITTLE BIRDS PRESCHOOL                      childcare-family           6.16       6.52       5.75       7.36       5.30       6.23
+Winfield Children's House                         childcare-center           8.67       8.12       8.19       7.38       8.32       9.05
+Breakwater School                                 childcare-center           3.08       2.99       2.59       3.30       2.49       3.43
+Glickman Lauder Ctr. Of Excellence In Autism &amp childcare-center           3.37       3.60       2.99       4.32       2.55       3.56
+Children's Enrichment On The Cape                 childcare-center           4.49       4.46       5.03       4.60       5.00       3.86
+Art Play Nursery School                           childcare-nursery          4.67       4.20       4.19       3.66       4.30       5.06
+Brilliant Stars Montessori Home                   childcare-family           4.89       4.46       4.40       3.98       4.48       5.27
+Ketcha Outdoors                                   childcare-center           5.02       5.46       5.32       6.49       4.96       4.72
+Portside Learning Center                          childcare-center           5.65       5.28       5.16       4.85       5.21       6.04
+Pine Grove Montessori School Falmouth             childcare-center           5.70       4.93       5.28       3.94       5.58       5.98
+Blais Nursery School                              childcare-nursery          6.16       6.17       5.69       6.53       5.45       6.45
+Davinci Childcare                                 childcare-center           6.66       6.14       6.19       5.46       6.31       7.05
+APPLE BLOSSOM CHILDCARE                           childcare-family           6.67       6.34       6.17       5.94       6.20       7.05
+Sunny Days Childcare &amp; Education Center       childcare-center           7.77       7.96       7.38       8.56       6.95       7.96
+Julia Churchill                                   childcare-family           8.50       8.62       8.08       9.11       7.72       8.74
+Creative Explorations- Brook Campus               childcare-center           8.64       8.80       8.24       9.34       7.84       8.86
+Kidz Go Eco                                       childcare-center           8.85       9.38       8.77      10.61       8.32       8.77
+Storeytime Learning Center &amp; Aftercare        childcare-center           9.52       8.76       9.09       7.78       9.36       9.82
+Toddle Inn Day Care - South Portland              childcare-center           1.75       2.22       2.07       3.34       1.76       1.48
+Chickadee Toddler Care &amp; Preschool Units  B1- childcare-center           2.25       2.62       1.84       3.56       1.39       2.34
+Community Montessori Of Greater Portland          childcare-center           3.21       2.58       2.77       1.88       2.99       3.58
+Waypoint Little Dolphin School Scarborough        childcare-center           8.17       8.71       8.11       9.94       7.66       8.09
+Cape Care Part Of Ce Community Services           childcare-center           3.54       3.48       4.08       3.65       4.05       2.89
+Toddle Inn Child Care - Westbrook                 childcare-center           4.05       4.38       3.66       5.18       3.20       4.17
+Karen Kullman                                     childcare-family           4.92       5.05       4.50       5.61       4.14       5.16
+Toddle Inn Child Care - Scarborough               childcare-center           5.20       5.74       5.15       6.96       4.70       5.12
+Falmouth Corner Preschool                         childcare-nursery          6.20       5.50       5.76       4.61       5.99       6.56
+Helena Nime                                       childcare-family           6.98       6.75       6.48       6.54       6.45       7.35
+Falmouth Elementary School                        childcare-center           7.06       6.51       6.58       5.79       6.72       7.44
+Toddle Inn Child Care Center - Gorham             childcare-center           7.76       7.93       7.36       8.49       6.95       7.97
+Imagination Station                               childcare-center           7.90       8.05       7.49       8.60       7.10       8.11
+FRIENDS SCHOOL OF PORTLAND                        childcare-center           8.22       7.46       7.80       6.46       8.09       8.51
+Summit Community Church                           childcare-center           9.66       9.90       9.29      10.54       8.82       9.82
+Creative Beginnings Childcare Ctr                 childcare-center          0.73Y      0.30Y       1.04      0.87Y       1.24      0.49Y
+WISHING TREE PRESCHOOL                            childcare-family          0.39Y      0.79Y      0.12Y       1.99      0.04Y      0.49Y
+Children's Adventure Center Inc.                  childcare-center          0.23Y      0.76Y      0.53Y       1.99      0.47Y      0.28Y
+Growing Learners @ Harding Street                 childcare-center          0.65Y       1.03      0.25Y       2.17      0.00Y      0.75Y
+Caroline Kleiman                                  childcare-family          0.64Y      0.43Y       1.11       1.19       1.16      0.20Y
+Lighthouse School &amp; Child Care Center         childcare-center          0.65Y      0.71Y       1.18       1.67       1.15      0.06Y
+WAYNFLETE SCHOOL                                  childcare-center          0.71Y      0.20Y      0.30Y      0.96Y      0.79Y       1.06
+Kiddie Garden, L.L.C.                             childcare-center          0.90Y      0.20Y      0.53Y      0.72Y       1.02       1.23
+Kiddie Garden LLC                                 childcare-center          0.99Y      0.32Y      0.60Y      0.68Y       1.08       1.33
+Suzanne Kahill                                    childcare-family          0.91Y      0.61Y       1.32       1.07       1.44      0.49Y
+ALPHABET TREE EARLY LEARNING ACADEMY              childcare-family           1.23       1.62      0.84Y       2.70      0.44Y       1.31
+Caroline Whitten                                  childcare-family           1.15      0.69Y       1.51      0.98Y       1.68      0.74Y
+Pearlite Montessori Home                          childcare-center           1.17      0.86Y       1.60       1.22       1.69      0.66Y
+Serina Holbrook                                   childcare-family           1.34       1.73      0.95Y       2.81      0.56Y       1.41
+Ready Set Grow Learning Center                    childcare-center           1.60       2.09       1.41       3.31      0.96Y       1.62
+Discovery Center                                  childcare-nursery          1.61      0.93Y       1.82      0.75Y       2.11       1.30
+Ocean House On The Farm LLC                       childcare-center           1.68       1.58       2.21       2.02       2.17       1.00
+Chickadee Infant &amp; Toddler Care               childcare-center           2.01       2.38       1.60       3.32       1.15       2.10
+Kids World At Willard Beach                       childcare-center           1.89       1.12       1.97      0.28Y       2.35       1.68
+Christine Wheeler                                 childcare-family           1.93       1.54       2.35       1.63       2.45       1.37
+Children's House                                  childcare-center           1.99       1.52       1.52       1.37       1.71       2.37
+Trina Carroll                                     childcare-center           2.04       1.72       1.55       1.76       1.65       2.43
+Katherine Folan                                   childcare-family           1.94       2.38       2.29       3.46       1.99       1.63
+Madeline Chisholm                                 childcare-family           2.24       2.06       1.73       2.34       1.72       2.61
+Trinity Day School                                childcare-center           2.24       1.88       1.76       1.79       1.87       2.63
+Baby Steps Nursery &amp; Child Care               childcare-center           2.33       2.39       1.87       2.96       1.64       2.63
+Hinda Wilansky                                    childcare-family           2.39       2.19       1.89       2.40       1.89       2.77
+Skills for Life                                   childcare-center           2.55       2.95       2.18       4.02       1.78       2.59
+Clara Allen                                       childcare-family           2.51       2.20       2.02       2.15       2.09       2.90
+Shining Star Child Development Center             childcare-center           2.70       3.04       2.30       3.90       1.84       2.82
+Maiden Cove Child Center                          childcare-center           2.85       2.23       3.12       1.58       3.37       2.41
+Anne Salamone                                     childcare-family           2.92       2.67       2.43       2.69       2.44       3.30
+Comfy Cape Children's Center                      childcare-center           2.95       2.98       3.49       3.41       3.46       2.35
+Growing Learners At Stevens Square                childcare-center           3.10       2.81       2.60       2.69       2.65       3.49
+Growing Learners Child Care Center                childcare-center           3.11       2.78       2.61       2.58       2.68       3.49
+Gentle Wings                                      childcare-center           3.20       2.86       2.70       2.64       2.77       3.58
+Diane Gervais                                     childcare-family           3.22       3.72       3.03       4.94       2.59       3.21
+Bright Eyes Early Learning Center                 childcare-center           3.17       3.09       3.71       3.26       3.68       2.51
+Back Cove School                                  childcare-center           3.36       2.78       2.90       2.15       3.09       3.74
+String Bean Farm School                           childcare-center           3.31       3.21       3.84       3.34       3.81       2.64
+The Academy For Active Learners LLC               childcare-center           3.75       3.49       3.26       3.37       3.27       4.13
+United 4 childcare Growing Learners Gannett Drive childcare-center           4.06       4.43       3.66       5.28       3.21       4.15
+Bethel Kids Care DBA The Children's Ark Learning  childcare-center           4.07       4.08       3.60       4.47       3.39       4.38
+Roselyn North Academy- Patrick Drive- Westbrook   childcare-center           4.11       4.12       3.64       4.53       3.42       4.41
+Peaks Island Children's Workshop                  childcare-center           4.17       3.38       4.12       1.82       4.56       3.99
+Sholeh Misaghian                                  childcare-family           4.19       3.76       3.71       3.28       3.81       4.58
+Portside Infant and Toddler Center                childcare-center           4.32       3.90       3.84       3.45       3.93       4.71
+COLLEEN SNYDER                                    childcare-center           4.22       4.74       4.37       5.90       3.95       4.02
+Pied Piper Preschool                              childcare-nursery          4.34       4.84       4.50       5.99       4.09       4.12
+Brenda Keites                                     childcare-family           4.56       4.60       4.10       5.05       3.83       4.84
+Lil' Folk Farm, Inc.                              childcare-center           4.41       4.91       4.60       6.04       4.20       4.18
+Nilo Hejabian                                     childcare-family           4.66       4.18       4.18       3.63       4.29       5.05
+Brandi Lawrence                                   childcare-family           4.66       4.38       4.16       4.14       4.18       5.04
+Roselyn North Academy- Main Westbrook             childcare-center           4.87       4.93       4.42       5.39       4.14       5.15
+Mary Casey                                        childcare-family           5.12       5.07       5.66       5.11       5.63       4.48
+Joanne (Jody) Richardson                          childcare-family           5.23       5.14       4.73       5.32       4.60       5.56
+Rebecca Hansen                                    childcare-family           5.31       5.47       4.90       6.05       4.51       5.53
+Naila Matkevich                                   childcare-family           5.34       4.97       4.85       4.54       4.90       5.73
+Christina Arroyo                                  childcare-family           5.48       5.05       5.00       4.53       5.08       5.87
+Little Steps Childcare                            childcare-center           5.67       5.27       5.18       4.78       5.25       6.06
+Mbiko Family Learning Center                      childcare-center         743.75     744.15     743.36     745.03     742.92     743.79
+Little Stars Infant &amp; Toddlers                childcare-center           5.72       5.74       5.25       6.11       5.00       6.01
+Maine Nature Academy dba Growing Tree Childcare   childcare-center           5.78       5.41       5.29       4.97       5.34       6.17
+Little Stars Preschool, Developmental Concepts, L childcare-center           5.83       5.84       5.36       6.21       5.12       6.12
+St. Mary's Child Care Center dba Caring Hearts Ch childcare-center           5.82       5.05       5.41       4.06       5.72       6.10
+My First School                                   childcare-nursery          5.81       5.64       5.31       5.62       5.24       6.17
+OMAR GHOSHEH                                      childcare-family           6.25       6.75       6.06       7.98       5.62       6.23
+Falmouth Kindervillage                            childcare-center           6.20       5.50       5.76       4.61       5.99       6.56
+Seedlings To Sunflowers-Industrial Parkway        childcare-center           6.29       6.39       5.86       6.89       5.51       6.53
+Growing Learners @ Rich Way                       childcare-center           6.54       5.82       6.11       4.89       6.35       6.89
+Cradle Inn Daycare                                childcare-center           6.54       6.64       6.11       7.12       5.77       6.79
+Leah Kane                                         childcare-family           6.60       7.04       6.29       8.15       5.89       6.62
+LITTLE WILLOW SCHOOL HOUSE                        childcare-center           6.69       5.98       6.25       5.06       6.48       7.04
+Melanie Collins                                   childcare-family           6.82       6.11       6.38       5.18       6.62       7.17
+Little Hands Daycare                              childcare-center           6.82       6.40       6.34       5.85       6.41       7.21
+Scarborough Childrens Academy                     childcare-center           8.17       8.71       8.11       9.94       7.66       8.09
+Sun Catchers Childcare                            childcare-center           8.17       8.71       8.11       9.94       7.66       8.09
+Seedlings To Sunflowers-South Gorham              childcare-center           7.27       7.64       6.86       8.46       6.41       7.34
+Mountainside Community Church                     childcare-center           7.65       7.23       7.16       6.67       7.23       8.04
+Carla Fickett                                     childcare-family           8.09       8.40       7.70       9.16       7.24       8.20
+Roselyn North Academy- Saco                       childcare-center           8.26       8.80       8.21      10.03       7.76       8.17
+Roselyn North Academy- North Gorham               childcare-center           8.54       8.75       8.17       9.37       7.72       8.73
+Katelyn Cain                                      childcare-family         356.07     356.48     355.70     357.44     355.27     356.10
+Rebecca Armstrong                                 childcare-family           8.57       7.83       8.14       6.86       8.41       8.90
+Jill Ball                                         childcare-family           8.64       8.90       8.26       9.57       7.80       8.79
+Children's Adventure Day Care &amp; Learning Cent childcare-center           8.87       9.08       8.50       9.69       8.04       9.05
+Gorham Arts Alliance                              childcare-center           8.87       9.08       8.50       9.70       8.05       9.05
+Dayle Footer                                      childcare-family           9.04       9.28       8.67       9.94       8.21       9.20
+Amy Toney- Bolduc                                 childcare-family           8.96       9.48       8.79      10.70       8.35       8.94
+Ashley Bubar                                      childcare-family          10.09       9.85       9.59       9.57       9.56      10.46
+Watch Us Grow Preschool                           childcare-nursery          9.65       9.87       9.27      10.51       8.81       9.81
+Willow School- Cumberland                         childcare-center           9.66       9.04       9.20       8.19       9.37      10.04
+Kids Place Child Care Center                      childcare-center           9.72       8.92       9.44       7.34       9.92       9.70
+Denise Dyer                                       childcare-family           9.78       9.63       9.28       9.54       9.19      10.13
+Camilla Taylor                                    childcare-license          1.43      0.65Y       1.50      0.30Y       1.87       1.27
+Jacobs, Maija                                     childcare-license          5.07       5.10       4.61       5.49       4.36       5.36
+Michelle McClure                                  childcare-family          10.15      10.55       9.77      11.48       9.34      10.19
+Nichole Reasoner                                  childcare-family          10.17      10.16       9.69      10.41       9.45      10.46
+Sara Wiggs                                        childcare-family          10.03      10.56       9.92      11.79       9.47       9.97
+Toddle Inn Day Care - Cumberland Foreside         childcare-center          10.74       9.97      10.32       8.94      10.61      11.01
+FINCH &amp; FIDDLE                                childcare-family          11.27      10.47      10.86       9.28      11.20      11.47
+Darcey James                                      childcare-family          10.72      10.08      10.27       9.22      10.44      11.10
+
+=== per-farm counts (fence-line / structure distance) ===
+
+Global: schools=3, childcare centers=8, family homes=3, nurseries=0, senior=1
+   senior - Ridgeland Estates (SPHA)
+
+CITGO: schools=4, childcare centers=9, family homes=5, nurseries=2, senior=3
+   senior - Gordon Green
+   senior - Ridgeland Estates (SPHA)
+   senior - Sawyer Street House
+
+Buckeye: schools=1, childcare centers=8, family homes=3, nurseries=1, senior=1
+   senior - Ridgeland Estates (SPHA)
+
+GulfSunoco: schools=2, childcare centers=8, family homes=2, nurseries=2, senior=4
+   senior - Betsy Ross House (SPHA)
+   senior - Gordon Green
+   senior - One Willow Manor
+   senior - Sawyer Street House
+
+Sprague: schools=4, childcare centers=6, family homes=3, nurseries=0, senior=5
+   senior - Linton Street Facility
+   senior - Ridgeland Estates (SPHA)
+   senior - Thornton Heights Commons (SPHA)
+   senior - Wescott
+   senior - Wilson Street
+
+PPLC: schools=4, childcare centers=6, family homes=5, nurseries=0, senior=1
+   senior - Ridgeland Estates (SPHA)
+
+=== UNION across farms (receptors within 1 mile of ANY farm) ===
+childcare-center: 15
+    0.00 mi  Growing Learners @ Harding Street
+    0.01 mi  Spring Point Childrens Center
+    0.06 mi  Youth &amp; Family Outreach
+    0.06 mi  Lighthouse School &amp; Child Care Center
+    0.20 mi  Kiddie Garden, L.L.C.
+    0.20 mi  WAYNFLETE SCHOOL
+    0.23 mi  Children's Adventure Center Inc.
+    0.28 mi  Kids World At Willard Beach
+    0.30 mi  Creative Beginnings Childcare Ctr
+    0.32 mi  Kiddie Garden LLC
+    0.32 mi  Catherine Morrill Day Nursery
+    0.46 mi  The Opportuinity Alliance- East End
+    0.49 mi  The Opportunity Alliance- Lydia Lane
+    0.66 mi  Pearlite Montessori Home
+    0.96 mi  Ready Set Grow Learning Center
+childcare-family: 7
+    0.04 mi  WISHING TREE PRESCHOOL
+    0.20 mi  Caroline Kleiman
+    0.44 mi  ALPHABET TREE EARLY LEARNING ACADEMY
+    0.49 mi  Suzanne Kahill
+    0.56 mi  Serina Holbrook
+    0.66 mi  Stacie Archibald
+    0.69 mi  Caroline Whitten
+childcare-license: 1
+    0.30 mi  Camilla Taylor
+childcare-nursery: 2
+    0.54 mi  The Children's Nursery School
+    0.75 mi  Discovery Center
+school: 7
+    0.04 mi  Kaler Elementary (summer camp 2026)
+    0.16 mi  Dyer Elementary
+    0.18 mi  South Portland High School
+    0.28 mi  Dora L. Small Elementary
+    0.48 mi  Frank I. Brown Elementary
+    0.65 mi  South Portland Middle School
+    0.80 mi  Skillin Elementary
+senior: 9
+    0.01 mi  Betsy Ross House (SPHA)
+    0.09 mi  Ridgeland Estates (SPHA)
+    0.13 mi  One Willow Manor
+    0.26 mi  Gordon Green
+    0.50 mi  Sawyer Street House
+    0.68 mi  Linton Street Facility
+    0.80 mi  Wilson Street
+    0.83 mi  Thornton Heights Commons (SPHA)
+    0.88 mi  Wescott
