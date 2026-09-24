@@ -4,13 +4,14 @@ Supporting dataset for Protect South Portland's research on oil tank farm
 proximity to sensitive receptors (public schools, licensed child care programs,
 senior housing) and Maine DEP air-license renewal timelines.
 
-**Full project with report, fact-check log, and source documents is private.**
-This public repo publishes only non-sensitive, compiled data.
+The report and fact-check log are published here in full; the DEP license-order PDFs are public record at maine.gov/dep/ftp/AIR/licenses/ and are cited (not re-hosted) in the References section.
 
 ## What's here
 
 | File | Contents |
 |---|---|
+| `outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md` | **Full research report** — executive summary, permit table with official VOC/HAP limits from each DEP license order, fence-line and address-based counts, human-operator methodology, caveats, and a numbered references section with DEP archive URLs. |
+| `outputs/FACTCHECK.md` | **Claim-by-claim fact-check log** — for every claim: report section → claim → source → direct evidence quoted from the source document. Includes the removal trail for advocacy-packet-sourced claims (§FC-6). |
 | `data/receptor_fenceline_distances.csv` | **Master dataset** — 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each of 6 tank-farm fence lines (OpenStreetMap parcels/tanks), nearest farm, and within-1-mile flag. |
 | `data/ccc_union.json` | 166 unique licensed child care programs from Maine OCFS "Child Care Choices" search (name, address, type, star rating). Includes family child care homes. |
 | `data/overpass_tanks.json` | OpenStreetMap structures: 113 storage-tank polygons + 37 industrial parcel polygons, bbox 43.62–43.66 / −70.31 to −70.22. |
