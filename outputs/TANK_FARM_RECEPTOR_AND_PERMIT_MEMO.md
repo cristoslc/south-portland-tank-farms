@@ -119,7 +119,7 @@ Distances in miles, straight-line, receptor address → tank farm street address
 
 ## 5.1 Data sources
 1. **Tank farm list and addresses** — each facility's address as stated in its own DEP air license order (refs 2–9); cross-checked against DEP's license archive listings.
-2. **Tank farm structures (fence lines)** — OpenStreetMap via Overpass API: 113 `man_made=storage_tank` polygons + 37 `landuse=industrial` parcel polygons in the study area (bbox 43.62–43.66, −70.31 to −70.22) [17].
+2. **Tank farm structures (fence lines)** — OpenStreetMap via the project's self-hosted Overpass instance (osm.cristoslc.com, Maine daily extract; base timestamp 2026-09-27T20:10Z): 113 `man_made=storage_tank` polygons + 56 `landuse=industrial` parcels in the study area, of which 137 structures pass the tank-farm inclusion rule [17].
 3. **Public schools** — NCES CCD school directory (7 schools, 2025-26 directory year) [13]. Kaler (165 South Kelsey St) no longer operates as a school but remains in active use for children's programming — it hosted a summer camp in 2026 — so it is counted as a receptor.
 4. **Licensed child care** — Maine OCFS "Child Care Choices" search (search.childcarechoices.me), all four provider types (Family Based, Center Based, Nursery, CCAP License-Exempt). One search per tank farm coordinate; union = **166 unique programs** [14]. Includes all licensed programs, even expired/conditional licenses.
 5. **Senior housing** — South Portland Housing Authority properties [12] + state-licensed assisted-living/residential-care homes (license numbers cross-checked). Thornton Heights Commons is elderly-preference but mixed-age.

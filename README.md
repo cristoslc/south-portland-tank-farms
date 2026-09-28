@@ -1,82 +1,106 @@
-# South Portland Tank Farms — Public Data
+# South Portland Tank Farms — Sensitive Receptors & Permit Renewals
 
-Supporting dataset for Protect South Portland's research on oil tank farm
-proximity to sensitive receptors (public schools, licensed child care programs,
-senior housing) and Maine DEP air-license renewal timelines.
+Research for Protect South Portland quantifying how many public schools, licensed
+child care programs, and senior housing facilities sit within one mile of any of
+South Portland's six oil tank farms, and tracking each facility's Maine DEP air
+license renewal timeline.
 
-The report and fact-check log are published here in full; the DEP license-order PDFs are public record at maine.gov/dep/ftp/AIR/licenses/ and are cited (not re-hosted) in the References section.
+## Outputs (start here)
 
-## What's here
+| File | What it is |
+|---|---|
+| `outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md` | **Main report.** Executive summary (FK Grade ~6.4), permit table with official VOC/HAP limits, fence-line counts, address cross-check, human-operator methodology, caveats, regulatory context, references. |
+| `outputs/FACTCHECK.md` | Claim-by-claim verification log: section → claim → source → direct evidence quote. Includes §FC-6 documenting every claim removed when the PSP advocacy packet was dropped as a source. |
+| `outputs/receptor_fenceline_distances.csv` | **Master dataset.** 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each farm's fence line, nearest farm, and within-1-mile flag. |
+| `outputs/SouthPortland_TankFarms_Binder.pdf` | 15-page shareable PDF binder: cover + report + fact-check. |
+| `outputs/polygon_results.txt` | Full console output of the fence-line analysis (per-farm counts, union lists). |
+
+## Headline findings (as of 2026-09-24)
+
+- **All 7 public schools**, **25 licensed child care programs**, and **9 senior
+  housing facilities** lie within 1 mile of at least one tank farm fence line —
+  42 sensitive sites total. Address-to-address (conservative) method: 5 / 14 / 6.
+- Kaler Elementary is **0.04 mi (~200 ft)** from Portland Pipe Line's Hill St
+  parcel; Betsy Ross House sits **directly adjacent** to the Gulf/Sunoco parcel;
+  Growing Learners @ Harding St **touches** Sprague's fence line.
+- Licensed facility-wide VOC caps at last issuance total **~597 tpy**
+  (21.9 Global + 117.3 CITGO + 135.4 Buckeye + 49.9 Gulf + 49.9 Sprague + 220 PPLC).
+- Permit renewal windows: **Sprague ~2028** · **CITGO ~2030** · **PPLC air ~2030
+  (ch.600 marine renewal already pending, accepted Aug 2025)** · **Buckeye
+  nominally expired ~2020, on evergreen** · **Global ~2033** · **Gulf/Sunoco ~2033**.
+
+## Directory layout
+
+```
+├── README.md
+├── outputs/        Deliverables (report, fact-check, dataset, binder)
+├── src/            Reproducible scripts (see "Reproducing" below)
+├── data/           Fetched data: OCFS captures, geocode cache, OSM structures
+├── sources/        Official DEP license orders + DEP legislative report
+└── archive/        Superseded scripts, scratch files, intermediate renders
+```
+
+### sources/ — the official record
 
 | File | Contents |
 |---|---|
-| `outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md` | **Full research report** — executive summary, permit table with official VOC/HAP limits from each DEP license order, fence-line and address-based counts, human-operator methodology, caveats, and a numbered references section with DEP archive URLs. |
-| `outputs/FACTCHECK.md` | **Claim-by-claim fact-check log** — for every claim: report section → claim → source → direct evidence quoted from the source document. Includes the removal trail for advocacy-packet-sourced claims (§FC-6). |
-| `outputs/gis/receptors_points.csv` | **GIS point layer** — one row per receptor with `latitude`/`longitude`, WKT geometry, distances in **both miles and meters** to each farm, `within_1mi_of_any` flag. Drop-in for QGIS "Delimited Text Layer" import. |
-| `outputs/gis/tank_farm_1mile_buffer.geojson` | **The 1-mile zone as a single polygon** — union of all fence-line structures buffered by 1 statute mile. Point-in-polygon of this zone = the 'within 1 mile' criterion used in the report (41/42 verified exactly; 1 boundary-adjacent site at 1.000 mi). |
-| `outputs/gis/tank_farm_structures.geojson` | **Fence-line polygons** — 150 OSM structures (113 storage tanks + 37 industrial parcels) with `farm_id` assignment and `used_in_analysis` flag. Load directly into QGIS/geojson.io. |
-| `outputs/gis/tank_farm_facilities.csv` | Six facilities with anchor coordinates, WKT, DEP license numbers, renewal dates, and facility-wide VOC/HAP limits. |
-| `outputs/gis/receptor_farm_distances_long.csv` | **Tidy long format** — 1,026 rows (171 receptors × 6 farms), one `distance_mi`/`distance_m` per row with `within_1mi` flag. Ideal for pivots, filters, and joins. |
-| `outputs/gis/receptor_counts_by_farm.csv` | Per-farm counts of receptors within 1 mile, by category. |
-| `outputs/STRUCTURE_AUDIT_ADDENDUM.md` | Audit trail for the fence-line geometry correction (Sept 2026): documents the non-tank-farm parcels excluded and the count impact. |
-| `outputs/south_portland_tank_farms_map.png` | **Branded static map** (print-ready, Letter landscape): fence-line polygons, 1-mile rings, receptors by category, facility labels/addresses, DEP VOC monitor sites. |
-| `outputs/map_interactive.html` | **Interactive Leaflet map** — open in any browser: clickable facilities (permit + VOC cap), receptors (measured distance), monitor stations, toggle-able 1-mile rings. |
-| `data/receptor_fenceline_distances.csv` | **Master dataset** — 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each of 6 tank-farm fence lines (OpenStreetMap parcels/tanks), nearest farm, and within-1-mile flag. |
-| `data/ccc_union.json` | 166 unique licensed child care programs from Maine OCFS "Child Care Choices" search (name, address, type, star rating). Includes family child care homes. |
-| `data/overpass_tanks.json` | OpenStreetMap structures: 113 storage-tank polygons + 37 industrial parcel polygons, bbox 43.62–43.66 / −70.31 to −70.22. |
-| `data/geocode_cache.json` | Nominatim geocodes for all receptor + facility addresses. |
-| `outputs/polygon_results.txt` | Full distance-matrix and per-farm count output. |
-| `src/` | Reproducible scripts (geocoding, OCFS search union, polygon distance analysis, dataset export). |
-| `README.md` | Methodology summary, data provenance, known limitations. |
+| `A0197HR.pdf` | PPLC Part 70 renewal A-197-70-H-R (Feb 24, 2025) — VOC 220.0 tpy, HAP 9.9/24.9, 11.0 Bgal/yr crude throughput |
+| `A0460HR.pdf` | CITGO Part 70 renewal A-460-70-H-R (Nov 5, 2025) — VOC 117.3→104.4 tpy, HAP 5.0 |
+| `A0432SRM.pdf` | Global renewal A-432-71-S-R/M (Dec 5, 2023) — VOC 21.9 tpy |
+| `A0432PM.pdf` | Global Amendment #2 (Feb 17, 2021) |
+| `A0390PRM.pdf` | Gulf renewal A-390-71-P-R/M (Feb 22, 2023) — VOC 49.9, HAP 24.9 |
+| `A0390RT.pdf` | Sunoco Midstream multi-program license transfer (2024) |
+| `A0179PRM.pdf` | Sprague renewal A-179-71-P-R/M (Mar 2018; scanned) — VOC 49.9, HAP 24.9 |
+| `A0179RM.pdf` | Sprague Amendment #2 (Jun 29, 2021) |
+| `A0282GR.pdf` | Buckeye/SPT Part 70 renewal A-282-70-G-R (Nov–Dec 2015; scanned) — VOC 135.4, HAP 14.1 |
+| `A0282HA.pdf` | Buckeye/SPT Amendment #1 (Nov 1, 2016) |
+| `A0282_fenceline.pdf`, `A0282_2026Q1.pdf` | Buckeye ch.171 fenceline reports Q1 2025 & Q1 2026 (still citing the 2015 licenses) |
+| `MEDEP_tank_report_2021.pdf` | DEP legislative report, "Measurement and Control of Emissions from Aboveground Petroleum Storage Tanks" (Jan 2021) |
+| `A0202LR.pdf` *(archive/)* | Buckeye **Bangor** license — pulled to rule out a false match; not a SoPo source |
 
-## Headline findings
+## Reproducing the analysis (human-operator path)
 
-- All 7 public schools, 25 licensed child care programs, and 9 senior housing
-  facilities fall within 1 mile of at least one tank farm fence line —
-  42 sensitive sites total.
-- Kaler Elementary: 0.04 mi from Portland Pipe Line's parcel. Betsy Ross House
-  (SPHA senior housing): directly adjacent to Gulf/Sunoco's parcel.
-- Facility-wide VOC license caps total ~597 tpy across the six facilities.
-- All 7 public schools, 25 licensed child care programs, and 9 senior housing facilities within 1 mile of a tank-farm fence line (117-structure corrected set).
-- Permit renewals: PPLC ch.600 marine renewal pending (accepted Aug 2025);
-  Sprague ~2028; CITGO ~2030; Global/Gulf/Sunoco ~2033; Buckeye nominally
-  expired ~2020, operating under Maine's evergreen rule.
-
-## Reproducing
+The full browser-and-spreadsheet procedure — no coding required — is §5.3 of the
+report (search NCES/OCFS/SPHA, geocode, pull OSM fence lines via overpass-turbo.eu,
+measure in QGIS, then permit research in DEP's license archive). Automated
+equivalents live in `src/`:
 
 ```bash
-python3 src/geocode.py "87 Thompson Street South Portland ME"
-python3 src/polygon_analysis.py
-python3 src/export_datasets.py
+python3 src/geocode.py "87 Thompson Street South Portland ME"   # cached geocoder
+export LD_LIBRARY_PATH=~/chrome-libs/usr/lib/x86_64-linux-gnu    # Chromium libs (see below)
+python3 src/ccc_union.py          # OCFS search x6 tank farms -> data/ccc_union.json
+python3 src/polygon_analysis.py   # fence-line distances -> outputs/polygon_results.txt
+python3 src/export_datasets.py    # -> outputs/receptor_fenceline_distances.csv
+python3 src/build_binder.py       # -> outputs/SouthPortland_TankFarms_Binder.pdf
 ```
 
-Full human-operator procedure (no coding required): §5.3 of the project report
-(private). Automated scripts read from `data/` and write to `outputs/`.
+**Chromium note (OCFS search only):** Playwright's bundled Chromium needs system
+libraries absent on this machine. They were provisioned by extracting Debian .debs
+(`~/debs` + libcups/avahi from ftp.debian.org) into `~/chrome-libs` and setting
+`LD_LIBRARY_PATH` as above. `src/ccc_search.py <lat> <lon> "<address>" <out.html>`
+drives the OCFS page (injects lat/lon into hidden form fields, checks all four
+provider types, submits).
 
-## Method & caveats
+## Data provenance
 
-- **Distances are straight-line** (fence-line method: receptor point to nearest
-  OSM industrial parcel / storage-tank polygon edge; address-to-address as
-  conservative cross-check). Not walking distances.
-- **Fence-line geometry is community-mapped OSM**; City of South Portland
-  assessor GIS parcels would be the parcel-exact gold standard.
-- Distances < ~0.01 mi mean the receptor geocode sits on/inside the mapped
-  parcel edge ("directly adjacent").
-- OCFS search includes programs with expired/conditional licenses (its own
-  disclosure); captured 2026-09-24. Listings change over time.
-- Permit data from Maine DEP license orders (maine.gov/dep/ftp/AIR/licenses/),
-  verified claim-by-claim with direct evidence quotes in the private fact-check
-  log. Sprague (2018) and Buckeye (2015) orders are scanned; figures read via OCR.
-- Buckeye renewal status is the analysis' one inference (2015 order + evergreen
-  rule + no newer public document + fenceline reports through Q1 2026); confirm
-  via DEP Bureau of Air Quality (207-287-7688) or a FOAA request.
+- Public schools: NCES CCD directory, South Portland district 2312330 (2025-26)
+- Child care (centers + family homes): Maine OCFS "Child Care Choices" search
+  (search.childcarechoices.me), 6 searches 2026-09-24, union = 166 programs;
+  raw captures in `data/ccc_*.html`
+- Senior housing: SPHA (spha.net) + state-licensed AL/RCF homes
+- Fence lines: OpenStreetMap via self-hosted Overpass (osm.cristoslc.com, Maine daily extract), base 2026-09-27 (`data/overpass_tanks.json`)
+- Geocodes: Nominatim, cached in `data/geocode_cache.json`
 
-## License & attribution
+## Verification & known limits
 
-Data: CC BY 4.0. Scripts: MIT.
-Sources: Maine DEP license orders (public record); OCFS Child Care Choices
-(state licensing data); NCES (federal); OpenStreetMap (ODbL 1.0).
-AI-assisted compilation under human steering (see private report's disclosure).
-
----
-*Questions or corrections: Protect South Portland — protectsouthportland.com*
+- Every factual claim in the memo is logged in `outputs/FACTCHECK.md` with its
+  source and a direct quote. The Protect South Portland advocacy packet is
+  intentionally **not** used as a source (see FACTCHECK §FC-6).
+- Fence-line geometry is community-mapped OSM; city assessor GIS parcels would be
+  the parcel-exact gold standard. Distances are straight-line, not walking.
+- Distances < ~0.01 mi mean the receptor geocode sits on/inside the mapped parcel
+  edge ("directly adjacent").
+- Buckeye's renewal-application status is the memo's one inference (2015 order +
+  evergreen rule + no newer public document + fenceline reports through Q1 2026);
+  confirm via DEP Bureau of Air Quality (207-287-7688) or a FOAA request.
+- Sprague and Buckeye license figures were read via OCR from scanned orders.
