@@ -15,799 +15,6 @@
     "coordinates": [
      [
       [
-       -70.2507016,
-       43.6564334
-      ],
-      [
-       -70.2506127,
-       43.6563658
-      ],
-      [
-       -70.2506663,
-       43.6563272
-      ],
-      [
-       -70.2498657,
-       43.6557457
-      ],
-      [
-       -70.2498825,
-       43.6557323
-      ],
-      [
-       -70.2498606,
-       43.6557178
-      ],
-      [
-       -70.2498559,
-       43.6557216
-      ],
-      [
-       -70.2498447,
-       43.6557304
-      ],
-      [
-       -70.2494883,
-       43.6554716
-      ],
-      [
-       -70.2490607,
-       43.6551613
-      ],
-      [
-       -70.2490493,
-       43.6551696
-      ],
-      [
-       -70.2488778,
-       43.6552945
-      ],
-      [
-       -70.2486423,
-       43.6554928
-      ],
-      [
-       -70.2491979,
-       43.6558982
-      ],
-      [
-       -70.2492919,
-       43.6559664
-      ],
-      [
-       -70.2493102,
-       43.6559508
-      ],
-      [
-       -70.2493274,
-       43.6559625
-      ],
-      [
-       -70.2493649,
-       43.6559333
-      ],
-      [
-       -70.2493733,
-       43.6559268
-      ],
-      [
-       -70.2495668,
-       43.6560571
-      ],
-      [
-       -70.2494908,
-       43.6561162
-      ],
-      [
-       -70.2502341,
-       43.6566563
-      ],
-      [
-       -70.2502216,
-       43.656665
-      ],
-      [
-       -70.2502154,
-       43.6566693
-      ],
-      [
-       -70.2502313,
-       43.6566812
-      ],
-      [
-       -70.249975,
-       43.6568777
-      ],
-      [
-       -70.2500425,
-       43.6569218
-      ],
-      [
-       -70.250308,
-       43.6567123
-      ],
-      [
-       -70.2506436,
-       43.6564764
-      ],
-      [
-       -70.2507016,
-       43.6564334
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594024,
-    "structure_type": "industrial_parcel",
-    "name": "Custom House Wharf",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2581176,
-       43.6467882
-      ],
-      [
-       -70.2579637,
-       43.6467037
-      ],
-      [
-       -70.257959,
-       43.6466817
-      ],
-      [
-       -70.2583088,
-       43.6463605
-      ],
-      [
-       -70.2583813,
-       43.646294
-      ],
-      [
-       -70.2583195,
-       43.6462574
-      ],
-      [
-       -70.2583371,
-       43.646243
-      ],
-      [
-       -70.2583022,
-       43.6462224
-      ],
-      [
-       -70.2564701,
-       43.6479252
-      ],
-      [
-       -70.2566534,
-       43.6480254
-      ],
-      [
-       -70.2566802,
-       43.6480099
-      ],
-      [
-       -70.2567035,
-       43.6480096
-      ],
-      [
-       -70.2569013,
-       43.6481178
-      ],
-      [
-       -70.2569852,
-       43.6480366
-      ],
-      [
-       -70.2568008,
-       43.6479288
-      ],
-      [
-       -70.2567934,
-       43.6479077
-      ],
-      [
-       -70.2569489,
-       43.6477568
-      ],
-      [
-       -70.2569858,
-       43.647753
-      ],
-      [
-       -70.2571119,
-       43.6478225
-      ],
-      [
-       -70.2572003,
-       43.6477367
-      ],
-      [
-       -70.2570759,
-       43.6476705
-      ],
-      [
-       -70.257075,
-       43.6476434
-      ],
-      [
-       -70.2572078,
-       43.6475252
-      ],
-      [
-       -70.2573241,
-       43.6475954
-      ],
-      [
-       -70.2575779,
-       43.647369
-      ],
-      [
-       -70.2575143,
-       43.6473341
-      ],
-      [
-       -70.2581176,
-       43.6467882
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594063,
-    "structure_type": "industrial_parcel",
-    "name": "Marine Terminal Pier",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2572171,
-       43.6490028
-      ],
-      [
-       -70.2574337,
-       43.6487759
-      ],
-      [
-       -70.256243,
-       43.6481586
-      ],
-      [
-       -70.2561386,
-       43.648213
-      ],
-      [
-       -70.2559756,
-       43.6483739
-      ],
-      [
-       -70.2568768,
-       43.6488412
-      ],
-      [
-       -70.2570446,
-       43.64892
-      ],
-      [
-       -70.2570624,
-       43.6489283
-      ],
-      [
-       -70.2570913,
-       43.6489419
-      ],
-      [
-       -70.2571704,
-       43.6489802
-      ],
-      [
-       -70.2572171,
-       43.6490028
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594067,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2565814,
-       43.6504626
-      ],
-      [
-       -70.2551047,
-       43.649706
-      ],
-      [
-       -70.2550924,
-       43.6497188
-      ],
-      [
-       -70.2549149,
-       43.649903
-      ],
-      [
-       -70.2549034,
-       43.6499149
-      ],
-      [
-       -70.2551389,
-       43.65006
-      ],
-      [
-       -70.2551174,
-       43.650106
-      ],
-      [
-       -70.2563277,
-       43.6507403
-      ],
-      [
-       -70.2565814,
-       43.6504626
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594069,
-    "structure_type": "industrial_parcel",
-    "name": "Hobsons Wharf",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2568165,
-       43.6495472
-      ],
-      [
-       -70.2561947,
-       43.649227
-      ],
-      [
-       -70.2554455,
-       43.6488411
-      ],
-      [
-       -70.2553913,
-       43.6488899
-      ],
-      [
-       -70.255353,
-       43.6489271
-      ],
-      [
-       -70.2553109,
-       43.6489681
-      ],
-      [
-       -70.2553004,
-       43.6489784
-      ],
-      [
-       -70.2558646,
-       43.6493337
-      ],
-      [
-       -70.256065,
-       43.6494424
-      ],
-      [
-       -70.2560735,
-       43.6494335
-      ],
-      [
-       -70.2566772,
-       43.6497481
-      ],
-      [
-       -70.2568165,
-       43.6495472
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594070,
-    "structure_type": "industrial_parcel",
-    "name": "Holyoke Wharf",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2568846,
-       43.6500624
-      ],
-      [
-       -70.2563629,
-       43.6497971
-      ],
-      [
-       -70.2563125,
-       43.6497499
-      ],
-      [
-       -70.25621,
-       43.6497086
-      ],
-      [
-       -70.2559646,
-       43.6495945
-      ],
-      [
-       -70.2556773,
-       43.6494484
-      ],
-      [
-       -70.2554262,
-       43.6493207
-      ],
-      [
-       -70.255115,
-       43.649163
-      ],
-      [
-       -70.2550917,
-       43.64919
-      ],
-      [
-       -70.2551112,
-       43.6492001
-      ],
-      [
-       -70.2551199,
-       43.6491911
-      ],
-      [
-       -70.2554056,
-       43.6493368
-      ],
-      [
-       -70.2553956,
-       43.6493471
-      ],
-      [
-       -70.2553688,
-       43.6493746
-      ],
-      [
-       -70.2556055,
-       43.6494955
-      ],
-      [
-       -70.2555439,
-       43.6495586
-      ],
-      [
-       -70.2552982,
-       43.6494331
-      ],
-      [
-       -70.2552806,
-       43.6494512
-      ],
-      [
-       -70.255271,
-       43.649461
-      ],
-      [
-       -70.2549643,
-       43.6493042
-      ],
-      [
-       -70.2549387,
-       43.6493304
-      ],
-      [
-       -70.255252,
-       43.6494908
-      ],
-      [
-       -70.2554891,
-       43.6496121
-      ],
-      [
-       -70.2555041,
-       43.6496198
-      ],
-      [
-       -70.2555638,
-       43.6497082
-      ],
-      [
-       -70.2556174,
-       43.6497016
-      ],
-      [
-       -70.2557449,
-       43.6498348
-      ],
-      [
-       -70.2559067,
-       43.6499153
-      ],
-      [
-       -70.2562311,
-       43.650099
-      ],
-      [
-       -70.2563543,
-       43.650149
-      ],
-      [
-       -70.2566803,
-       43.6503296
-      ],
-      [
-       -70.2568846,
-       43.6500624
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 30594073,
-    "structure_type": "industrial_parcel",
-    "name": "Berlin Mills Wharf",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2529969,
-       43.6535231
-      ],
-      [
-       -70.2538391,
-       43.654276
-      ],
-      [
-       -70.2540466,
-       43.6543481
-      ],
-      [
-       -70.2538498,
-       43.6541246
-      ],
-      [
-       -70.2520286,
-       43.652202
-      ],
-      [
-       -70.2514897,
-       43.652536
-      ],
-      [
-       -70.2526736,
-       43.6536858
-      ],
-      [
-       -70.2529969,
-       43.6535231
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 325259942,
-    "structure_type": "industrial_parcel",
-    "name": "Union Wharf",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2524052,
-       43.6540686
-      ],
-      [
-       -70.2525667,
-       43.6538879
-      ],
-      [
-       -70.251453,
-       43.6527293
-      ],
-      [
-       -70.2512503,
-       43.6528356
-      ],
-      [
-       -70.2521584,
-       43.6537843
-      ],
-      [
-       -70.2524052,
-       43.6540686
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 325259943,
-    "structure_type": "industrial_parcel",
-    "name": "Widgery Wharf",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2567643,
-       43.6481743
-      ],
-      [
-       -70.2568381,
-       43.6480877
-      ],
-      [
-       -70.257046,
-       43.6478632
-      ],
-      [
-       -70.2570182,
-       43.6478471
-      ],
-      [
-       -70.2575143,
-       43.6473341
-      ],
-      [
-       -70.2580706,
-       43.6467637
-      ],
-      [
-       -70.2585464,
-       43.646327
-      ],
-      [
-       -70.258697,
-       43.6461883
-      ],
-      [
-       -70.260333,
-       43.647083
-      ],
-      [
-       -70.260193,
-       43.64724
-      ],
-      [
-       -70.2601197,
-       43.6473304
-      ],
-      [
-       -70.259918,
-       43.647579
-      ],
-      [
-       -70.2595752,
-       43.6480116
-      ],
-      [
-       -70.259286,
-       43.648371
-      ],
-      [
-       -70.2590419,
-       43.648657
-      ],
-      [
-       -70.2589132,
-       43.6488078
-      ],
-      [
-       -70.2588143,
-       43.648929
-      ],
-      [
-       -70.2587239,
-       43.6490357
-      ],
-      [
-       -70.2586422,
-       43.6491321
-      ],
-      [
-       -70.258578,
-       43.649208
-      ],
-      [
-       -70.2576278,
-       43.6487716
-      ],
-      [
-       -70.2577165,
-       43.648724
-      ],
-      [
-       -70.2576974,
-       43.6486719
-      ],
-      [
-       -70.2575516,
-       43.6486019
-      ],
-      [
-       -70.2567643,
-       43.6481743
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 352840582,
-    "structure_type": "industrial_parcel",
-    "name": "Portland International Marine Terminal",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
        -70.2644198,
        43.62568
       ],
@@ -895,7 +102,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -992,7 +200,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1089,7 +298,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1186,7 +396,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1283,7 +494,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1380,7 +592,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1477,7 +690,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1574,7 +788,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1671,7 +886,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1768,7 +984,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1865,7 +1082,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -1962,7 +1180,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2059,7 +1278,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2156,7 +1376,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2253,7 +1474,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2350,7 +1572,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2447,7 +1670,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2544,7 +1768,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2641,7 +1866,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2738,7 +1964,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2835,7 +2062,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -2932,7 +2160,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -3029,7 +2258,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -3126,7 +2356,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -3223,7 +2454,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -3444,7 +2676,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 19
    }
   },
   {
@@ -3513,7 +2746,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 2
    }
   },
   {
@@ -3722,7 +2956,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 46
    }
   },
   {
@@ -4031,7 +3266,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4128,7 +3364,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4225,7 +3462,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4322,7 +3560,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4419,7 +3658,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "pplc",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4576,7 +3816,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 11
    }
   },
   {
@@ -4721,7 +3962,8 @@
     "structure_type": "industrial_parcel",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 10
    }
   },
   {
@@ -4818,7 +4060,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -4915,7 +4158,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5012,7 +4256,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5109,7 +4354,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5206,7 +4452,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5303,7 +4550,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5400,7 +4648,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5497,7 +4746,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5594,7 +4844,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5691,7 +4942,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5788,7 +5040,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5885,7 +5138,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -5982,7 +5236,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -6079,7 +5334,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -6176,7 +5432,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -6273,463 +5530,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2932394,
-       43.6237168
-      ],
-      [
-       -70.2940749,
-       43.6235965
-      ],
-      [
-       -70.2952088,
-       43.6234466
-      ],
-      [
-       -70.2952229,
-       43.6208268
-      ],
-      [
-       -70.293378,
-       43.6209776
-      ],
-      [
-       -70.2928589,
-       43.6188957
-      ],
-      [
-       -70.2920209,
-       43.6190182
-      ],
-      [
-       -70.2915532,
-       43.6176703
-      ],
-      [
-       -70.2901855,
-       43.6170762
-      ],
-      [
-       -70.2889325,
-       43.6180536
-      ],
-      [
-       -70.2892678,
-       43.6194398
-      ],
-      [
-       -70.2870089,
-       43.6198167
-      ],
-      [
-       -70.2840264,
-       43.6224102
-      ],
-      [
-       -70.2839029,
-       43.6226657
-      ],
-      [
-       -70.2839999,
-       43.6232661
-      ],
-      [
-       -70.283352,
-       43.6229915
-      ],
-      [
-       -70.2784251,
-       43.6274524
-      ],
-      [
-       -70.2788194,
-       43.6275424
-      ],
-      [
-       -70.2797109,
-       43.6277458
-      ],
-      [
-       -70.2806048,
-       43.6279463
-      ],
-      [
-       -70.280835,
-       43.627359
-      ],
-      [
-       -70.2819125,
-       43.6275798
-      ],
-      [
-       -70.282073,
-       43.627526
-      ],
-      [
-       -70.282266,
-       43.627411
-      ],
-      [
-       -70.282413,
-       43.627363
-      ],
-      [
-       -70.282485,
-       43.627344
-      ],
-      [
-       -70.282549,
-       43.62732
-      ],
-      [
-       -70.283015,
-       43.627218
-      ],
-      [
-       -70.283161,
-       43.627175
-      ],
-      [
-       -70.283368,
-       43.627107
-      ],
-      [
-       -70.2835946,
-       43.6267816
-      ],
-      [
-       -70.28379,
-       43.626501
-      ],
-      [
-       -70.2842071,
-       43.6259182
-      ],
-      [
-       -70.2848888,
-       43.6261637
-      ],
-      [
-       -70.2852021,
-       43.6257329
-      ],
-      [
-       -70.28571,
-       43.625937
-      ],
-      [
-       -70.2882095,
-       43.6255316
-      ],
-      [
-       -70.288296,
-       43.6258182
-      ],
-      [
-       -70.2895646,
-       43.6256002
-      ],
-      [
-       -70.2896259,
-       43.6257819
-      ],
-      [
-       -70.290019,
-       43.6256507
-      ],
-      [
-       -70.2898818,
-       43.6251808
-      ],
-      [
-       -70.2909186,
-       43.6250026
-      ],
-      [
-       -70.2905003,
-       43.6236857
-      ],
-      [
-       -70.2908373,
-       43.62363
-      ],
-      [
-       -70.2906199,
-       43.6229233
-      ],
-      [
-       -70.2920665,
-       43.6226912
-      ],
-      [
-       -70.2925831,
-       43.6232585
-      ],
-      [
-       -70.2931436,
-       43.6232001
-      ],
-      [
-       -70.2932394,
-       43.6237168
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 454036746,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2778031,
-       43.6495048
-      ],
-      [
-       -70.2772693,
-       43.646809
-      ],
-      [
-       -70.2770735,
-       43.6457318
-      ],
-      [
-       -70.2770708,
-       43.6453825
-      ],
-      [
-       -70.2772344,
-       43.6448623
-      ],
-      [
-       -70.2774785,
-       43.6444566
-      ],
-      [
-       -70.2777306,
-       43.6444799
-      ],
-      [
-       -70.2792702,
-       43.6446643
-      ],
-      [
-       -70.2791173,
-       43.6454174
-      ],
-      [
-       -70.2792434,
-       43.6461511
-      ],
-      [
-       -70.2794178,
-       43.6468226
-      ],
-      [
-       -70.2796538,
-       43.647762
-      ],
-      [
-       -70.2799676,
-       43.6489032
-      ],
-      [
-       -70.2799007,
-       43.6489036
-      ],
-      [
-       -70.2786854,
-       43.6489909
-      ],
-      [
-       -70.2786153,
-       43.6486179
-      ],
-      [
-       -70.2780659,
-       43.6486703
-      ],
-      [
-       -70.2782215,
-       43.6494796
-      ],
-      [
-       -70.2778031,
-       43.6495048
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 455426307,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2832748,
-       43.6567538
-      ],
-      [
-       -70.2832868,
-       43.6558661
-      ],
-      [
-       -70.2813146,
-       43.6558856
-      ],
-      [
-       -70.2821436,
-       43.6571132
-      ],
-      [
-       -70.2827122,
-       43.6569595
-      ],
-      [
-       -70.2832748,
-       43.6567538
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 455442382,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2834778,
-       43.6572479
-      ],
-      [
-       -70.2830293,
-       43.6573828
-      ],
-      [
-       -70.282427,
-       43.6575068
-      ],
-      [
-       -70.2836132,
-       43.6594733
-      ],
-      [
-       -70.2845492,
-       43.6609107
-      ],
-      [
-       -70.2848037,
-       43.6613354
-      ],
-      [
-       -70.2849515,
-       43.6616858
-      ],
-      [
-       -70.2850788,
-       43.6621283
-      ],
-      [
-       -70.2851691,
-       43.6624817
-      ],
-      [
-       -70.2852266,
-       43.6630549
-      ],
-      [
-       -70.2859244,
-       43.6630905
-      ],
-      [
-       -70.2861584,
-       43.6623421
-      ],
-      [
-       -70.2863678,
-       43.6616175
-      ],
-      [
-       -70.2860517,
-       43.6615255
-      ],
-      [
-       -70.2859039,
-       43.6613592
-      ],
-      [
-       -70.285206,
-       43.6603286
-      ],
-      [
-       -70.2843563,
-       43.6590575
-      ],
-      [
-       -70.2840935,
-       43.6586447
-      ],
-      [
-       -70.2838883,
-       43.6582171
-      ],
-      [
-       -70.2837036,
-       43.6578725
-      ],
-      [
-       -70.2835681,
-       43.6575191
-      ],
-      [
-       -70.2834778,
-       43.6572479
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 455442383,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -6826,7 +5628,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -6923,7 +5726,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7020,7 +5824,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7117,7 +5922,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7214,7 +6020,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7311,7 +6118,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7408,7 +6216,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7505,7 +6314,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7602,7 +6412,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7699,7 +6510,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -7796,132 +6608,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2932394,
-       43.6237168
-      ],
-      [
-       -70.2940749,
-       43.6235965
-      ],
-      [
-       -70.2943337,
-       43.6266621
-      ],
-      [
-       -70.2945355,
-       43.6266288
-      ],
-      [
-       -70.2947205,
-       43.6265661
-      ],
-      [
-       -70.2950218,
-       43.6265279
-      ],
-      [
-       -70.2954519,
-       43.6265611
-      ],
-      [
-       -70.295609,
-       43.6267242
-      ],
-      [
-       -70.2962652,
-       43.6268106
-      ],
-      [
-       -70.2963864,
-       43.6267189
-      ],
-      [
-       -70.2957847,
-       43.6296316
-      ],
-      [
-       -70.295211,
-       43.6296697
-      ],
-      [
-       -70.2951282,
-       43.6294173
-      ],
-      [
-       -70.2947599,
-       43.6288084
-      ],
-      [
-       -70.294215,
-       43.6283698
-      ],
-      [
-       -70.2937543,
-       43.6279045
-      ],
-      [
-       -70.2936706,
-       43.6277385
-      ],
-      [
-       -70.2935839,
-       43.6274783
-      ],
-      [
-       -70.2935436,
-       43.6272741
-      ],
-      [
-       -70.293525,
-       43.6270857
-      ],
-      [
-       -70.2935312,
-       43.6267357
-      ],
-      [
-       -70.2935374,
-       43.6265652
-      ],
-      [
-       -70.2935715,
-       43.6263027
-      ],
-      [
-       -70.293618,
-       43.6260559
-      ],
-      [
-       -70.2936273,
-       43.6256252
-      ],
-      [
-       -70.2935529,
-       43.6250464
-      ],
-      [
-       -70.2932394,
-       43.6237168
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 456477913,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8018,7 +6706,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8115,7 +6804,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8212,7 +6902,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8309,7 +7000,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8406,7 +7098,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "global",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8503,7 +7196,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8600,7 +7294,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8697,7 +7392,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8794,7 +7490,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8891,7 +7588,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -8988,7 +7686,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9085,7 +7784,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9182,7 +7882,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9279,7 +7980,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9376,7 +8078,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9473,7 +8176,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9570,7 +8274,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9667,7 +8372,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9764,7 +8470,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9861,7 +8568,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -9958,7 +8666,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10055,7 +8764,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10152,7 +8862,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10249,7 +8960,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "citgo",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10346,7 +9058,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10443,7 +9156,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10540,7 +9254,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10637,7 +9352,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10734,7 +9450,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10831,7 +9548,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -10936,7 +9654,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11033,7 +9752,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11130,7 +9850,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11227,7 +9948,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11324,7 +10046,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11421,7 +10144,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11518,7 +10242,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11615,7 +10340,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11712,7 +10438,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11809,7 +10536,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -11906,7 +10634,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12003,7 +10732,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12100,7 +10830,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12197,7 +10928,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12294,7 +11026,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12391,7 +11124,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12488,7 +11222,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12585,7 +11320,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12682,7 +11418,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12779,7 +11516,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12876,7 +11614,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -12973,873 +11712,8 @@
     "structure_type": "storage_tank",
     "name": "",
     "farm_id": "sprague",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2623293,
-       43.6439618
-      ],
-      [
-       -70.2624232,
-       43.644152
-      ],
-      [
-       -70.2634209,
-       43.6448818
-      ],
-      [
-       -70.2637455,
-       43.6448653
-      ],
-      [
-       -70.2639882,
-       43.6448517
-      ],
-      [
-       -70.264243,
-       43.644809
-      ],
-      [
-       -70.2644992,
-       43.6447489
-      ],
-      [
-       -70.2646333,
-       43.6447081
-      ],
-      [
-       -70.2648774,
-       43.6445955
-      ],
-      [
-       -70.2652878,
-       43.6444519
-      ],
-      [
-       -70.265503,
-       43.6443669
-      ],
-      [
-       -70.2657364,
-       43.6442737
-      ],
-      [
-       -70.2659003,
-       43.6442144
-      ],
-      [
-       -70.2661534,
-       43.6441221
-      ],
-      [
-       -70.2667827,
-       43.6438478
-      ],
-      [
-       -70.2674166,
-       43.6435902
-      ],
-      [
-       -70.2692869,
-       43.6431544
-      ],
-      [
-       -70.2692333,
-       43.6430175
-      ],
-      [
-       -70.2674215,
-       43.6431941
-      ],
-      [
-       -70.2667335,
-       43.6432582
-      ],
-      [
-       -70.2653307,
-       43.6435057
-      ],
-      [
-       -70.2653508,
-       43.6435416
-      ],
-      [
-       -70.2639373,
-       43.643792
-      ],
-      [
-       -70.2634746,
-       43.6437153
-      ],
-      [
-       -70.2626404,
-       43.6438638
-      ],
-      [
-       -70.2623293,
-       43.6439618
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 846592712,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "citgo",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.248304,
-       43.6459397
-      ],
-      [
-       -70.2485164,
-       43.645808
-      ],
-      [
-       -70.2481564,
-       43.6455052
-      ],
-      [
-       -70.2483444,
-       43.6453787
-      ],
-      [
-       -70.2473395,
-       43.6445055
-      ],
-      [
-       -70.2472043,
-       43.6445949
-      ],
-      [
-       -70.2472826,
-       43.6446609
-      ],
-      [
-       -70.2474073,
-       43.6447649
-      ],
-      [
-       -70.2475234,
-       43.6448629
-      ],
-      [
-       -70.2471171,
-       43.6451204
-      ],
-      [
-       -70.2472418,
-       43.6451476
-      ],
-      [
-       -70.2474792,
-       43.6453481
-      ],
-      [
-       -70.2475539,
-       43.6454111
-      ],
-      [
-       -70.2475155,
-       43.6454347
-      ],
-      [
-       -70.2475489,
-       43.6454632
-      ],
-      [
-       -70.2476622,
-       43.6455478
-      ],
-      [
-       -70.2477688,
-       43.645638
-      ],
-      [
-       -70.2477868,
-       43.6456522
-      ],
-      [
-       -70.2479068,
-       43.6455773
-      ],
-      [
-       -70.2481112,
-       43.6457503
-      ],
-      [
-       -70.2480977,
-       43.6457596
-      ],
-      [
-       -70.248304,
-       43.6459397
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 864502880,
-    "structure_type": "industrial_parcel",
-    "name": "Buoy Yard",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2474306,
-       43.6459361
-      ],
-      [
-       -70.2480426,
-       43.646465
-      ],
-      [
-       -70.248288,
-       43.6463161
-      ],
-      [
-       -70.2478271,
-       43.645925
-      ],
-      [
-       -70.2476621,
-       43.6457865
-      ],
-      [
-       -70.2474306,
-       43.6459361
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 866113565,
-    "structure_type": "industrial_parcel",
-    "name": "Buoy Yard",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2534626,
-       43.6438823
-      ],
-      [
-       -70.2534412,
-       43.6438611
-      ],
-      [
-       -70.2533774,
-       43.6438946
-      ],
-      [
-       -70.2533988,
-       43.6439159
-      ],
-      [
-       -70.2534626,
-       43.6438823
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 923804752,
-    "structure_type": "storage_tank",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2534976,
-       43.6439174
-      ],
-      [
-       -70.2534763,
-       43.6438961
-      ],
-      [
-       -70.2534125,
-       43.6439297
-      ],
-      [
-       -70.2534338,
-       43.643951
-      ],
-      [
-       -70.2534976,
-       43.6439174
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 923804753,
-    "structure_type": "storage_tank",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2544753,
-       43.6431676
-      ],
-      [
-       -70.2544374,
-       43.6431343
-      ],
-      [
-       -70.2544035,
-       43.6431048
-      ],
-      [
-       -70.2540666,
-       43.6433081
-      ],
-      [
-       -70.2536048,
-       43.6435685
-      ],
-      [
-       -70.2535207,
-       43.6435591
-      ],
-      [
-       -70.2534529,
-       43.6435942
-      ],
-      [
-       -70.2534352,
-       43.6436656
-      ],
-      [
-       -70.2523579,
-       43.6442802
-      ],
-      [
-       -70.2523877,
-       43.6443989
-      ],
-      [
-       -70.2528019,
-       43.6448013
-      ],
-      [
-       -70.2528372,
-       43.6448355
-      ],
-      [
-       -70.2528859,
-       43.6448693
-      ],
-      [
-       -70.2529433,
-       43.6448913
-      ],
-      [
-       -70.2530103,
-       43.6448998
-      ],
-      [
-       -70.2532571,
-       43.6448446
-      ],
-      [
-       -70.2534001,
-       43.6447672
-      ],
-      [
-       -70.2531347,
-       43.6444782
-      ],
-      [
-       -70.253155,
-       43.6444683
-      ],
-      [
-       -70.2533769,
-       43.644363
-      ],
-      [
-       -70.2534474,
-       43.6443295
-      ],
-      [
-       -70.253479,
-       43.6442894
-      ],
-      [
-       -70.2538665,
-       43.6440891
-      ],
-      [
-       -70.2541357,
-       43.64395
-      ],
-      [
-       -70.2545993,
-       43.6437121
-      ],
-      [
-       -70.2545992,
-       43.6435437
-      ],
-      [
-       -70.2543792,
-       43.6432956
-      ],
-      [
-       -70.2543748,
-       43.6432628
-      ],
-      [
-       -70.2543894,
-       43.6432218
-      ],
-      [
-       -70.2544388,
-       43.6431909
-      ],
-      [
-       -70.2544725,
-       43.6431694
-      ],
-      [
-       -70.2544753,
-       43.6431676
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 923804758,
-    "structure_type": "industrial_parcel",
-    "name": "Cape Gas Turbine",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2550795,
-       43.6492042
-      ],
-      [
-       -70.2550843,
-       43.6491986
-      ],
-      [
-       -70.2550917,
-       43.64919
-      ],
-      [
-       -70.255115,
-       43.649163
-      ],
-      [
-       -70.2551232,
-       43.6491534
-      ],
-      [
-       -70.2550502,
-       43.6491206
-      ],
-      [
-       -70.2550065,
-       43.6491714
-      ],
-      [
-       -70.2550795,
-       43.6492042
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182424,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2566099,
-       43.6490694
-      ],
-      [
-       -70.2566461,
-       43.6490309
-      ],
-      [
-       -70.2565958,
-       43.649006
-      ],
-      [
-       -70.2565704,
-       43.6489933
-      ],
-      [
-       -70.2563848,
-       43.6489006
-      ],
-      [
-       -70.2561327,
-       43.6487746
-      ],
-      [
-       -70.2557438,
-       43.6485827
-      ],
-      [
-       -70.2555714,
-       43.648743
-      ],
-      [
-       -70.2556194,
-       43.648767
-      ],
-      [
-       -70.2557071,
-       43.6486807
-      ],
-      [
-       -70.25578,
-       43.6486566
-      ],
-      [
-       -70.2566099,
-       43.6490694
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182439,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2565704,
-       43.6489933
-      ],
-      [
-       -70.2565031,
-       43.6490371
-      ],
-      [
-       -70.2563923,
-       43.6491678
-      ],
-      [
-       -70.2569079,
-       43.6494416
-      ],
-      [
-       -70.2571227,
-       43.6491621
-      ],
-      [
-       -70.2569917,
-       43.6490875
-      ],
-      [
-       -70.2569135,
-       43.6490429
-      ],
-      [
-       -70.2567652,
-       43.6489722
-      ],
-      [
-       -70.2566153,
-       43.649007
-      ],
-      [
-       -70.2565704,
-       43.6489933
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182441,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2569847,
-       43.6490036
-      ],
-      [
-       -70.2570446,
-       43.64892
-      ],
-      [
-       -70.2568768,
-       43.6488412
-      ],
-      [
-       -70.2568541,
-       43.6488706
-      ],
-      [
-       -70.2569608,
-       43.6489138
-      ],
-      [
-       -70.2569136,
-       43.6489748
-      ],
-      [
-       -70.2569847,
-       43.6490036
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182443,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2563848,
-       43.6489006
-      ],
-      [
-       -70.2563989,
-       43.6488859
-      ],
-      [
-       -70.2564236,
-       43.6488599
-      ],
-      [
-       -70.2561715,
-       43.6487339
-      ],
-      [
-       -70.2561327,
-       43.6487746
-      ],
-      [
-       -70.2563848,
-       43.6489006
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182444,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2540466,
-       43.6519666
-      ],
-      [
-       -70.2537247,
-       43.6517469
-      ],
-      [
-       -70.2536098,
-       43.651835
-      ],
-      [
-       -70.2539317,
-       43.6520548
-      ],
-      [
-       -70.2540466,
-       43.6519666
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182450,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2537849,
-       43.6521732
-      ],
-      [
-       -70.2535678,
-       43.6520314
-      ],
-      [
-       -70.2534612,
-       43.6519612
-      ],
-      [
-       -70.2533604,
-       43.652041
-      ],
-      [
-       -70.2536826,
-       43.6522542
-      ],
-      [
-       -70.2537849,
-       43.6521732
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182451,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2535319,
-       43.6523722
-      ],
-      [
-       -70.2532102,
-       43.6521611
-      ],
-      [
-       -70.2531752,
-       43.652189
-      ],
-      [
-       -70.2527239,
-       43.6518929
-      ],
-      [
-       -70.2526499,
-       43.6519518
-      ],
-      [
-       -70.2534229,
-       43.6524591
-      ],
-      [
-       -70.2535319,
-       43.6523722
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1125182452,
-    "structure_type": "industrial_parcel",
-    "name": "",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 1
    }
   },
   {
@@ -14036,7 +11910,832 @@
     "structure_type": "industrial_parcel",
     "name": "Gulf Oil Limited Partnership",
     "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
+    "used_in_analysis": "Y",
+    "contains_tanks": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2380518,
+       43.6494811
+      ],
+      [
+       -70.237887,
+       43.6490968
+      ],
+      [
+       -70.2378179,
+       43.6489344
+      ],
+      [
+       -70.2377023,
+       43.6486627
+      ],
+      [
+       -70.2376554,
+       43.6485526
+      ],
+      [
+       -70.237588,
+       43.6483943
+      ],
+      [
+       -70.2375272,
+       43.6482913
+      ],
+      [
+       -70.2374918,
+       43.6482312
+      ],
+      [
+       -70.2374351,
+       43.6481352
+      ],
+      [
+       -70.2373731,
+       43.6480302
+      ],
+      [
+       -70.2373256,
+       43.6479497
+      ],
+      [
+       -70.2372651,
+       43.6478516
+      ],
+      [
+       -70.2372126,
+       43.6477678
+      ],
+      [
+       -70.2371749,
+       43.6477078
+      ],
+      [
+       -70.2371277,
+       43.6476325
+      ],
+      [
+       -70.2370589,
+       43.6475227
+      ],
+      [
+       -70.2369903,
+       43.6474133
+      ],
+      [
+       -70.2369518,
+       43.647352
+      ],
+      [
+       -70.2368854,
+       43.647246
+      ],
+      [
+       -70.2367818,
+       43.6470808
+      ],
+      [
+       -70.2367027,
+       43.6469547
+      ],
+      [
+       -70.2366437,
+       43.6468556
+      ],
+      [
+       -70.2366055,
+       43.6467903
+      ],
+      [
+       -70.2366048,
+       43.6467402
+      ],
+      [
+       -70.2366124,
+       43.6466454
+      ],
+      [
+       -70.236644,
+       43.6465835
+      ],
+      [
+       -70.2367185,
+       43.6464746
+      ],
+      [
+       -70.2368069,
+       43.6463369
+      ],
+      [
+       -70.2368428,
+       43.6462809
+      ],
+      [
+       -70.2369043,
+       43.646185
+      ],
+      [
+       -70.2362719,
+       43.645964
+      ],
+      [
+       -70.2361186,
+       43.6459046
+      ],
+      [
+       -70.235954,
+       43.6459972
+      ],
+      [
+       -70.2350998,
+       43.6453148
+      ],
+      [
+       -70.2341594,
+       43.6460123
+      ],
+      [
+       -70.2337363,
+       43.6463337
+      ],
+      [
+       -70.233543,
+       43.6465
+      ],
+      [
+       -70.2333889,
+       43.6466626
+      ],
+      [
+       -70.2332844,
+       43.6467835
+      ],
+      [
+       -70.2330676,
+       43.6470576
+      ],
+      [
+       -70.2330024,
+       43.6471182
+      ],
+      [
+       -70.2347859,
+       43.6478184
+      ],
+      [
+       -70.2345264,
+       43.6481528
+      ],
+      [
+       -70.2346019,
+       43.6481808
+      ],
+      [
+       -70.2347055,
+       43.6482189
+      ],
+      [
+       -70.2347634,
+       43.648242
+      ],
+      [
+       -70.2352339,
+       43.6484285
+      ],
+      [
+       -70.2356564,
+       43.6486029
+      ],
+      [
+       -70.2359017,
+       43.6487008
+      ],
+      [
+       -70.2361328,
+       43.6487883
+      ],
+      [
+       -70.2363169,
+       43.6488632
+      ],
+      [
+       -70.2365237,
+       43.6489449
+      ],
+      [
+       -70.236615,
+       43.6489808
+      ],
+      [
+       -70.2368919,
+       43.6490909
+      ],
+      [
+       -70.2372501,
+       43.6492341
+      ],
+      [
+       -70.2376464,
+       43.6493896
+      ],
+      [
+       -70.2378285,
+       43.649461
+      ],
+      [
+       -70.2379191,
+       43.6495008
+      ],
+      [
+       -70.2380359,
+       43.6494851
+      ],
+      [
+       -70.2380518,
+       43.6494811
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 1354720148,
+    "structure_type": "industrial_parcel",
+    "name": "Portland Pipe Line Corporation",
+    "farm_id": "gulf_sunoco",
+    "used_in_analysis": "Y",
+    "contains_tanks": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2335178,
+       43.6511183
+      ],
+      [
+       -70.2336872,
+       43.6506467
+      ],
+      [
+       -70.232193,
+       43.6503701
+      ],
+      [
+       -70.2320459,
+       43.6506124
+      ],
+      [
+       -70.2320276,
+       43.6506425
+      ],
+      [
+       -70.2320176,
+       43.650659
+      ],
+      [
+       -70.2305428,
+       43.6531272
+      ],
+      [
+       -70.2305532,
+       43.6531885
+      ],
+      [
+       -70.2307893,
+       43.6532559
+      ],
+      [
+       -70.2322811,
+       43.6508168
+      ],
+      [
+       -70.2323156,
+       43.6507603
+      ],
+      [
+       -70.2326576,
+       43.6508706
+      ],
+      [
+       -70.2335178,
+       43.6511183
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 1354720149,
+    "structure_type": "industrial_parcel",
+    "name": "Portland Pipe Line Corporation",
+    "farm_id": "gulf_sunoco",
+    "used_in_analysis": "Y",
+    "contains_tanks": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2507016,
+       43.6564334
+      ],
+      [
+       -70.2506127,
+       43.6563658
+      ],
+      [
+       -70.2506663,
+       43.6563272
+      ],
+      [
+       -70.2498657,
+       43.6557457
+      ],
+      [
+       -70.2498825,
+       43.6557323
+      ],
+      [
+       -70.2498606,
+       43.6557178
+      ],
+      [
+       -70.2498559,
+       43.6557216
+      ],
+      [
+       -70.2498447,
+       43.6557304
+      ],
+      [
+       -70.2494883,
+       43.6554716
+      ],
+      [
+       -70.2490607,
+       43.6551613
+      ],
+      [
+       -70.2490493,
+       43.6551696
+      ],
+      [
+       -70.2488778,
+       43.6552945
+      ],
+      [
+       -70.2486423,
+       43.6554928
+      ],
+      [
+       -70.2491979,
+       43.6558982
+      ],
+      [
+       -70.2492919,
+       43.6559664
+      ],
+      [
+       -70.2493102,
+       43.6559508
+      ],
+      [
+       -70.2493274,
+       43.6559625
+      ],
+      [
+       -70.2493649,
+       43.6559333
+      ],
+      [
+       -70.2493733,
+       43.6559268
+      ],
+      [
+       -70.2495668,
+       43.6560571
+      ],
+      [
+       -70.2494908,
+       43.6561162
+      ],
+      [
+       -70.2502341,
+       43.6566563
+      ],
+      [
+       -70.2502216,
+       43.656665
+      ],
+      [
+       -70.2502154,
+       43.6566693
+      ],
+      [
+       -70.2502313,
+       43.6566812
+      ],
+      [
+       -70.249975,
+       43.6568777
+      ],
+      [
+       -70.2500425,
+       43.6569218
+      ],
+      [
+       -70.250308,
+       43.6567123
+      ],
+      [
+       -70.2506436,
+       43.6564764
+      ],
+      [
+       -70.2507016,
+       43.6564334
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 30594024,
+    "structure_type": "industrial_parcel",
+    "name": "Custom House Wharf",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "pier/wharf (no tanks)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2524052,
+       43.6540686
+      ],
+      [
+       -70.2525667,
+       43.6538879
+      ],
+      [
+       -70.251453,
+       43.6527293
+      ],
+      [
+       -70.2512503,
+       43.6528356
+      ],
+      [
+       -70.2521584,
+       43.6537843
+      ],
+      [
+       -70.2524052,
+       43.6540686
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 325259943,
+    "structure_type": "industrial_parcel",
+    "name": "Widgery Wharf",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "pier/wharf (no tanks)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2623293,
+       43.6439618
+      ],
+      [
+       -70.2624232,
+       43.644152
+      ],
+      [
+       -70.2634209,
+       43.6448818
+      ],
+      [
+       -70.2637455,
+       43.6448653
+      ],
+      [
+       -70.2639882,
+       43.6448517
+      ],
+      [
+       -70.264243,
+       43.644809
+      ],
+      [
+       -70.2644992,
+       43.6447489
+      ],
+      [
+       -70.2646333,
+       43.6447081
+      ],
+      [
+       -70.2648774,
+       43.6445955
+      ],
+      [
+       -70.2652878,
+       43.6444519
+      ],
+      [
+       -70.265503,
+       43.6443669
+      ],
+      [
+       -70.2657364,
+       43.6442737
+      ],
+      [
+       -70.2659003,
+       43.6442144
+      ],
+      [
+       -70.2661534,
+       43.6441221
+      ],
+      [
+       -70.2667827,
+       43.6438478
+      ],
+      [
+       -70.2674166,
+       43.6435902
+      ],
+      [
+       -70.2692869,
+       43.6431544
+      ],
+      [
+       -70.2692333,
+       43.6430175
+      ],
+      [
+       -70.2674215,
+       43.6431941
+      ],
+      [
+       -70.2667335,
+       43.6432582
+      ],
+      [
+       -70.2653307,
+       43.6435057
+      ],
+      [
+       -70.2653508,
+       43.6435416
+      ],
+      [
+       -70.2639373,
+       43.643792
+      ],
+      [
+       -70.2634746,
+       43.6437153
+      ],
+      [
+       -70.2626404,
+       43.6438638
+      ],
+      [
+       -70.2623293,
+       43.6439618
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 846592712,
+    "structure_type": "industrial_parcel",
+    "name": "",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "industrial parcel with no mapped tanks or oil tag"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.248304,
+       43.6459397
+      ],
+      [
+       -70.2485164,
+       43.645808
+      ],
+      [
+       -70.2481564,
+       43.6455052
+      ],
+      [
+       -70.2483444,
+       43.6453787
+      ],
+      [
+       -70.2473395,
+       43.6445055
+      ],
+      [
+       -70.2472043,
+       43.6445949
+      ],
+      [
+       -70.2472826,
+       43.6446609
+      ],
+      [
+       -70.2474073,
+       43.6447649
+      ],
+      [
+       -70.2475234,
+       43.6448629
+      ],
+      [
+       -70.2471171,
+       43.6451204
+      ],
+      [
+       -70.2472418,
+       43.6451476
+      ],
+      [
+       -70.2474792,
+       43.6453481
+      ],
+      [
+       -70.2475539,
+       43.6454111
+      ],
+      [
+       -70.2475155,
+       43.6454347
+      ],
+      [
+       -70.2475489,
+       43.6454632
+      ],
+      [
+       -70.2476622,
+       43.6455478
+      ],
+      [
+       -70.2477688,
+       43.645638
+      ],
+      [
+       -70.2477868,
+       43.6456522
+      ],
+      [
+       -70.2479068,
+       43.6455773
+      ],
+      [
+       -70.2481112,
+       43.6457503
+      ],
+      [
+       -70.2480977,
+       43.6457596
+      ],
+      [
+       -70.248304,
+       43.6459397
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 864502880,
+    "structure_type": "industrial_parcel",
+    "name": "Buoy Yard",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "buoy yard (no tanks)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2474306,
+       43.6459361
+      ],
+      [
+       -70.2480426,
+       43.646465
+      ],
+      [
+       -70.248288,
+       43.6463161
+      ],
+      [
+       -70.2478271,
+       43.645925
+      ],
+      [
+       -70.2476621,
+       43.6457865
+      ],
+      [
+       -70.2474306,
+       43.6459361
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 866113565,
+    "structure_type": "industrial_parcel",
+    "name": "Buoy Yard",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "buoy yard (no tanks)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -70.2535319,
+       43.6523722
+      ],
+      [
+       -70.2532102,
+       43.6521611
+      ],
+      [
+       -70.2531752,
+       43.652189
+      ],
+      [
+       -70.2527239,
+       43.6518929
+      ],
+      [
+       -70.2526499,
+       43.6519518
+      ],
+      [
+       -70.2534229,
+       43.6524591
+      ],
+      [
+       -70.2535319,
+       43.6523722
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_way_id": 1125182452,
+    "structure_type": "industrial_parcel",
+    "name": "",
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "pier/wharf (no tanks)"
    }
   },
   {
@@ -14320,445 +13019,9 @@
     "osm_way_id": 1354720145,
     "structure_type": "industrial_parcel",
     "name": "Yard South",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2380518,
-       43.6494811
-      ],
-      [
-       -70.237887,
-       43.6490968
-      ],
-      [
-       -70.2378179,
-       43.6489344
-      ],
-      [
-       -70.2377023,
-       43.6486627
-      ],
-      [
-       -70.2376554,
-       43.6485526
-      ],
-      [
-       -70.237588,
-       43.6483943
-      ],
-      [
-       -70.2375272,
-       43.6482913
-      ],
-      [
-       -70.2374918,
-       43.6482312
-      ],
-      [
-       -70.2374351,
-       43.6481352
-      ],
-      [
-       -70.2373731,
-       43.6480302
-      ],
-      [
-       -70.2373256,
-       43.6479497
-      ],
-      [
-       -70.2372651,
-       43.6478516
-      ],
-      [
-       -70.2372126,
-       43.6477678
-      ],
-      [
-       -70.2371749,
-       43.6477078
-      ],
-      [
-       -70.2371277,
-       43.6476325
-      ],
-      [
-       -70.2370589,
-       43.6475227
-      ],
-      [
-       -70.2369903,
-       43.6474133
-      ],
-      [
-       -70.2369518,
-       43.647352
-      ],
-      [
-       -70.2368854,
-       43.647246
-      ],
-      [
-       -70.2367818,
-       43.6470808
-      ],
-      [
-       -70.2367027,
-       43.6469547
-      ],
-      [
-       -70.2366437,
-       43.6468556
-      ],
-      [
-       -70.2366055,
-       43.6467903
-      ],
-      [
-       -70.2366048,
-       43.6467402
-      ],
-      [
-       -70.2366124,
-       43.6466454
-      ],
-      [
-       -70.236644,
-       43.6465835
-      ],
-      [
-       -70.2367185,
-       43.6464746
-      ],
-      [
-       -70.2368069,
-       43.6463369
-      ],
-      [
-       -70.2368428,
-       43.6462809
-      ],
-      [
-       -70.2369043,
-       43.646185
-      ],
-      [
-       -70.2362719,
-       43.645964
-      ],
-      [
-       -70.2361186,
-       43.6459046
-      ],
-      [
-       -70.235954,
-       43.6459972
-      ],
-      [
-       -70.2350998,
-       43.6453148
-      ],
-      [
-       -70.2341594,
-       43.6460123
-      ],
-      [
-       -70.2337363,
-       43.6463337
-      ],
-      [
-       -70.233543,
-       43.6465
-      ],
-      [
-       -70.2333889,
-       43.6466626
-      ],
-      [
-       -70.2332844,
-       43.6467835
-      ],
-      [
-       -70.2330676,
-       43.6470576
-      ],
-      [
-       -70.2330024,
-       43.6471182
-      ],
-      [
-       -70.2347859,
-       43.6478184
-      ],
-      [
-       -70.2345264,
-       43.6481528
-      ],
-      [
-       -70.2346019,
-       43.6481808
-      ],
-      [
-       -70.2347055,
-       43.6482189
-      ],
-      [
-       -70.2347634,
-       43.648242
-      ],
-      [
-       -70.2352339,
-       43.6484285
-      ],
-      [
-       -70.2356564,
-       43.6486029
-      ],
-      [
-       -70.2359017,
-       43.6487008
-      ],
-      [
-       -70.2361328,
-       43.6487883
-      ],
-      [
-       -70.2363169,
-       43.6488632
-      ],
-      [
-       -70.2365237,
-       43.6489449
-      ],
-      [
-       -70.236615,
-       43.6489808
-      ],
-      [
-       -70.2368919,
-       43.6490909
-      ],
-      [
-       -70.2372501,
-       43.6492341
-      ],
-      [
-       -70.2376464,
-       43.6493896
-      ],
-      [
-       -70.2378285,
-       43.649461
-      ],
-      [
-       -70.2379191,
-       43.6495008
-      ],
-      [
-       -70.2380359,
-       43.6494851
-      ],
-      [
-       -70.2380518,
-       43.6494811
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1354720148,
-    "structure_type": "industrial_parcel",
-    "name": "Portland Pipe Line Corporation",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2335178,
-       43.6511183
-      ],
-      [
-       -70.2336872,
-       43.6506467
-      ],
-      [
-       -70.232193,
-       43.6503701
-      ],
-      [
-       -70.2320459,
-       43.6506124
-      ],
-      [
-       -70.2320276,
-       43.6506425
-      ],
-      [
-       -70.2320176,
-       43.650659
-      ],
-      [
-       -70.2305428,
-       43.6531272
-      ],
-      [
-       -70.2305532,
-       43.6531885
-      ],
-      [
-       -70.2307893,
-       43.6532559
-      ],
-      [
-       -70.2322811,
-       43.6508168
-      ],
-      [
-       -70.2323156,
-       43.6507603
-      ],
-      [
-       -70.2326576,
-       43.6508706
-      ],
-      [
-       -70.2335178,
-       43.6511183
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1354720149,
-    "structure_type": "industrial_parcel",
-    "name": "Portland Pipe Line Corporation",
-    "farm_id": "gulf_sunoco",
-    "used_in_analysis": "Y"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2811778,
-       43.6489491
-      ],
-      [
-       -70.2811205,
-       43.6489174
-      ],
-      [
-       -70.281262,
-       43.6487836
-      ],
-      [
-       -70.2813193,
-       43.6488153
-      ],
-      [
-       -70.2811778,
-       43.6489491
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1448294930,
-    "structure_type": "storage_tank",
-    "name": "",
     "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2804773,
-       43.6484039
-      ],
-      [
-       -70.2803978,
-       43.6484143
-      ],
-      [
-       -70.2803833,
-       43.6483563
-      ],
-      [
-       -70.2804628,
-       43.6483459
-      ],
-      [
-       -70.2804773,
-       43.6484039
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1448294940,
-    "structure_type": "storage_tank",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       -70.2816393,
-       43.6480921
-      ],
-      [
-       -70.2815115,
-       43.6480399
-      ],
-      [
-       -70.281549,
-       43.6479919
-      ],
-      [
-       -70.2816767,
-       43.6480441
-      ],
-      [
-       -70.2816393,
-       43.6480921
-      ]
-     ]
-    ]
-   },
-   "properties": {
-    "osm_way_id": 1448300780,
-    "structure_type": "storage_tank",
-    "name": "",
-    "farm_id": "",
-    "used_in_analysis": "N"
+    "used_in_analysis": "N",
+    "exclusion_reason": "shipyard (no tanks)"
    }
   },
   {
@@ -15002,8 +13265,9 @@
     "osm_way_id": 1449380363,
     "structure_type": "industrial_parcel",
     "name": "",
-    "farm_id": "buckeye",
-    "used_in_analysis": "Y"
+    "farm_id": "",
+    "used_in_analysis": "N",
+    "exclusion_reason": "industrial parcel with no mapped tanks or oil tag"
    }
   }
  ]
