@@ -121,15 +121,27 @@ for f in features:
     ax.add_patch(MplPoly(pts, closed=True, facecolor="#14311f" if is_tank else "#2d6a4f",
                          alpha=0.55, edgecolor="white", linewidth=0.7, zorder=3))
 
-# 1-mile rings
-MILE = 1609.344
-for fid, name, addr, flat, flon in FARMS:
-    cx, cy = px(flat, flon)
-    nlat = flat + MILE/111320.0
-    _, ny_abs = lonlat_px_abs(nlat, flon)
-    rpx = abs((H - ny_abs) - cy)
-    ax.add_patch(Circle((cx, cy), rpx, fill=False, edgecolor=AMBER, linewidth=1.2,
-                        linestyle=(0,(6,4)), alpha=0.75, zorder=4))
+# 1-mile fence-line buffer (union zone) — matches the counted geometry
+from matplotlib.patches import PathPatch
+from matplotlib.path import Path as MplPath
+import shapely.geometry as sg
+gj = json.load(open(os.path.join(DATA, "..", "outputs", "gis", "tank_farm_1mile_buffer.geojson")))
+gj = json.load(open(os.path.join(HERE, "outputs", "gis", "tank_farm_1mile_buffer.geojson")))
+geom = gj["features"][0]["geometry"]
+def ring_to_px(ring):
+    return [px(la, lo) for lo, la in ring]
+if geom["type"] == "Polygon":
+    rings = [ring_to_px(geom["coordinates"][0])]
+    verts = rings[0]; codes = [MplPath.MOVETO] + [MplPath.LINETO]*(len(verts := verts)-2) + [MplPath.CLOSEPOLY]
+else:
+    allverts = []; allcodes = []
+    for mp in geom["coordinates"]:
+        rv = ring_to_px(mp[0])
+        allverts += rv
+        allcodes += [MplPath.MOVETO] + [MplPath.LINETO]*(len(rv)-2) + [MplPath.CLOSEPOLY]
+    verts = allverts; codes = allcodes
+path = MplPath(verts, codes)
+ax.add_patch(PathPatch(path, fill=False, edgecolor=AMBER, linewidth=1.6, linestyle=(0,(6,4)), alpha=0.9, zorder=4))
 
 # receptors
 receptors = list(csv.DictReader(open(os.path.join(HERE, "outputs", "receptor_fenceline_distances.csv"))))
