@@ -17,6 +17,8 @@ The report and fact-check log are published here in full; the DEP license-order 
 | `outputs/gis/tank_farm_facilities.csv` | Six facilities with anchor coordinates, WKT, DEP license numbers, renewal dates, and facility-wide VOC/HAP limits. |
 | `outputs/gis/receptor_farm_distances_long.csv` | **Tidy long format** — 1,026 rows (171 receptors × 6 farms), one `distance_mi`/`distance_m` per row with `within_1mi` flag. Ideal for pivots, filters, and joins. |
 | `outputs/gis/receptor_counts_by_farm.csv` | Per-farm counts of receptors within 1 mile, by category. |
+| `outputs/south_portland_tank_farms_map.png` | **Branded static map** (print-ready, Letter landscape): fence-line polygons, 1-mile rings, receptors by category, facility labels/addresses, DEP VOC monitor sites. |
+| `outputs/map_interactive.html` | **Interactive Leaflet map** — open in any browser: clickable facilities (permit + VOC cap), receptors (measured distance), monitor stations, toggle-able 1-mile rings. |
 | `data/receptor_fenceline_distances.csv` | **Master dataset** — 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each of 6 tank-farm fence lines (OpenStreetMap parcels/tanks), nearest farm, and within-1-mile flag. |
 | `data/ccc_union.json` | 166 unique licensed child care programs from Maine OCFS "Child Care Choices" search (name, address, type, star rating). Includes family child care homes. |
 | `data/overpass_tanks.json` | OpenStreetMap structures: 113 storage-tank polygons + 37 industrial parcel polygons, bbox 43.62–43.66 / −70.31 to −70.22. |
