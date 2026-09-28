@@ -37,6 +37,12 @@ def hav(a,b,c,d):
 
 buffer_gj = json.load(open(os.path.join(HERE, "outputs", "gis", "tank_farm_1mile_buffer.geojson")))
 buffer_geom = buffer_gj["features"][0]["geometry"]
+# normalize to a list of [lat, lon] rings for Leaflet (works for Polygon and MultiPolygon)
+if buffer_geom["type"] == "Polygon":
+    BUFFER_RINGS = [buffer_geom["coordinates"][0]]
+else:
+    BUFFER_RINGS = [mp[0] for mp in buffer_geom["coordinates"]]
+BUFFER_RINGS = [[[c[1], c[0]] for c in ring] for ring in BUFFER_RINGS]
 structs = json.load(open(os.path.join(DATA, "overpass_tanks.json")))
 polys = []
 for e in structs.get("elements", []):
@@ -111,6 +117,7 @@ const FARMS = __FARMS__;
 const RECS = __RECS__;
 const MON = __MON__;
 const POLYS = __POLYS__;
+const BUFFER_RINGS = __BUFFER__;
 const map = L.map('map').setView([43.635, -70.275], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
 const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
@@ -118,7 +125,7 @@ const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;heigh
  senior:L.divIcon({className:'',html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[13,13],iconAnchor:[6,6]})};
 POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5})
   .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Industrial parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
-L.polygon(buffer_geom.coordinates[0].map(r=>r.map(c=>[c[1],c[0]])) if buffer_geom.type==='Polygon' else buffer_geom.coordinates.map(mp=>mp[0].map(c=>[c[1],c[0]])),{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons + 1 mile. Receptors inside this zone are the 42 counted sites.').addTo(map);
+L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the 42 counted sites.').addTo(map);
 FARMS.forEach(f=>{
   L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
   L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`,iconAnchor:[0,0]})}).addTo(map);});
@@ -130,5 +137,6 @@ html = html.replace("__FARMS__", json.dumps(farm_js))
 html = html.replace("__RECS__", json.dumps(rec_js))
 html = html.replace("__MON__", json.dumps(mon_js))
 html = html.replace("__POLYS__", json.dumps(polys))
+html = html.replace("__BUFFER__", json.dumps(BUFFER_RINGS))
 open(os.path.join(OUT, "map_interactive.html"), "w").write(html)
 print(f"interactive map: {len(rec_js)} receptors, {len(polys)} structures, {len(FARMS)} farms -> outputs/map_interactive.html")
