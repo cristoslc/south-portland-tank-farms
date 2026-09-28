@@ -62,8 +62,15 @@ def num2deg(x, y, z):
 Z = 14
 COLS, ROWS = 6, 5
 TP = 256
-lat_c, lon_c = 43.633, -70.282
-x0, y0 = deg2num(lat_c, lon_c, Z)
+lat_c, lon_c = 43.6335, -70.278   # center of tank-farm cluster
+# fractional tile coords of the DESIRED CENTER, then back off half the grid
+# (deg2num returns the tile CONTAINING a point -> top-left; using it as the
+# grid origin shifts the view half a frame southeast. This was the bug.)
+n = 2.0 ** Z
+fx = (lon_c + 180.0) / 360.0 * n
+fy = (1 - math.log(math.tan(math.radians(lat_c)) + 1 / math.cos(math.radians(lat_c))) / math.pi) / 2 * n
+x0 = round(fx - COLS / 2)
+y0 = round(fy - ROWS / 2)
 import PIL.Image as Image
 canvas = Image.new("RGB", (COLS*TP, ROWS*TP), CREAM)
 n_fetched = 0
