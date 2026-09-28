@@ -12,6 +12,11 @@ The report and fact-check log are published here in full; the DEP license-order 
 |---|---|
 | `outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md` | **Full research report** — executive summary, permit table with official VOC/HAP limits from each DEP license order, fence-line and address-based counts, human-operator methodology, caveats, and a numbered references section with DEP archive URLs. |
 | `outputs/FACTCHECK.md` | **Claim-by-claim fact-check log** — for every claim: report section → claim → source → direct evidence quoted from the source document. Includes the removal trail for advocacy-packet-sourced claims (§FC-6). |
+| `outputs/gis/receptors_points.csv` | **GIS point layer** — one row per receptor with `latitude`/`longitude`, WKT geometry, distances in **both miles and meters** to each farm, `within_1mi_of_any` flag. Drop-in for QGIS "Delimited Text Layer" import. |
+| `outputs/gis/tank_farm_structures.geojson` | **Fence-line polygons** — 150 OSM structures (113 storage tanks + 37 industrial parcels) with `farm_id` assignment and `used_in_analysis` flag. Load directly into QGIS/geojson.io. |
+| `outputs/gis/tank_farm_facilities.csv` | Six facilities with anchor coordinates, WKT, DEP license numbers, renewal dates, and facility-wide VOC/HAP limits. |
+| `outputs/gis/receptor_farm_distances_long.csv` | **Tidy long format** — 1,026 rows (171 receptors × 6 farms), one `distance_mi`/`distance_m` per row with `within_1mi` flag. Ideal for pivots, filters, and joins. |
+| `outputs/gis/receptor_counts_by_farm.csv` | Per-farm counts of receptors within 1 mile, by category. |
 | `data/receptor_fenceline_distances.csv` | **Master dataset** — 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each of 6 tank-farm fence lines (OpenStreetMap parcels/tanks), nearest farm, and within-1-mile flag. |
 | `data/ccc_union.json` | 166 unique licensed child care programs from Maine OCFS "Child Care Choices" search (name, address, type, star rating). Includes family child care homes. |
 | `data/overpass_tanks.json` | OpenStreetMap structures: 113 storage-tank polygons + 37 industrial parcel polygons, bbox 43.62–43.66 / −70.31 to −70.22. |
