@@ -81,6 +81,7 @@ index_body = f"""
   <li><a href="https://github.com/cristoslc/south-portland-tank-farms"><b>Downloadable data</b></a> — CSV/GeoJSON datasets, GIS point/polygon layers, maps (GitHub)</li>
   <li><a href="map.png"><b>Proximity map</b></a> — print-ready static map (PNG)</li>
   <li><a href="map.html"><b>Interactive map</b></a> — Leaflet map with popups</li>
+  <li><a href="SouthPortland_TankFarms_Binder.pdf"><b>Evidence binder (PDF)</b></a> — print-ready report + fact-check + map in one document</li>
 </ul>
 <div class="callout"><b>About this project.</b> Research compiled with AI assistance under human steering for Protect South Portland. Every factual claim is verified against official Maine DEP license documents, with the verification trail published in the fact-check log.</div>
 <p class="muted">Compiled September 2026 · ProtectSouthPortland.com</p>
@@ -117,4 +118,7 @@ for src, out, title in [("TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md", "report.html",
 import shutil
 shutil.copy(os.path.join(HERE, "outputs", "south_portland_tank_farms_map.png"), os.path.join(OUT, "map.png"))
 shutil.copy(os.path.join(HERE, "outputs", "map_interactive.html"), os.path.join(OUT, "map.html"))
+_binder = os.path.join(HERE, "outputs", "SouthPortland_TankFarms_Binder.pdf")
+if os.path.exists(_binder):
+    shutil.copy(_binder, os.path.join(OUT, "SouthPortland_TankFarms_Binder.pdf"))
 print("docs/ built:", sorted(os.listdir(OUT)))
