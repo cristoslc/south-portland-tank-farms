@@ -8,9 +8,11 @@ Inclusion rule (corrected after the Sept 28 arrow audit):
     - it is tagged industrial=oil, OR
     - it is named for a licensed oil operator (Gulf/Portland Pipe Line).
   Excluded: piers/wharves, buoy yards, shipyards, and bare landuse=industrial
-  parcels with no mapped tanks and no oil tag (Custom House Wharf, Widgery
-  Wharf, Buoy Yards, Yard South shipyard, unnamed pier, empty industrial
-  parcels). These were incorrectly shaded in earlier map versions.
+  parcels with NO mapped tanks and no oil tag (Custom House Wharf, Widgery
+  Wharf, Buoy Yards, Yard South shipyard, an unnamed pier, and two empty
+  industrial parcels). Parcels containing even one mapped tank are kept —
+  the tank proves petroleum infrastructure on the parcel. Lone tanks are
+  included as tanks. These were incorrectly shaded in earlier map versions.
 """
 import json, math, os
 

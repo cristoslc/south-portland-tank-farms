@@ -161,43 +161,36 @@ with open(os.path.join(OUT, "receptor_counts_by_farm.csv"), "w", newline="") as 
     w.writeheader()
     w.writerows(counts)
 
-# ---------- 5. tank_farm_structures.geojson ----------
-osm = json.load(open(os.path.join(DATA, "overpass_tanks.json")))
-
-def haversine(lat1, lon1, lat2, lon2):
-    R = 6371000.0
-    p1, p2 = math.radians(lat1), math.radians(lat2)
-    a = (math.sin((p2 - p1) / 2) ** 2
-         + math.cos(p1) * math.cos(p2) * math.sin(math.radians(lon2 - lon1) / 2) ** 2)
-    return 2 * R * math.asin(math.sqrt(a))
-
-ASSIGN_R = 1200.0
+# ---------- 5. tank_farm_structures.geojson (corrected rule) ----------
+import sys
+sys.path.insert(0, os.path.join(HERE, "src"))
+from farm_structures import load as fs_load, ring_contains as fs_contains
+_assigned, _excluded = fs_load(HERE)
 features = []
-for e in osm.get("elements", []):
-    geom = e.get("geometry")
-    if not geom:
-        continue
-    ring = [[g["lon"], g["lat"]] for g in geom]
-    if ring[0] != ring[-1]:
-        ring = ring + [ring[0]]
-    clat = sum(p[1] for p in ring[:-1]) / (len(ring) - 1)
-    clon = sum(p[0] for p in ring[:-1]) / (len(ring) - 1)
-    best_fid, best_d = "", None
-    for farm in FARMS:
-        d = haversine(clat, clon, farm["latitude"], farm["longitude"])
-        if best_d is None or d < best_d:
-            best_fid, best_d = farm["farm_id"], d
-    assigned = best_d is not None and best_d <= ASSIGN_R
-    tags = e.get("tags", {}) or {}
+for s in _assigned:
     features.append({
         "type": "Feature",
-        "geometry": {"type": "Polygon", "coordinates": [ring]},
+        "geometry": {"type": "Polygon", "coordinates": [s["ring"]]},
         "properties": {
-            "osm_way_id": e.get("id"),
-            "structure_type": "storage_tank" if tags.get("man_made") == "storage_tank" else "industrial_parcel",
-            "name": tags.get("name") or tags.get("operator") or "",
-            "farm_id": best_fid if assigned else "",
-            "used_in_analysis": "Y" if assigned else "N",
+            "osm_way_id": s["id"],
+            "structure_type": "storage_tank" if s["kind"] == "tank" else "industrial_parcel",
+            "name": (s["tags"].get("name") or s["tags"].get("operator") or ""),
+            "farm_id": s["farm"],
+            "used_in_analysis": "Y",
+            "contains_tanks": s.get("contains_tanks", 0),
+        },
+    })
+for s in _excluded:
+    features.append({
+        "type": "Feature",
+        "geometry": {"type": "Polygon", "coordinates": [s["ring"]]},
+        "properties": {
+            "osm_way_id": s["id"],
+            "structure_type": "storage_tank" if s["kind"] == "tank" else "industrial_parcel",
+            "name": (s["tags"].get("name") or s["tags"].get("operator") or ""),
+            "farm_id": "",
+            "used_in_analysis": "N",
+            "exclusion_reason": s.get("reason", ""),
         },
     })
 gj = {"type": "FeatureCollection",

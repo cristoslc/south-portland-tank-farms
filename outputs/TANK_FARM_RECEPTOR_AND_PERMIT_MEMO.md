@@ -1,6 +1,6 @@
 # South Portland Tank Farms: Sensitive Receptors & Permit Renewals
 ## Executive summary + full findings + methodology
-*Protect South Portland — research memo. Compiled 2026-09-24. This is the public copy; the companion dataset files are in this repository (`data/`, `outputs/`), and the fact-check log is at `outputs/FACTCHECK.md`.*
+*Protect South Portland — research memo. Compiled 2026-09-24. Data and datasets in `projects/psp/sleuthing-tank-farms/`. Fact-check log: `FACTCHECK.md`.*
 
 > **AI disclosure:** This report was produced with substantial AI assistance under a human-steered workflow: an AI research agent performed the searches, data compilation, geocoding, and distance calculations described in the Methodology (§5), under continuous human direction, review, and editing; all findings were verified against primary documents (cited below) that a human selected and inspected. This corresponds to "AI-primary / human-steered" use under the Partnership on AI's AI-Generated Content guidance [19]. Questions about methods or data: contact Protect South Portland.
 
@@ -60,18 +60,20 @@ Total: **42 sensitive sites**. The more conservative address-to-address method g
 
 # 3. GIS fence-line analysis (preferred)
 
-Distances are measured from each receptor to the **nearest tank-farm structure** — OpenStreetMap industrial parcel boundaries and the 111 individually mapped storage tanks. Receptors were assembled from three inventories: all South Portland public schools (NCES) [13], all licensed child care programs in the Maine OCFS Child Care Choices search (union of six searches, one per tank farm) [14], and senior housing from the South Portland Housing Authority plus state-licensed assisted-living homes [12]. 166 unique child care programs were captured.
+Distances are measured from each receptor to the **nearest tank-farm structure** — OpenStreetMap storage tanks and the parcels that contain them (corrected set: 117 structures; see §6 note 7). Receptors were assembled from three inventories: all South Portland public schools (NCES) [13], all licensed child care programs in the Maine OCFS Child Care Choices search (union of six searches, one per tank farm) [14], and senior housing from the South Portland Housing Authority plus state-licensed assisted-living homes [12]. 166 unique child care programs were captured.
 
 **Per-farm counts within 1 mile of the fence line:**
 
-| Tank farm | Schools | Centers/nurseries | Family homes | Senior housing |
-|---|---|---|---|---|
-| Global (1 Clark Rd) | 3 | 8 | 3 | 1 — Ridgeland Estates |
-| CITGO (102 Mechanic St) | 4 | 9 + 2 nurseries | 5 | 3 — Gordon Green, Ridgeland Estates, Sawyer Street House |
-| Buckeye (170 Lincoln St) | 1 | 8 + 1 nursery | 3 | 1 — Ridgeland Estates |
-| Gulf/Sunoco (175 Front St) | 2 | 8 + 2 nurseries | 2 | 4 — Betsy Ross House, Gordon Green, One Willow Manor, Sawyer Street House |
-| Sprague (59 Main St) | 4 | 6 | 3 | 5 — Linton Street, Ridgeland Estates, Thornton Heights Commons, Wescott, Wilson Street |
-| PPLC (30 Hill St) | 4 | 6 | 5 | 1 — Ridgeland Estates |
+| Tank farm | All receptors within 1 mi |
+|---|---|
+| Global (1 Clark Rd) | 15 |
+| CITGO (102 Mechanic St) | 24 |
+| Buckeye (170 Lincoln St) | 10 |
+| Gulf/Sunoco (175 Front St) | 12 |
+| Sprague (59 Main St) | 18 |
+| PPLC (30 Hill St) | 17 |
+
+*Fence-line geometry uses a corrected structure set (see §6 note 7 and the Structure Audit Addendum): 117 mapped structures — storage tanks, parcels containing tanks, and operator-tagged oil parcels — after excluding piers/wharves, buoy yards, a shipyard, and bare industrial parcels with no tanks that earlier versions wrongly shaded.*
 
 **Union — closest fence-line distance for every site inside the circle:**
 
@@ -121,7 +123,7 @@ Distances in miles, straight-line, receptor address → tank farm street address
 3. **Public schools** — NCES CCD school directory (7 schools, 2025-26 directory year) [13]. Kaler (165 South Kelsey St) no longer operates as a school but remains in active use for children's programming — it hosted a summer camp in 2026 — so it is counted as a receptor.
 4. **Licensed child care** — Maine OCFS "Child Care Choices" search (search.childcarechoices.me), all four provider types (Family Based, Center Based, Nursery, CCAP License-Exempt). One search per tank farm coordinate; union = **166 unique programs** [14]. Includes all licensed programs, even expired/conditional licenses.
 5. **Senior housing** — South Portland Housing Authority properties [12] + state-licensed assisted-living/residential-care homes (license numbers cross-checked). Thornton Heights Commons is elderly-preference but mixed-age.
-6. **Permit documents** — Maine DEP license archive (maine.gov/dep/ftp/AIR/licenses/), DEP major-project pages [10], and DEP transfer orders [6]. Every cited license order is public record and downloadable from the Maine DEP archive (URLs in References).
+6. **Permit documents** — Maine DEP license archive (maine.gov/dep/ftp/AIR/licenses/), DEP major-project pages [10], and DEP transfer orders [6]. Every license PDF cited is saved in this folder.
 7. **Emission limits** — each facility's facility-wide VOC/HAP limits as stated in its own DEP license order (refs 2–9), including OCR of the two scanned orders (Sprague, Buckeye).
 8. **Geocoding** — Nominatim/OpenStreetMap (1 req/sec, cached in `geocode_cache.json`).
 
@@ -143,7 +145,7 @@ Retrieve each facility's most recent DEP air license order from maine.gov/dep/ft
 - *Senior housing:* on spha.net, list the Housing Authority's elderly properties (Betsy Ross House, Ridgeland Estates, etc.) with their addresses [12]; then list the city's state-licensed assisted-living and residential-care homes (any current Maine DHHS assisted-living directory, or the licensing numbers shown on facilities' pages, e.g., RCC610 for Linton Street).
 
 **Step 3 — Geocode every address.**
-For each receptor address, enter it into a geocoding service (Google Maps, or nominatim.openstreetmap.org). Record the latitude and longitude it returns. Rate-limit polite free services to one lookup per second. A handful of addresses may fail; retry them without apartment/unit numbers. (All 171 geocoded points used here are saved in `data/geocode_cache.json` if you prefer to skip this step.)
+For each receptor address, enter it into a geocoding service (Google Maps, or nominatim.openstreetmap.org). Record the latitude and longitude it returns. Rate-limit polite free services to one lookup per second. A handful of addresses may fail; retry them without apartment/unit numbers. (All 171 geocoded points used here are saved in geocode_cache.json if you prefer to skip this step.)
 
 **Step 4 — Get the tank farm fence lines.**
 Open overpass-turbo.eu and run this query for the study area (bbox south 43.62, west −70.31, north 43.66, east −70.22): `way["man_made"="storage_tank"](43.62,-70.31,43.66,-70.22); way["landuse"="industrial"](43.62,-70.31,43.66,-70.22); out geom;` — export the result as GeoJSON. This returns the mapped outlines of the storage tanks and the industrial parcels they sit on (113 tanks and 37 parcels at the time of this study) [17]. Alternatively, in QGIS load the OSM layer and visually select the tank farm parcels; or request parcel polygons from the City of South Portland assessor's GIS for the most authoritative boundaries.
@@ -155,7 +157,7 @@ In QGIS (free, qgis.org): import the receptor points (spreadsheet → delimited 
 On maine.gov/dep/ftp/AIR/licenses/, open the ch115 (state licenses) and titlev (Part 70/Title V) folders and find each facility's most recent order PDF; read the signature date, the term sentence ("The term of this license shall be five/ten (5/10) years from the signature date above"), and the facility-wide VOC/HAP emission limits (in the Registration section's "Total Licensed Annual Emissions" table and the Order section's "Facility Wide Limits"). For scanned orders, use a printed copy and read the tables by eye. Check DEP's major-projects pages (maine.gov/dep/projects/) for in-progress renewals (PPLC's ch. 600 marine terminal renewal is there [10]). Check DEP's "Opportunity for Comment" page for active comment periods. For anything unclear (as with Buckeye, see §6 note 5), call the Bureau of Air Quality at 207-287-7688 or file a FOAA request for the application log.
 
 **Step 7 — Verify and update.**
-Re-check the OCFS search before each use of the counts (listings change); keep the dated OCFS result capture with your records. Refresh the OSM query each time, since mapping improves over time. Any change to the numbers in this memo should be traceable to a re-run of Steps 2–5.
+Re-check the OCFS search before each use of the counts (listings change); keep the dated OCFS result capture (ccc_*.html) with your records. Refresh the OSM query each time, since mapping improves over time. Any change to the numbers in this memo should be traceable to a re-run of Steps 2–5.
 
 ## 5.4 Dataset files
 
@@ -168,8 +170,8 @@ Re-check the OCFS search before each use of the counts (listings change); keep t
 | `overpass_tanks.json` | Raw OSM structures (tanks + industrial parcels) |
 | `polygon_results.txt` | Full console output of the fence-line analysis |
 | `A0197HR.pdf`, `A0460HR.pdf`, `A0432SRM.pdf`, `A0390PRM.pdf`, `A0179PRM.pdf`, `A0179RM.pdf`, `A0432PM.pdf`, `A0282GR.pdf`, `A0282HA.pdf`, `A0390RT.pdf`, `A0282_fenceline.pdf` | Source DEP license orders and transfer approvals |
-| (DEP legislative report) | "Measurement and Control of Emissions from Aboveground Petroleum Storage Tanks" (Jan 2021) [20] — maine.gov/dep/publications/reports/ |
-| `ccc_*.html` | Raw OCFS search results per farm (6 files; raw captures retained in the project archive) |
+| `MEDEP_tank_report_2021.pdf` | DEP's legislative report, "Measurement and Control of Emissions from Aboveground Petroleum Storage Tanks" (Jan 2021) [20] |
+| `ccc_*.html` | Raw OCFS search results per farm (6 files) |
 
 # 6. Caveats
 1. Fence-line geometry comes from OpenStreetMap — community-mapped. Where a farm's parcel is not fully mapped, distance leans on individual tank footprints. The City of South Portland's assessor GIS would be the parcel-exact gold standard.
@@ -178,6 +180,7 @@ Re-check the OCFS search before each use of the counts (listings change); keep t
 4. OCFS results include programs with expired or conditional licenses; the search page states this explicitly [14].
 5. Permit dates come from the DEP license orders' signature blocks; term lengths (5 or 10 years) are stated in each order. Buckeye's status is the one inference in this memo: the 2015 order states a 5-year term, no newer A-0282 document appears in DEP's public archives (checked Sep 2026), and the facility's quarterly fenceline reports through Q1 2026 still cite A-282-70-G-R/A-282-70-H-A [9][11] — all consistent with an evergreen-extended license, but the application log itself requires a FOAA request or a call to DEP to see. Two false leads were ruled out: DEP's December 2025 public-comment notice (id 13337490) is a NOx RACT draft for Sappi Westbrook, and EPA's January 2026 public notice for Buckeye (ME0000485) is the facility's wastewater (MEPDES) permit renewal, not air.
 6. Emission-limit figures in §1 are each facility's licensed facility-wide limits as stated in its DEP order [2][3][4][5][7][9]; these are license caps, not measured emissions. The two scanned orders (Sprague 2018, Buckeye 2015) were read via OCR; figures should be double-checked against a printed copy before publication. Buckeye's VOC/HAP limits date from 2015 and may have changed in a newer license that is not publicly archived.
+7. **Fence-line structure correction (Sept 28, 2026 audit):** the OSM query originally picked up non-petroleum facilities near the farms via `landuse=industrial` — piers/wharves (Custom House, Widgery, one unnamed), two Buoy Yards, the Yard South shipyard, and bare industrial parcels with no tanks. These inflated Gulf/Sunoco and Buckeye proximity for several Portland-side sites and shaded non-tank-farm areas on the map. The corrected rule (`src/farm_structures.py`): include storage tanks, parcels containing mapped tanks, and parcels tagged or named for oil operators; exclude the rest. Union count 42 (unchanged headline: 7 schools / 25 child care / 9 senior); per-farm counts now Buckeye 10, Gulf/Sunoco 12, Sprague 18, PPLC 17 (Global 15, CITGO 24 unchanged). Full trail: Structure Audit Addendum.
 
 # 7. Regulatory context (official DEP report)
 

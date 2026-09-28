@@ -43,17 +43,11 @@ if buffer_geom["type"] == "Polygon":
 else:
     BUFFER_RINGS = [mp[0] for mp in buffer_geom["coordinates"]]
 BUFFER_RINGS = [[[c[1], c[0]] for c in ring] for ring in BUFFER_RINGS]
-structs = json.load(open(os.path.join(DATA, "overpass_tanks.json")))
-polys = []
-for e in structs.get("elements", []):
-    g = e.get("geometry")
-    if not g: continue
-    ring = [[pt["lon"], pt["lat"]] for pt in g]
-    clat = sum(p[1] for p in ring)/len(ring); clon = sum(p[0] for p in ring)/len(ring)
-    best = min(FARMS, key=lambda f: hav(clat, clon, f["lat"], f["lon"]))
-    if hav(clat, clon, best["lat"], best["lon"]) <= 1200:
-        tags = e.get("tags", {}) or {}
-        polys.append({"ring": ring, "kind": "tank" if tags.get("man_made")=="storage_tank" else "parcel", "farm": best["id"]})
+import sys
+sys.path.insert(0, os.path.join(HERE, "src"))
+from farm_structures import load as fs_load
+_assigned, _excluded = fs_load(HERE)
+polys = [{"ring": s["ring"], "kind": s["kind"], "farm": s["farm"]} for s in _assigned]
 
 def cat_group(c):
     if c == "public school": return ("school","#1b4332")

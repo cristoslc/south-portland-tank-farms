@@ -18,6 +18,7 @@ The report and fact-check log are published here in full; the DEP license-order 
 | `outputs/gis/tank_farm_facilities.csv` | Six facilities with anchor coordinates, WKT, DEP license numbers, renewal dates, and facility-wide VOC/HAP limits. |
 | `outputs/gis/receptor_farm_distances_long.csv` | **Tidy long format** — 1,026 rows (171 receptors × 6 farms), one `distance_mi`/`distance_m` per row with `within_1mi` flag. Ideal for pivots, filters, and joins. |
 | `outputs/gis/receptor_counts_by_farm.csv` | Per-farm counts of receptors within 1 mile, by category. |
+| `outputs/STRUCTURE_AUDIT_ADDENDUM.md` | Audit trail for the fence-line geometry correction (Sept 2026): documents the non-tank-farm parcels excluded and the count impact. |
 | `outputs/south_portland_tank_farms_map.png` | **Branded static map** (print-ready, Letter landscape): fence-line polygons, 1-mile rings, receptors by category, facility labels/addresses, DEP VOC monitor sites. |
 | `outputs/map_interactive.html` | **Interactive Leaflet map** — open in any browser: clickable facilities (permit + VOC cap), receptors (measured distance), monitor stations, toggle-able 1-mile rings. |
 | `data/receptor_fenceline_distances.csv` | **Master dataset** — 171 receptors (7 public schools, 12 senior facilities, 152 child care programs) with lat/lon, distance in miles to each of 6 tank-farm fence lines (OpenStreetMap parcels/tanks), nearest farm, and within-1-mile flag. |
@@ -36,6 +37,7 @@ The report and fact-check log are published here in full; the DEP license-order 
 - Kaler Elementary: 0.04 mi from Portland Pipe Line's parcel. Betsy Ross House
   (SPHA senior housing): directly adjacent to Gulf/Sunoco's parcel.
 - Facility-wide VOC license caps total ~597 tpy across the six facilities.
+- All 7 public schools, 25 licensed child care programs, and 9 senior housing facilities within 1 mile of a tank-farm fence line (117-structure corrected set).
 - Permit renewals: PPLC ch.600 marine renewal pending (accepted Aug 2025);
   Sprague ~2028; CITGO ~2030; Global/Gulf/Sunoco ~2033; Buckeye nominally
   expired ~2020, operating under Maine's evergreen rule.

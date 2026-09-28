@@ -48,17 +48,13 @@ def pt_to_ring_dist(lat, lon, ring):
 def ring_centroid(ring):
     return sum(p[1] for p in ring)/len(ring), sum(p[0] for p in ring)/len(ring)
 
-# ---- OSM structures ----
-osm = json.load(open('overpass_tanks.json'))
-structures = []
-for e in osm['elements']:
-    t = e.get('tags', {}) or {}
-    geom = e.get('geometry')
-    if not geom:
-        continue
-    ring = [[g['lon'], g['lat']] for g in geom]
-    kind = 'tank' if t.get('man_made') == 'storage_tank' else 'parcel'
-    structures.append({'kind': kind, 'name': t.get('name') or t.get('operator') or '', 'ring': ring})
+# ---- OSM structures (corrected rule via farm_structures) ----
+import sys
+sys.path.insert(0, os.path.join(HERE, 'src'))
+from farm_structures import load as fs_load
+_assigned, _excluded = fs_load(HERE)
+structures = [{'kind': s['kind'], 'name': (s['tags'].get('name') or s['tags'].get('operator') or ''),
+               'ring': s['ring'], 'farm': s['farm']} for s in _assigned]
 
 TANKS = {
     "Global":     (43.634665, -70.275381, "Global Companies LLC", "1 Clark Road"),
@@ -68,17 +64,11 @@ TANKS = {
     "Sprague":    (43.637217, -70.286403, "Sprague Operating Resources", "59 Main Street"),
     "PPLC":       (43.629026, -70.271068, "Portland Pipe Line Corp.", "30 Hill Street"),
 }
-ASSIGN_R = 1200.0
-farm_structs = {k: [] for k in TANKS}
+FARM_KEY = {"global": "Global", "citgo": "CITGO", "buckeye": "Buckeye",
+            "gulf_sunoco": "GulfSunoco", "sprague": "Sprague", "pplc": "PPLC"}
+farm_structs = {}
 for s in structures:
-    clat, clon = ring_centroid(s['ring'])
-    bk, bd = None, float('inf')
-    for k, (tlat, tlon, _, _) in TANKS.items():
-        dd = haversine(clat, clon, tlat, tlon)
-        if dd < bd:
-            bk, bd = k, dd
-    if bd <= ASSIGN_R:
-        farm_structs[bk].append(s)
+    farm_structs.setdefault(FARM_KEY[s['farm']], []).append(s)
 
 def farm_distance(lat, lon, farm):
     best = float('inf')

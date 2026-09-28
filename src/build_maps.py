@@ -39,17 +39,10 @@ def hav(a, b, c, d):
     return 2*R*math.asin(math.sqrt(x))
 
 # structures
-structures = json.load(open(os.path.join(DATA, "overpass_tanks.json")))
-features = []
-for e in structures.get("elements", []):
-    g = e.get("geometry")
-    if not g: continue
-    ring = [[p["lon"], p["lat"]] for p in g]
-    clat = sum(p[1] for p in ring)/len(ring); clon = sum(p[0] for p in ring)/len(ring)
-    best = min(FARMS, key=lambda f: hav(clat, clon, f[3], f[4]))
-    if hav(clat, clon, best[3], best[4]) <= 1200:
-        tags = e.get("tags", {}) or {}
-        features.append({"ring": ring, "kind": "tank" if tags.get("man_made")=="storage_tank" else "parcel"})
+import sys
+sys.path.insert(0, os.path.join(HERE, "src"))
+from farm_structures import load as fs_load
+features = [{"ring": s["ring"], "kind": s["kind"]} for s in fs_load(HERE)[0]]
 print(f"{len(features)} structures")
 
 # ---- tiles: zoom 14, 6x5 ----

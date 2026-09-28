@@ -94,9 +94,7 @@ The following claims appeared in earlier drafts citing the Protect South Portlan
 - PPLC "largest permitted HAP emitter" historical ranking; "6–8 of 23 tanks refilled" — **dropped**; the Feb 2025 PPLC order (FC-1.6) is now the sole basis for PPLC's limits and throughput.
 - "Stack testing at next license renewal" recommendation — **re-framed** as the community's ask (§7), not as an official recommendation; the DEP report actually recommended developing an EPA test method (FC-5.3).
 
-## Sources of record
-
-All DEP license orders cited above are public record at maine.gov/dep/ftp/AIR/licenses/ (folders ch115 and titlev). The raw OCFS search captures, geocode cache, and OSM structure export ship with this repository in `data/`.
+## Sources-of-record on file (this folder)
 
 - DEP license orders: A0197HR.pdf, A0460HR.pdf, A0432SRM.pdf, A0432PM.pdf, A0390PRM.pdf, A0390RT.pdf, A0179PRM.pdf, A0179RM.pdf, A0282GR.pdf, A0282HA.pdf
 - DEP legislative report: MEDEP_tank_report_2021.pdf
