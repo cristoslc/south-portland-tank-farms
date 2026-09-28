@@ -200,7 +200,7 @@ fig.text(lx, 0.905, "", fontsize=1)
 
 items = [(FOREST,"s","Public school (7)"), (RED,"^","Child care (25)"),
          ("#7b2cbf","D","Senior housing (9)"), (AMBER,"*","Tank farm (6)"),
-         (AMBER,"ring","1-mile radius"), (PINE,"v","DEP VOC monitor")]
+         (AMBER,"ring","1-mile fence-line buffer"), (PINE,"v","DEP VOC monitor")]
 y = 0.895
 for c, m, label in items:
     axl = fig.add_axes([lx, y-0.012, 0.045, 0.024]); axl.axis("off"); axl.set_xlim(0,1); axl.set_ylim(0,1)
