@@ -82,15 +82,41 @@ for dx in range(COLS):
                 time.sleep(2)
         time.sleep(0.35)
 print(f"{n_fetched} tiles")
-from PIL import ImageEnhance
-canvas = Image.blend(Image.new("RGB", canvas.size, (255,255,255)), canvas, 0.82)
-W, H = canvas.size
+
 
 def lonlat_px_abs(lat, lon):
     n = 2.0**Z
     xt = (lon+180)/360*n*TP - x0*TP
     yt = (1-math.log(math.tan(math.radians(lat))+1/math.cos(math.radians(lat)))/math.pi)/2*n*TP - y0*TP
     return xt, yt
+
+# --- fade the basemap, full strength inside the 1-mile fence-line buffer ---
+from PIL import ImageEnhance
+FADED = 0.30          # opacity of basemap outside the buffer (0..1)
+FULL = 0.98           # opacity inside the buffer
+faded = Image.blend(Image.new("RGB", canvas.size, (255,255,255)), canvas, FADED)
+full  = Image.blend(Image.new("RGB", canvas.size, (255,255,255)), canvas, FULL)
+# buffer mask at pixel resolution (soft edge ~4px for a smooth transition)
+import json as _json
+_bgj = _json.load(open(os.path.join(HERE, "outputs", "gis", "tank_farm_1mile_buffer.geojson")))
+_bg = _bgj["features"][0]["geometry"]
+def _ring_px(ring):
+    return [lonlat_px_abs(la, lo) for lo, la in ring]   # canvas coords (y down)
+if _bg["type"] == "Polygon":
+    _rings = [_bg["coordinates"][0]]
+else:
+    _rings = [mp[0] for mp in _bg["coordinates"]]
+_mask = Image.new("L", canvas.size, 255)   # start fully faded (mask=0 => faded)
+from PIL import ImageDraw, ImageFilter
+_dr = ImageDraw.Draw(_mask)
+_dr.rectangle([0, 0, canvas.size[0], canvas.size[1]], fill=0)   # canvas coords, y down
+for _r in _rings:
+    _pts = [(x, y) for x, y in _ring_px(_r)]
+    if len(_pts) >= 3:
+        _dr.polygon(_pts, fill=255)
+_mask = _mask.filter(ImageFilter.GaussianBlur(3))
+canvas = Image.composite(full, faded, _mask)
+W, H = canvas.size
 
 import matplotlib
 matplotlib.use("Agg")
