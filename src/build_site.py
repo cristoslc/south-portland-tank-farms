@@ -39,15 +39,11 @@ pre{{background:#f9fafb;padding:12px;overflow-x:auto;font-size:.85em}}
 .card{{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.06)}}
 .card h3{{margin:.1em 0 .4em;color:var(--forest)}}
 .stat{{font-size:2rem;font-weight:800;color:var(--leaf)}}
-/* --- interactive map page: fill viewport under header --- */
-body.mappage{{margin:0}}
-body.mappage main{{max-width:none;margin:0;padding:0}}
-body.mappage #map{{position:fixed;top:57px;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1}}
-.map-explain{{position:fixed;left:14px;bottom:14px;z-index:1000;max-width:440px;
-  background:rgba(255,255,255,.95);border:1px solid #e0e0e0;border-radius:8px;
-  padding:8px 12px;box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:.82rem}}
-.map-explain summary{{cursor:pointer;font-weight:700;color:var(--forest)}}
-.map-explain[open]{{padding-bottom:12px;max-height:60vh;overflow:auto}}
+".map-layout{{display:flex;gap:14px;height:calc(100vh - 57px - 28px);padding:14px;box-sizing:border-box}}
+.map-frame{{flex:1 1 auto;position:relative;border:1px solid #e0e0e0;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(27,67,50,.10);background:#f9fafb}}
+#map{{position:absolute;inset:0;width:100%;height:100%}}
+.map-sidebar{{flex:0 0 295px;max-width:295px;overflow-y:auto;background:#fff;border:1px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 10px rgba(27,67,50,.10);padding:14px 16px;font-size:.85rem;line-height:1.5}}
+@media (max-width:840px){{.map-layout{{flex-direction:column;height:auto}}.map-frame{{height:62vh;flex:none}}.map-sidebar{{flex:none;max-width:none;width:auto}}}}
 footer.site{{background:var(--forest);color:#fff;padding:22px;margin-top:40px;font-size:.85rem}}
 footer.site .wrap{{max-width:980px;margin:0 auto}}
 footer.site a{{color:var(--pale)}}
