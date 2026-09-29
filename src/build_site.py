@@ -5,6 +5,9 @@ import os, markdown
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root
 OUT = os.path.join(HERE, "docs")
 os.makedirs(OUT, exist_ok=True)
+import sys as _sys
+_sys.path.insert(0, os.path.join(HERE, "src"))
+from map_block_template import MAP_BODY_TEMPLATE as MAP_BLOCK_TEMPLATE
 
 FOREST = "#1b4332"; PINE = "#2d6a4f"; LEAF = "#52b788"; PALE = "#d8f3dc"; MUTED = "#555"
 
@@ -36,6 +39,15 @@ pre{{background:#f9fafb;padding:12px;overflow-x:auto;font-size:.85em}}
 .card{{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.06)}}
 .card h3{{margin:.1em 0 .4em;color:var(--forest)}}
 .stat{{font-size:2rem;font-weight:800;color:var(--leaf)}}
+/* --- interactive map page: fill viewport under header --- */
+body.mappage{{margin:0}}
+body.mappage main{{max-width:none;margin:0;padding:0}}
+body.mappage #map{{position:fixed;top:57px;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1}}
+.map-explain{{position:fixed;left:14px;bottom:14px;z-index:1000;max-width:440px;
+  background:rgba(255,255,255,.95);border:1px solid #e0e0e0;border-radius:8px;
+  padding:8px 12px;box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:.82rem}}
+.map-explain summary{{cursor:pointer;font-weight:700;color:var(--forest)}}
+.map-explain[open]{{padding-bottom:12px;max-height:60vh;overflow:auto}}
 footer.site{{background:var(--forest);color:#fff;padding:22px;margin-top:40px;font-size:.85rem}}
 footer.site .wrap{{max-width:980px;margin:0 auto}}
 footer.site a{{color:var(--pale)}}
@@ -178,50 +190,16 @@ MON_JS = _grab("MON")
 POLYS_JS = _grab("POLYS")
 BUFFER_JS = _grab("BUFFER_RINGS")
 
-MAP_BODY = f"""
-<div class="callout" style="margin-bottom:14px"><b>How to read this map.</b>
-Shaded polygons are the tank farm structures mapped in OpenStreetMap (individual storage tanks and the parcels
-that contain them). The dashed amber boundary is the <b>1-mile fence-line buffer</b> &mdash; the union of all
-tank/parcel outlines extended one statute mile; receptors inside that zone are the sites counted in the
-research. Click any marker for measured distances and permit details.</div>
-<div id="map" style="height:560px;border-radius:8px;border:1px solid #e0e0e0"></div>
-<p class="muted" style="margin-top:10px">Straight-line distances to OSM-mapped fence lines, not walking distances.
-Fence-line geometry is community-mapped OSM data. Sources: Maine DEP air license orders, OCFS Child Care Choices
-(Sept 24 2026), NCES, SPHA. DEP monitor placements are approximate. Datasets:
-<a href="data.html">data files page</a> &middot; Repo:
-<a href="https://github.com/cristoslc/south-portland-tank-farms">github</a></p>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-const FARMS = {FARMS_JS};
-const RECS = {RECS_JS};
-const MON = {MON_JS};
-const POLYS = {POLYS_JS};
-const BUFFER_RINGS = {BUFFER_JS};
-const map = L.map('map').setView([43.6335, -70.278], 14);
-L.tileLayer('https://tile.openstormmap.org/{{z}}/{{x}}/{{y}}.png', {{maxZoom:19, attribution:'&copy; OpenStreetMap contributors (ODbL)'}}).addTo(map);
-"""
-# NOTE: fix tile url typo later; keep consistent with standalone
-MAP_BODY = MAP_BODY.replace("tile.openstormmap.org", "tile.openstreetmap.org")
-MAP_BODY += """
-const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
- childcare:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#d62828;transform:rotate(45deg);border:1.5px solid #fff"></div>',iconSize:[12,12],iconAnchor:[6,6]}),
- senior:L.divIcon({className:'',html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px"></div>',iconSize:[13,13],iconAnchor:[6,6]})};
-/* fade basemap outside the buffer */
-const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
-L.polygon([WORLD, ...BUFFER_RINGS],{stroke:false,fillColor:'#ffffff',fillOpacity:0.70,interactive:false}).addTo(map);
-POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5}).bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
-L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the sites counted in the research.').addTo(map);
-FARMS.forEach(f=>{L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} &middot; VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
-L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div style="background:#1b4332;color:#fff;padding:2px 7px;border-radius:4px;font-weight:700;font-size:.72rem;white-space:nowrap">${f.name.split(' ')[0]}</div>`})}).addTo(map);});
-RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
-MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff"></div>'})}).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitor (approximate)</i>`).addTo(map);});
-</script>"""
-
+# interactive map page: fill layer data into the site-chrome template
+_far = {"FARMS": FARMS_JS, "RECS": RECS_JS, "MON": MON_JS, "POLYS": POLYS_JS, "BUFFER": BUFFER_JS}
+_map_html = MAP_BLOCK_TEMPLATE
+for _k, _v in _far.items():
+    _map_html = _map_html.replace("__" + _k + "__", _v)
 map_html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><title>Interactive Map — South Portland Tank Farms</title>
-<link rel="stylesheet" href="styles.css"></head><body>{HEADER}<main>{MAP_BODY}</main>{FOOTER}</body></html>"""
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Interactive Map - South Portland Tank Farms</title>
+<link rel="stylesheet" href="styles.css"></head><body class="mappage">{HEADER}{_map_html}</body></html>"""
 open(os.path.join(OUT, "map.html"), "w").write(map_html)
+print("wrote integrated map.html (full-viewport layout)")
 print("wrote integrated map.html")
 _binder = os.path.join(HERE, "outputs", "SouthPortland_TankFarms_Binder.pdf")
 if os.path.exists(_binder):
