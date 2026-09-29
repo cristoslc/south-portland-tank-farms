@@ -248,12 +248,6 @@ for s in ["42 sensitive sites within 1 mile of a fence line:",
           "Licensed VOC caps: ~597 tons/yr (DEP orders)"]:
     fig.text(lx, y, s, fontsize=9.6, color=TEXT); y -= 0.036
 
-y -= 0.012
-fig.text(lx, y, "NEXT PERMIT RENEWALS", fontsize=11, fontweight="bold", color=FOREST); y -= 0.038
-for s in ["Sprague ~2028 · CITGO/Pipe Line ~2030",
-          "Buckeye: 2015 license, evergreen",
-          "Global, Gulf/Sunoco ~2033"]:
-    fig.text(lx, y, s, fontsize=9.6, color=TEXT); y -= 0.033
 
 fig.text(lx, 0.065, "V▼  DEP VOC monitors: POG Ocean Gateway · PWC W Commercial ·", fontsize=8.2, color=MUTED)
 fig.text(lx, 0.045, "SPCC Cash Corner · SPFS Front St · SPMS Mechanic St ·", fontsize=8.2, color=MUTED)

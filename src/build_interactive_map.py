@@ -117,6 +117,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribu
 const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
  childcare:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#d62828;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[12,12],iconAnchor:[6,6]}),
  senior:L.divIcon({className:'',html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[13,13],iconAnchor:[6,6]})};
+/* fade basemap outside the buffer: white world-donut with the buffer as a hole */
+const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
+L.polygon([WORLD, ...BUFFER_RINGS], {stroke:false, fillColor:'#ffffff', fillOpacity:0.70, interactive:false}).addTo(map);
+
 POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5})
   .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Industrial parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
 L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the 42 counted sites.').addTo(map);
