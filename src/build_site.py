@@ -48,7 +48,7 @@ img{{max-width:100%;height:auto;border-radius:8px}}
 """
 
 HEADER = f"""<header class="site"><div class="wrap"><h1>Protect South Portland</h1><nav>
-<a href="index.html">Home</a><a href="report.html">Research Report</a><a href="factcheck.html">Fact-Check</a><a href="https://github.com/cristoslc/south-portland-tank-farms">Data (GitHub)</a></nav></div></header>"""
+<a href="index.html">Home</a><a href="report.html">Research Report</a><a href="factcheck.html">Fact-Check</a><a href="data.html">Data Files</a><a href="https://github.com/cristoslc/south-portland-tank-farms">GitHub</a></nav></div></header>"""
 
 FOOTER = f"""<footer class="site" style="margin-top:40px"><div class="wrap">
 Protect South Portland · ProtectSouthPortland.com · AI-assisted research compiled under human steering; all claims verified in the <a href="factcheck.html">fact-check log</a>.</div></footer>"""
@@ -81,6 +81,7 @@ index_body = f"""
   <li><a href="https://github.com/cristoslc/south-portland-tank-farms"><b>Downloadable data</b></a> — CSV/GeoJSON datasets, GIS point/polygon layers, maps (GitHub)</li>
   <li><a href="map.png"><b>Proximity map</b></a> — print-ready static map (PNG)</li>
   <li><a href="map.html"><b>Interactive map</b></a> — Leaflet map with popups</li>
+  <li><a href="data.html"><b>Data files</b></a> — CSV/GeoJSON layers at clean site URLs (GIS-ready)</li>
   <li><a href="SouthPortland_TankFarms_Binder.pdf"><b>Evidence binder (PDF)</b></a> — print-ready report + fact-check + map in one document</li>
 </ul>
 <div class="callout"><b>About this project.</b> Research compiled with AI assistance under human steering for Protect South Portland. Every factual claim is verified against official Maine DEP license documents, with the verification trail published in the fact-check log.</div>
@@ -114,6 +115,53 @@ for src, out, title in [("TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md", "report.html",
     open(os.path.join(OUT, out), "w").write(html)
     print("wrote", out)
 
+# data files page
+data_rows = [
+    ("receptors_points.csv", "Receptor point layer (171 sites)", "CSV",
+     "One row per receptor: lat/lon, WKT, distances in miles + meters to each farm fence line, within-1-mile flag.",
+     "QGIS: Layer ▸ Add Layer ▸ Delimited Text (point coordinates, EPSG:4326)"),
+    ("receptor_farm_distances_long.csv", "Tidy distances (171 × 6 farms)", "CSV",
+     "Long format: one distance per receptor-farm pair, with within_1mi flag. Best shape for joins/pivots/database loads.",
+     "Any spreadsheet, R (read.csv), pandas, or Postgres COPY"),
+    ("receptor_counts_by_farm.csv", "Per-farm within-1-mile counts", "CSV",
+     "Summary table: counts by category for each of the six facilities.",
+     "Direct reference table"),
+    ("tank_farm_facilities.csv", "Tank farm facilities (6)", "CSV",
+     "Facility coordinates, DEP license numbers, renewal dates, facility-wide VOC/HAP limits.",
+     "GIS point import or tabular reference"),
+    ("tank_farm_structures.geojson", "Fence-line structures (117 + 8 excluded)", "GeoJSON",
+     "OSM polygons: storage tanks + qualifying parcels, with farm assignment and exclusion reasons for non-tank-farm structures.",
+     "QGIS/geojson.io/Leaflet — loads directly"),
+    ("tank_farm_1mile_buffer.geojson", "1-mile fence-line buffer zone", "GeoJSON",
+     "Single merged polygon: union of all qualifying structures buffered one statute mile. Point-in-polygon = the report's 'within 1 mile' criterion (41/42 exact; 1 boundary case at 1.000 mi).",
+     "QGIS/geojson.io/Leaflet — loads directly"),
+    ("receptor_fenceline_distances.csv", "Master dataset (original wide format)", "CSV",
+     "Original analysis dataset with per-farm distance columns (miles).",
+     "Superseded by receptors_points.csv for GIS use; retained for lineage"),
+]
+data_body = """
+<h1>Data Files</h1>
+<p>GIS-ready datasets used in the research. Coordinates are WGS84 (EPSG:4326); distances are straight-line
+fence-line distances from OpenStreetMap-mapped structures. See the
+<a href="report.html">research report</a> for methodology and caveats, and the
+<a href="factcheck.html">fact-check log</a> for claim-by-claim verification.</p>
+<table>
+<tr><th>File</th><th>Contents</th><th>Format</th><th>Use</th></tr>
+"""
+for fn, label, fmt, desc, use in data_rows:
+    data_body += f'<tr><td><a href="data/{fn}"><code>{fn}</code></a></td><td><b>{label}</b><br>{desc}</td><td>{fmt}</td><td>{use}</td></tr>\n'
+data_body += "</table>"
+data_body += """
+<div class="callout"><b>License &amp; provenance.</b> Data: CC BY 4.0. Fence-line geometry: OpenStreetMap contributors, ODbL 1.0, via the project's self-hosted Overpass instance (osm.cristoslc.com, Maine daily extract, base 2026-09-27T20:10Z). Child care listings: Maine OCFS Child Care Choices (captured Sept 24, 2026). Schools: NCES. Senior housing: SPHA + state-licensed facilities. Repo mirrors everything at
+<a href="https://github.com/cristoslc/south-portland-tank-farms">github.com/cristoslc/south-portland-tank-farms</a>.</div>
+<p class="muted">Note: fence-line polygons are community-mapped OSM data; City of South Portland assessor GIS parcels would be the parcel-exact upgrade. Distances &lt; ~0.01 mi mean the receptor point sits on/inside the mapped parcel edge ("directly adjacent").</p>
+"""
+html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Data Files — South Portland Tank Farms</title>
+<link rel="stylesheet" href="styles.css"></head><body>{HEADER}<main>{data_body}</main>{FOOTER}</body></html>"""
+open(os.path.join(OUT, "data.html"), "w").write(html)
+print("wrote data.html")
+
 # copy map + interactive map
 import shutil
 shutil.copy(os.path.join(HERE, "outputs", "south_portland_tank_farms_map.png"), os.path.join(OUT, "map.png"))
@@ -121,4 +169,21 @@ shutil.copy(os.path.join(HERE, "outputs", "map_interactive.html"), os.path.join(
 _binder = os.path.join(HERE, "outputs", "SouthPortland_TankFarms_Binder.pdf")
 if os.path.exists(_binder):
     shutil.copy(_binder, os.path.join(OUT, "SouthPortland_TankFarms_Binder.pdf"))
+
+# copy GIS/data files into docs/data/ for clean site URLs
+_gis_src = os.path.join(HERE, "outputs", "gis")
+_gis_dst = os.path.join(OUT, "data")
+os.makedirs(_gis_dst, exist_ok=True)
+GIS_FILES = ["receptors_points.csv", "receptor_farm_distances_long.csv",
+             "receptor_counts_by_farm.csv", "tank_farm_facilities.csv",
+             "tank_farm_structures.geojson", "tank_farm_1mile_buffer.geojson"]
+for fn in GIS_FILES:
+    src_path = os.path.join(_gis_src, fn)
+    if os.path.exists(src_path):
+        shutil.copy(src_path, os.path.join(_gis_dst, fn))
+_raw_dst = os.path.join(OUT, "data")
+for fn in ["receptor_fenceline_distances.csv"]:
+    src_path = os.path.join(HERE, "outputs", fn)
+    if os.path.exists(src_path):
+        shutil.copy(src_path, os.path.join(_raw_dst, fn))
 print("docs/ built:", sorted(os.listdir(OUT)))
