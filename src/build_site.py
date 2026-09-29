@@ -48,7 +48,7 @@ img{{max-width:100%;height:auto;border-radius:8px}}
 """
 
 HEADER = f"""<header class="site"><div class="wrap"><h1>Protect South Portland</h1><nav>
-<a href="index.html">Home</a><a href="report.html">Research Report</a><a href="factcheck.html">Fact-Check</a><a href="data.html">Data Files</a><a href="https://github.com/cristoslc/south-portland-tank-farms">GitHub</a></nav></div></header>"""
+<a href="index.html">Home</a><a href="report.html">Research Report</a><a href="factcheck.html">Fact-Check</a><a href="map.html">Interactive Map</a><a href="data.html">Data Files</a><a href="https://github.com/cristoslc/south-portland-tank-farms">GitHub</a></nav></div></header>"""
 
 FOOTER = f"""<footer class="site" style="margin-top:40px"><div class="wrap">
 Protect South Portland · ProtectSouthPortland.com · AI-assisted research compiled under human steering; all claims verified in the <a href="factcheck.html">fact-check log</a>.</div></footer>"""
@@ -80,7 +80,7 @@ index_body = f"""
   <li><a href="factcheck.html"><b>Fact-check log</b></a> — every claim with its source and direct evidence quote</li>
   <li><a href="https://github.com/cristoslc/south-portland-tank-farms"><b>Downloadable data</b></a> — CSV/GeoJSON datasets, GIS point/polygon layers, maps (GitHub)</li>
   <li><a href="map.png"><b>Proximity map</b></a> — print-ready static map (PNG)</li>
-  <li><a href="map.html"><b>Interactive map</b></a> — Leaflet map with popups</li>
+  <li><a href="map.html"><b>Interactive map</b></a> — facilities, receptors, buffer zone, DEP monitors (site-styled)</li>
   <li><a href="data.html"><b>Data files</b></a> — CSV/GeoJSON layers at clean site URLs (GIS-ready)</li>
   <li><a href="SouthPortland_TankFarms_Binder.pdf"><b>Evidence binder (PDF)</b></a> — print-ready report + fact-check + map in one document</li>
 </ul>
@@ -162,10 +162,64 @@ html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 open(os.path.join(OUT, "data.html"), "w").write(html)
 print("wrote data.html")
 
-# copy map + interactive map
+# copy static map; generate INTEGRATED interactive map page (site chrome)
 import shutil
 shutil.copy(os.path.join(HERE, "outputs", "south_portland_tank_farms_map.png"), os.path.join(OUT, "map.png"))
-shutil.copy(os.path.join(HERE, "outputs", "map_interactive.html"), os.path.join(OUT, "map.html"))
+
+# extract layer data from the standalone map HTML, then rebuild it inside site chrome
+import re, json as _json
+_standalone = open(os.path.join(HERE, "outputs", "map_interactive.html"), encoding="utf-8").read()
+def _grab(name):
+    m = re.search(r"const " + name + r"\s*=\s*(\[.*?\]);\n", _standalone, re.S)
+    return m.group(1) if m else "[]"
+FARMS_JS = _grab("FARMS")
+RECS_JS = _grab("RECS")
+MON_JS = _grab("MON")
+POLYS_JS = _grab("POLYS")
+BUFFER_JS = _grab("BUFFER_RINGS")
+
+MAP_BODY = f"""
+<div class="callout" style="margin-bottom:14px"><b>How to read this map.</b>
+Shaded polygons are the tank farm structures mapped in OpenStreetMap (individual storage tanks and the parcels
+that contain them). The dashed amber boundary is the <b>1-mile fence-line buffer</b> &mdash; the union of all
+tank/parcel outlines extended one statute mile; receptors inside that zone are the sites counted in the
+research. Click any marker for measured distances and permit details.</div>
+<div id="map" style="height:560px;border-radius:8px;border:1px solid #e0e0e0"></div>
+<p class="muted" style="margin-top:10px">Straight-line distances to OSM-mapped fence lines, not walking distances.
+Fence-line geometry is community-mapped OSM data. Sources: Maine DEP air license orders, OCFS Child Care Choices
+(Sept 24 2026), NCES, SPHA. DEP monitor placements are approximate. Datasets:
+<a href="data.html">data files page</a> &middot; Repo:
+<a href="https://github.com/cristoslc/south-portland-tank-farms">github</a></p>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const FARMS = {FARMS_JS};
+const RECS = {RECS_JS};
+const MON = {MON_JS};
+const POLYS = {POLYS_JS};
+const BUFFER_RINGS = {BUFFER_JS};
+const map = L.map('map').setView([43.6335, -70.278], 14);
+L.tileLayer('https://tile.openstormmap.org/{{z}}/{{x}}/{{y}}.png', {{maxZoom:19, attribution:'&copy; OpenStreetMap contributors (ODbL)'}}).addTo(map);
+"""
+# NOTE: fix tile url typo later; keep consistent with standalone
+MAP_BODY = MAP_BODY.replace("tile.openstormmap.org", "tile.openstreetmap.org")
+MAP_BODY += """
+const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
+ childcare:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#d62828;transform:rotate(45deg);border:1.5px solid #fff"></div>',iconSize:[12,12],iconAnchor:[6,6]}),
+ senior:L.divIcon({className:'',html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px"></div>',iconSize:[13,13],iconAnchor:[6,6]})};
+POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5}).bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
+L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the sites counted in the research.').addTo(map);
+FARMS.forEach(f=>{L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} &middot; VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
+L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div style="background:#1b4332;color:#fff;padding:2px 7px;border-radius:4px;font-weight:700;font-size:.72rem;white-space:nowrap">${f.name.split(' ')[0]}</div>`})}).addTo(map);});
+RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
+MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff"></div>'})}).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitor (approximate)</i>`).addTo(map);});
+</script>"""
+
+map_html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Interactive Map — South Portland Tank Farms</title>
+<link rel="stylesheet" href="styles.css"></head><body>{HEADER}<main>{MAP_BODY}</main>{FOOTER}</body></html>"""
+open(os.path.join(OUT, "map.html"), "w").write(map_html)
+print("wrote integrated map.html")
 _binder = os.path.join(HERE, "outputs", "SouthPortland_TankFarms_Binder.pdf")
 if os.path.exists(_binder):
     shutil.copy(_binder, os.path.join(OUT, "SouthPortland_TankFarms_Binder.pdf"))
