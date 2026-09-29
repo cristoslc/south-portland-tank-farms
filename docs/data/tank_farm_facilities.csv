@@ -1,0 +1,7 @@
+farm_id,operator,address,latitude,longitude,license,license_renewed,license_term_years,voc_limit_tpy,hap_limit_tpy,license_expires_approx,wkt
+global,Global Companies LLC,"1 Clark Road, South Portland, ME 04106",43.634665,-70.275381,A-432-71-S-R/M,2023-12-05,10,21.9,9.9,2033-12-05,POINT (-70.275381 43.634665)
+citgo,CITGO Petroleum Corp.,"102 Mechanic Street, South Portland, ME 04106",43.637390,-70.267687,A-460-70-H-R,2025-11-05,5,117.3,5.0,2030-11-05,POINT (-70.267687 43.637390)
+buckeye,South Portland Terminal LLC (Buckeye Terminals),"170 Lincoln Street, South Portland, ME 04106",43.636551,-70.285118,A-282-70-G-R / A-282-70-H-A,2015-11/12,5,135.4,14.1,nominally ~2020; evergreen pending renewal,POINT (-70.285118 43.636551)
+gulf_sunoco,Gulf Oil LP / Sunoco Midstream LLC,"175 Front Street, South Portland, ME 04106",43.650445,-70.238583,A-390-71-P-R/M,2023-02-22,10,49.9,24.9,2033-02-22,POINT (-70.238583 43.650445)
+sprague,Sprague Operating Resources LLC,"59 Main Street, South Portland, ME 04106",43.637217,-70.286403,A-179-71-P-R/M (SM),2018-03,10,49.9,24.9,2028-03,POINT (-70.286403 43.637217)
+pplc,Portland Pipe Line Corp.,"30 Hill Street, South Portland, ME 04106",43.629026,-70.271068,A-197-70-H-R,2025-02-24,5,220.0,24.9,2030-02-24,POINT (-70.271068 43.629026)

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Data Files — South Portland Tank Farms</title>
+<link rel="stylesheet" href="styles.css"></head><body><header class="site"><div class="wrap"><h1>Protect South Portland</h1><nav>
+<a href="index.html">Home</a><a href="report.html">Research Report</a><a href="factcheck.html">Fact-Check</a><a href="data.html">Data Files</a><a href="https://github.com/cristoslc/south-portland-tank-farms">GitHub</a></nav></div></header><main>
+<h1>Data Files</h1>
+<p>GIS-ready datasets used in the research. Coordinates are WGS84 (EPSG:4326); distances are straight-line
+fence-line distances from OpenStreetMap-mapped structures. See the
+<a href="report.html">research report</a> for methodology and caveats, and the
+<a href="factcheck.html">fact-check log</a> for claim-by-claim verification.</p>
+<table>
+<tr><th>File</th><th>Contents</th><th>Format</th><th>Use</th></tr>
+<tr><td><a href="data/receptors_points.csv"><code>receptors_points.csv</code></a></td><td><b>Receptor point layer (171 sites)</b><br>One row per receptor: lat/lon, WKT, distances in miles + meters to each farm fence line, within-1-mile flag.</td><td>CSV</td><td>QGIS: Layer ▸ Add Layer ▸ Delimited Text (point coordinates, EPSG:4326)</td></tr>
+<tr><td><a href="data/receptor_farm_distances_long.csv"><code>receptor_farm_distances_long.csv</code></a></td><td><b>Tidy distances (171 × 6 farms)</b><br>Long format: one distance per receptor-farm pair, with within_1mi flag. Best shape for joins/pivots/database loads.</td><td>CSV</td><td>Any spreadsheet, R (read.csv), pandas, or Postgres COPY</td></tr>
+<tr><td><a href="data/receptor_counts_by_farm.csv"><code>receptor_counts_by_farm.csv</code></a></td><td><b>Per-farm within-1-mile counts</b><br>Summary table: counts by category for each of the six facilities.</td><td>CSV</td><td>Direct reference table</td></tr>
+<tr><td><a href="data/tank_farm_facilities.csv"><code>tank_farm_facilities.csv</code></a></td><td><b>Tank farm facilities (6)</b><br>Facility coordinates, DEP license numbers, renewal dates, facility-wide VOC/HAP limits.</td><td>CSV</td><td>GIS point import or tabular reference</td></tr>
+<tr><td><a href="data/tank_farm_structures.geojson"><code>tank_farm_structures.geojson</code></a></td><td><b>Fence-line structures (117 + 8 excluded)</b><br>OSM polygons: storage tanks + qualifying parcels, with farm assignment and exclusion reasons for non-tank-farm structures.</td><td>GeoJSON</td><td>QGIS/geojson.io/Leaflet — loads directly</td></tr>
+<tr><td><a href="data/tank_farm_1mile_buffer.geojson"><code>tank_farm_1mile_buffer.geojson</code></a></td><td><b>1-mile fence-line buffer zone</b><br>Single merged polygon: union of all qualifying structures buffered one statute mile. Point-in-polygon = the report's 'within 1 mile' criterion (41/42 exact; 1 boundary case at 1.000 mi).</td><td>GeoJSON</td><td>QGIS/geojson.io/Leaflet — loads directly</td></tr>
+<tr><td><a href="data/receptor_fenceline_distances.csv"><code>receptor_fenceline_distances.csv</code></a></td><td><b>Master dataset (original wide format)</b><br>Original analysis dataset with per-farm distance columns (miles).</td><td>CSV</td><td>Superseded by receptors_points.csv for GIS use; retained for lineage</td></tr>
+</table>
+<div class="callout"><b>License &amp; provenance.</b> Data: CC BY 4.0. Fence-line geometry: OpenStreetMap contributors, ODbL 1.0, via the project's self-hosted Overpass instance (osm.cristoslc.com, Maine daily extract, base 2026-09-27T20:10Z). Child care listings: Maine OCFS Child Care Choices (captured Sept 24, 2026). Schools: NCES. Senior housing: SPHA + state-licensed facilities. Repo mirrors everything at
+<a href="https://github.com/cristoslc/south-portland-tank-farms">github.com/cristoslc/south-portland-tank-farms</a>.</div>
+<p class="muted">Note: fence-line polygons are community-mapped OSM data; City of South Portland assessor GIS parcels would be the parcel-exact upgrade. Distances &lt; ~0.01 mi mean the receptor point sits on/inside the mapped parcel edge ("directly adjacent").</p>
+</main><footer class="site" style="margin-top:40px"><div class="wrap">
+Protect South Portland · ProtectSouthPortland.com · AI-assisted research compiled under human steering; all claims verified in the <a href="factcheck.html">fact-check log</a>.</div></footer></body></html>

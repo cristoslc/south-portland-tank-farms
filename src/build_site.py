@@ -183,7 +183,8 @@ for fn in GIS_FILES:
         shutil.copy(src_path, os.path.join(_gis_dst, fn))
 _raw_dst = os.path.join(OUT, "data")
 for fn in ["receptor_fenceline_distances.csv"]:
-    src_path = os.path.join(HERE, "outputs", fn)
-    if os.path.exists(src_path):
-        shutil.copy(src_path, os.path.join(_raw_dst, fn))
+    for cand in (os.path.join(HERE, "outputs", fn), os.path.join(HERE, "data", fn)):
+        if os.path.exists(cand):
+            shutil.copy(cand, os.path.join(_raw_dst, fn))
+            break
 print("docs/ built:", sorted(os.listdir(OUT)))
