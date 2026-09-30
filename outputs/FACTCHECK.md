@@ -107,15 +107,15 @@ The following claims appeared in earlier drafts citing the Protect South Portlan
 
 *Prompt: user asked whether several daycares may have permanently closed. Method: directory cross-check (thedaycarebook, Yelp, childcarecenter.us, provider websites, news coverage) against the OCFS captures and older aggregator listings.*
 
-**Confirmed closed / operator-changed:**
+**Closed / operator changes (verified historical + current state, as of Sept 30, 2026):**
 
-- **Children's Time Child Development Center, 1065 Broadway — PERMANENTLY CLOSED.** TheDaycareBook's listing for the center carries a review noting "the facility is permanently closed." The address now operates as **Youth & Family Outreach** (OCFS: license 207461, active through Oct 3, 2026), which is a **temporary location during construction** of YFO's new facility at 331 Cumberland Ave, Portland (per YFO's own website: "Temporary Location during construction: 1065 Broadway South Portland"). YFO's new building is targeted to open around fall 2027 (Press Herald). Implication: the child care site inside the buffer at 1065 Broadway may **vacate in ~2027**, reducing the union count by one.
-- **Roots & Fruits, 72 MacArthur Circle E — CLOSED June 2021** after 16 years (Press Herald). Succeeded by **Chickadee Infant & Toddler Care** (opened Aug 30, 2021, per Press Herald), which OCFS lists at that address today. That site sits outside the 1-mile union; counts unaffected.
+- **Children's Time Child Development Center, 1065 Broadway — PERMANENTLY CLOSED.** TheDaycareBook's listing for the center carries a review noting "the facility is permanently closed." The address currently operates as **Youth & Family Outreach** (OCFS: license 207461, active through Oct 3, 2026), and the operator's website lists it as a "Temporary Location during construction" for its program. As of this report's date, the site is an operating child care location and remains counted; no statement is made about future relocation dates.
+- **Roots & Fruits, 72 MacArthur Circle E — closed June 2021** (Press Herald). The address currently operates as **Chickadee Infant & Toddler Care** (OCFS-listed), which sits outside the 1-mile union; counts unaffected.
 - **Mainely Childcare LLC, 9 Harding St — predecessor operator gone** (Yelp listing marked CLOSED). The address now operates as **Growing Learners @ Harding Street** (OCFS, openings updated 5/29/2025) — an active center in our union. Our earlier aggregator-sourced name "Busy Bee's" for this site was doubly stale.
 
 **Absent from current OCFS results — status unconfirmed:**
 
-- **Daycamp Inc, 310 Broadway** — no current OCFS listing; only stale directory entries remain (YellowPages with a COVID-era advisory note). Likely closed or converted. Its old 0.76-mi Gulf anchor distance was an aggregator entry; never part of the corrected union.
+- **Daycamp Inc, 310 Broadway** — no current OCFS listing; only stale directory entries remain (YellowPages with a COVID-era advisory note). Not in the current licensing search as of the search date; treated as not present in point-in-time counts.
 - **Waiting to Grow Preschool, 28 Jennies Ct** — directory listings remain (Nextdoor, finduslocal) but no current OCFS results entry; cannot confirm status from public record.
 - **"Prop Head Start & Child Care" (Brown School address)** — aggregator-era listing; Head Start programming is run by The Opportunity Alliance, whose OCFS-listed center is at 50 Lydia Ln. Not a distinct licensed site at the school address.
 
