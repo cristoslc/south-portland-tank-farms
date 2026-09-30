@@ -123,7 +123,7 @@ L.polygon([WORLD, ...BUFFER_RINGS], {stroke:false, fillColor:'#ffffff', fillOpac
 
 POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5})
   .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Industrial parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
-L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the 42 counted sites.').addTo(map);
+L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06,interactive:false}).addTo(map);
 FARMS.forEach(f=>{
   L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
   L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`,iconAnchor:[0,0]})}).addTo(map);});
