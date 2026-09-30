@@ -42,7 +42,10 @@ def hav(a, b, c, d):
 import sys
 sys.path.insert(0, os.path.join(HERE, "src"))
 from farm_structures import load as fs_load
-features = [{"ring": s["ring"], "kind": s["kind"]} for s in fs_load(HERE)[0]]
+VOC_TPY_IDS = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9,
+               "sprague": 49.9, "pplc": 220.0}
+features = [{"ring": s["ring"], "kind": s["kind"], "farm": s["farm"],
+             "voc": VOC_TPY_IDS[s["farm"]]} for s in fs_load(HERE)[0]]
 print(f"{len(features)} structures")
 
 # ---- tiles: zoom 14, 6x5 ----
@@ -133,12 +136,12 @@ ax = fig.add_axes([0.015, 0.02, 0.615, 0.96])
 ax.imshow(canvas, extent=(0, W, 0, H), interpolation="bilinear")
 ax.set_xlim(0, W); ax.set_ylim(0, H); ax.axis("off")
 
-# fence polygons
+# fence polygons — red shading proportional to the farm's permitted VOC
 for f in features:
     pts = [px(ll[1], ll[0]) for ll in f["ring"]]
-    is_tank = f["kind"] == "tank"
-    ax.add_patch(MplPoly(pts, closed=True, facecolor="#14311f" if is_tank else "#2d6a4f",
-                         alpha=0.55, edgecolor="white", linewidth=0.7, zorder=3))
+    a = 0.15 + 0.45*min(1, f["voc"]/220.0)
+    ax.add_patch(MplPoly(pts, closed=True, facecolor=RED,
+                         alpha=a, edgecolor="white", linewidth=0.7, zorder=3))
 
 # 1-mile fence-line buffer (union zone) — matches the counted geometry
 from matplotlib.patches import PathPatch
@@ -181,10 +184,6 @@ VOC_TPY = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9
 MPP = 156543.03392 * math.cos(math.radians(lat_c)) / 2**Z   # meters per canvas px
 for fid, name, addr, flat, flon in FARMS:
     p = px(flat, flon)
-    # permitted VOC bubble (size ~ sqrt(tons/yr))
-    rpx = (12 * math.sqrt(VOC_TPY[fid])) / MPP
-    ax.add_patch(Circle((p[0], p[1]), rpx, facecolor=RED, alpha=0.20,
-                        edgecolor=RED, linewidth=1.0, zorder=5))
     ax.scatter([p[0]], [p[1]], c=AMBER, marker="*", s=420, edgecolors=TEXT, linewidths=0.9, zorder=8)
     dx, dy, ha = LABEL_POS[fid]
     ax.annotate(f"{name}\n{addr} \u00b7 {VOC_TPY[fid]:.0f} tpy", (p[0], p[1]), textcoords="offset points",
@@ -226,15 +225,17 @@ fig.text(lx, 0.905, "", fontsize=1)
 
 items = [(FOREST,"s","Public school (7)"), (RED,"^","Child care (25)"),
          ("#7b2cbf","D","Senior housing (9)"), (AMBER,"*","Tank farm (6)"),
-         (AMBER,"bub","\u25cb Permitted VOC tpy (\u2192 bubble size)"),
+         (RED,"grad","Petroleum shading \u221d VOC (22\u2192220 t/yr)"),
          (AMBER,"ring","1-mile fence-line buffer"), (PINE,"v","DEP VOC monitor")]
 y = 0.895
 for c, m, label in items:
     axl = fig.add_axes([lx, y-0.012, 0.045, 0.024]); axl.axis("off"); axl.set_xlim(0,1); axl.set_ylim(0,1)
     if m == "ring":
         axl.add_patch(Circle((0.5,0.5), 0.42, fill=False, edgecolor=c, linewidth=1.6, linestyle=(0,(5,3))))
-    elif m == "bub":
-        axl.add_patch(Circle((0.5,0.5), 0.42, facecolor=RED, alpha=0.25, edgecolor=RED, linewidth=1.0))
+    elif m == "grad":
+        for ai in (0.22, 0.42, 0.62):
+            axl.add_patch(Circle((0.3 + (ai-0.22)*1.35, 0.5), 0.30, facecolor=RED, alpha=ai, edgecolor="none"))
+        axl.set_xlim(0, 1); axl.set_ylim(0, 1)
     else:
         axl.scatter([0.5],[0.5], c=c, marker=m, s=150 if m=="*" else 120, edgecolors="white" if m=="v" else "none", linewidths=0.7)
     fig.text(lx+0.055, y, label, fontsize=11, va="center", color=TEXT)
@@ -255,7 +256,7 @@ for s in ["42 sensitive sites within 1 mile of a fence line:",
           "Kaler Elementary: 0.04 mi from Pipe Line parcel",
           "Betsy Ross House: adjacent to Gulf/Sunoco parcel",
           "Growing Learners childcare: on Sprague fence line",
-          "Licensed VOC caps: ~594 tons/yr (DEP orders)"]:
+          "Licensed VOC caps: ~594 tons/yr total (parcel shading shows each)"]:
     fig.text(lx, y, s, fontsize=9.6, color=TEXT); y -= 0.036
 
 

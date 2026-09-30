@@ -72,7 +72,7 @@
     <div class="leg"><span class="sq" style="background:var(--green-dark)"></span>Storage tank (OSM)</div>
     <div class="leg"><span class="sq" style="background:var(--green-mid)"></span>Oil parcel (OSM)</div>
     <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
-    <div class="leg"><span class="dot" style="background:var(--red);opacity:.35"></span>Permitted VOC tpy (&rarr; bubble size)</div>
+    <div class="leg"><span style="display:inline-flex;gap:2px;flex:none"><span style="width:7px;height:11px;background:var(--red);opacity:.25"></span><span style="width:7px;height:11px;background:var(--red);opacity:.45"></span><span style="width:7px;height:11px;background:var(--red);opacity:.65"></span></span>Petroleum parcel shading &prop; permitted VOC (22&ndash;220 t/yr)</div>
     <div class="leg"><span class="dot" style="background:var(--green-dark)"></span>Public school (7)</div>
     <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
     <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
@@ -82,7 +82,7 @@
       <b>42 sites</b> within 1 mile of a fence line:
       all 7 public schools, 25 child care programs, 9 senior housing facilities.
       Kaler Elementary is <b>0.04 mi</b> from the Pipe Line parcel; Betsy Ross House sits
-      adjacent to the Gulf/Sunoco parcel. Licensed VOC caps total <b>~594 tons/yr</b>.
+      adjacent to the Gulf/Sunoco parcel. Licensed VOC total <b>~594 t/yr</b> (parcel shading shows each).
       <br><br>
       <span style="font-size:.68rem">Straight-line distances to OSM-mapped fence lines, not walking
       distances. Fence lines are community-mapped OSM data. Sources: Maine DEP air licenses,
@@ -196,9 +196,9 @@ const icons = {
 /* fence-line structures */
 POLYGONS.forEach(p => {
   L.polygon(p.ring.map(c => [c[1], c[0]]), {
-    color: '#1b4332', weight: 0.7,
-    fillColor: p.kind === 'tank' ? '#1b4332' : '#2d6a4f', fillOpacity: 0.5
-  }).bindPopup(`<b>${p.kind === 'tank' ? 'Storage tank' : 'Oil parcel'}</b><br>Farm: ${p.farm}`).addTo(map);
+    color: '#1b4332', weight: 0.7, fillColor: '#d62828',
+    fillOpacity: 0.15 + 0.45*Math.min(1, (p.voc || 0)/220)
+  }).bindPopup(`<b>${p.kind === 'tank' ? 'Storage tank' : 'Oil parcel'}</b><br>Farm: ${p.farm}<br>Permitted VOC: <b>${p.voc} t/yr</b>`).addTo(map);
 });
 
 /* 1-mile fence-line buffer */
@@ -218,10 +218,6 @@ FARM_DEFS.forEach(f => {
 });
 
 /* receptors */
-FARM_DEFS.forEach(f => {
-  L.circle([f.lat, f.lon], {radius: 12*Math.sqrt(f.voc), color: "#d62828", weight: 1, fillColor: "#d62828", fillOpacity: 0.18})
-    .bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);
-});
 RECEPTORS.forEach(r => {
   L.marker([r.lat, r.lon], {icon: icons[r.cat]}).bindPopup(
     `<b>${r.name}</b><br>${r.cat === 'school' ? 'Public school' : r.cat === 'senior' ? 'Senior housing' : 'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`

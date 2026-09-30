@@ -31,7 +31,9 @@ for r in recs:
 
 # structures
 assigned, _ = fs_load(HERE)
-polys = [{"ring": s["ring"], "kind": s["kind"], "farm": FARM_LABEL.get(s["farm"], s["farm"])}
+VOC_TPY = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9,
+           "sprague": 49.9, "pplc": 220.0}
+polys = [{"ring": s["ring"], "kind": s["kind"], "farm": FARM_LABEL.get(s["farm"], s["farm"]), "voc": VOC_TPY[s["farm"]]}
          for s in assigned]
 
 # buffer rings (lat,lon ordered for Leaflet)

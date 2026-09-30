@@ -47,7 +47,10 @@ import sys
 sys.path.insert(0, os.path.join(HERE, "src"))
 from farm_structures import load as fs_load
 _assigned, _excluded = fs_load(HERE)
-polys = [{"ring": s["ring"], "kind": s["kind"], "farm": s["farm"]} for s in _assigned]
+VOC_TPY = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9,
+           "sprague": 49.9, "pplc": 220.0}  # from each DEP license order
+polys = [{"ring": s["ring"], "kind": s["kind"], "farm": s["farm"],
+          "voc": VOC_TPY[s["farm"]]} for s in _assigned]
 
 def cat_group(c):
     if c == "public school": return ("school","#1b4332")
@@ -98,13 +101,13 @@ header span{font-size:.85rem;opacity:.85}
   <div class="leg"><span class="sq" style="background:var(--forest)"></span>Tank (OSM)</div>
   <div class="leg"><span class="sq" style="background:var(--leaf)"></span>Parcel (OSM)</div>
   <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
-  <div class="leg"><span class="dot" style="background:#d62828;opacity:.35;border-color:#d62828"></span>Permitted VOC tpy (&rarr; bubble size)</div>
+  <div class="leg"><span style="display:inline-flex;gap:2px;flex:none"><span style="width:7px;height:11px;background:#d62828;opacity:.25"></span><span style="width:7px;height:11px;background:#d62828;opacity:.45"></span><span style="width:7px;height:11px;background:#d62828;opacity:.65"></span></span>Petroleum parcel shading &prop; permitted VOC (22&ndash;220 t/yr)</div>
   <div class="leg"><span class="dot" style="background:var(--forest)"></span>School (7)</div>
   <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
   <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
   <div class="leg"><span class="star">★</span>Tank farm (6)</div>
   <div class="leg"><span class="dot" style="background:var(--pine);border-radius:2px;transform:rotate(45deg)"></span>DEP VOC monitor (7)</div>
-  <div class="facts"><b>42 sites</b> within 1 mile of a fence line. Kaler Elem <b>0.04 mi</b> from Pipe Line parcel; Betsy Ross House adjacent to Gulf/Sunoco. Licensed VOC: <b>~594 tpy</b>.<br><br><span style="font-size:.68rem;color:var(--muted)">Straight-line distances to OSM-mapped fence lines; not walking distances. Sources: DEP licenses, OCFS 9/2026, NCES, SPHA, OSM. Data: github.com/cristoslc/south-portland-tank-farms</span></div>
+  <div class="facts"><b>42 sites</b> within 1 mile of a fence line. Kaler Elem <b>0.04 mi</b> from Pipe Line parcel; Betsy Ross House adjacent to Gulf/Sunoco. Licensed VOC total: <b>~594 tpy</b> (parcel shading shows each).<br><br><span style="font-size:.68rem;color:var(--muted)">Straight-line distances to OSM-mapped fence lines; not walking distances. Sources: DEP licenses, OCFS 9/2026, NCES, SPHA, OSM. Data: github.com/cristoslc/south-portland-tank-farms</span></div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
@@ -122,13 +125,13 @@ const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;heigh
 const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
 L.polygon([WORLD, ...BUFFER_RINGS], {stroke:false, fillColor:'#ffffff', fillOpacity:0.70, interactive:false}).addTo(map);
 
-POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.5})
-  .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Industrial parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
+POLYS.forEach(p=>{const o=0.15+0.45*Math.min(1,(p.voc||0)/220);
+  L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:'#d62828',fillOpacity:o})
+  .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}<br>Permitted VOC: <b>${p.voc} t/yr</b>`).addTo(map);});
 L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06,interactive:false}).addTo(map);
 FARMS.forEach(f=>{
   L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
   L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`,iconAnchor:[0,0]})}).addTo(map);});
-FARMS.forEach(f=>{L.circle([f.lat,f.lon],{radius:12*Math.sqrt(f.voc),color:'#d62828',weight:1,fillColor:'#d62828',fillOpacity:0.18}).bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);});
 RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
 MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[12,12],iconAnchor:[6,6]})}).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitoring station</i>`).addTo(map);});
 </script></body></html>"""

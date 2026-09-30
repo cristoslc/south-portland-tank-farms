@@ -43,7 +43,7 @@ a.side-link:hover{text-decoration:underline}
       <div class="leg"><span class="dot" style="background:#d62828"></span>Child care program (25)</div>
       <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
       <div class="leg"><span class="star">&#9733;</span>Tank farm facility (6)</div>
-      <div class="leg"><span class="dot" style="background:#d62828;opacity:.35;border-color:#d62828"></span>Permitted VOC tpy (&rarr; bubble size)</div>
+      <div class="leg"><span style="display:inline-flex;gap:2px;flex:none"><span style="width:7px;height:11px;background:#d62828;opacity:.25"></span><span style="width:7px;height:11px;background:#d62828;opacity:.45"></span><span style="width:7px;height:11px;background:#d62828;opacity:.65"></span></span>Petroleum parcel shading &prop; permitted VOC (22&ndash;220 t/yr)</div>
       <div class="leg"><span class="mon"></span>DEP VOC monitor (7)</div>
     </div>
     <div class="side-sec">
@@ -52,7 +52,7 @@ a.side-link:hover{text-decoration:underline}
       <div class="fact"><span class="n">7</span><span class="t">public schools &mdash; all of them</span></div>
       <div class="fact"><span class="n">25</span><span class="t">licensed child care programs (centers, nurseries, family homes)</span></div>
       <div class="fact"><span class="n">9</span><span class="t">senior housing facilities</span></div>
-      <div class="fact"><span class="n">~594</span><span class="t">tons/yr licensed VOC caps across the six facilities (DEP orders; bubble size shows each)</span></div>
+      <div class="fact"><span class="n">~594</span><span class="t">tons/yr licensed VOC caps across the six facilities (DEP orders; parcel shading shows each)</span></div>
       <p style="margin-top:8px">Closest pairings: <b>Kaler Elementary</b> 0.04 mi from the Pipe Line parcel; <b>Betsy Ross House</b> adjacent to the Gulf/Sunoco parcel; <b>Growing Learners</b> child care on the Sprague fence line.</p>
     </div>
     <div class="side-sec">
@@ -95,7 +95,8 @@ const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;heigh
 const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
 L.polygon([WORLD, ...BUFFER_RINGS],{stroke:false,fillColor:'#ffffff',fillOpacity:0.70,interactive:false}).addTo(map);
 
-POLYS.forEach(p=>{L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:p.kind==='tank'?'#1b4332':'#2d6a4f',fillOpacity:0.55}).bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}`).addTo(map);});
+POLYS.forEach(p=>{const o=0.15+0.45*Math.min(1,(p.voc||0)/220);
+L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:'#d62828',fillOpacity:o}).bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}<br>Permitted VOC: <b>${p.voc} t/yr</b>`).addTo(map);});
 
 L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.05,interactive:false}).addTo(map);
 
