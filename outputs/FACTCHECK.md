@@ -102,3 +102,23 @@ The following claims appeared in earlier drafts citing the Protect South Portlan
 - OCFS captures: ccc_*.html (6), parsed to ccc_union.json
 - Geocodes: geocode_cache.json; OSM structures: overpass_tanks.json
 - Computed datasets: receptor_fenceline_distances.csv, polygon_results.txt
+
+## FC-8 / child care site status verification (Sept 30, 2026)
+
+*Prompt: user asked whether several daycares may have permanently closed. Method: directory cross-check (thedaycarebook, Yelp, childcarecenter.us, provider websites, news coverage) against the OCFS captures and older aggregator listings.*
+
+**Confirmed closed / operator-changed:**
+
+- **Children's Time Child Development Center, 1065 Broadway — PERMANENTLY CLOSED.** TheDaycareBook's listing for the center carries a review noting "the facility is permanently closed." The address now operates as **Youth & Family Outreach** (OCFS: license 207461, active through Oct 3, 2026), which is a **temporary location during construction** of YFO's new facility at 331 Cumberland Ave, Portland (per YFO's own website: "Temporary Location during construction: 1065 Broadway South Portland"). YFO's new building is targeted to open around fall 2027 (Press Herald). Implication: the child care site inside the buffer at 1065 Broadway may **vacate in ~2027**, reducing the union count by one.
+- **Roots & Fruits, 72 MacArthur Circle E — CLOSED June 2021** after 16 years (Press Herald). Succeeded by **Chickadee Infant & Toddler Care** (opened Aug 30, 2021, per Press Herald), which OCFS lists at that address today. That site sits outside the 1-mile union; counts unaffected.
+- **Mainely Childcare LLC, 9 Harding St — predecessor operator gone** (Yelp listing marked CLOSED). The address now operates as **Growing Learners @ Harding Street** (OCFS, openings updated 5/29/2025) — an active center in our union. Our earlier aggregator-sourced name "Busy Bee's" for this site was doubly stale.
+
+**Absent from current OCFS results — status unconfirmed:**
+
+- **Daycamp Inc, 310 Broadway** — no current OCFS listing; only stale directory entries remain (YellowPages with a COVID-era advisory note). Likely closed or converted. Its old 0.76-mi Gulf anchor distance was an aggregator entry; never part of the corrected union.
+- **Waiting to Grow Preschool, 28 Jennies Ct** — directory listings remain (Nextdoor, finduslocal) but no current OCFS results entry; cannot confirm status from public record.
+- **"Prop Head Start & Child Care" (Brown School address)** — aggregator-era listing; Head Start programming is run by The Opportunity Alliance, whose OCFS-listed center is at 50 Lydia Ln. Not a distinct licensed site at the school address.
+
+**Active (verified via operator/directory evidence):** Spring Point Children's Center (SMCC's official program page, active), Children's Adventure Center ("currently accepting new enrollments"), Lighthouse School & Child Care Center (active 2026-27 profile), Discovery Center (current directory entry), and the family providers (Stacie Archibald openings updated 9/14/2026; Alphabet Tree 9/6/2025; others mid-2025).
+
+**Caveat:** our OCFS captures do not include per-program license status (only the "Licensing Details/Reports" links carry it), and the OCFS search page itself warns it includes programs with expired or conditional licenses [14]. A live re-check of any individual program should go through OCFS's licensing reports or the Child Care Resource Services line (877-680-5866). 
