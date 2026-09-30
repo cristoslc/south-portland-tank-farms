@@ -176,11 +176,18 @@ for r in receptors:
     ax.scatter([p[0]], [p[1]], c=c, marker=m, s=s, edgecolors="white", linewidths=0.8, zorder=6)
 
 # facility markers + short labels with leader arrows
+VOC_TPY = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9,
+           "sprague": 49.9, "pplc": 220.0}  # from each DEP license order
+MPP = 156543.03392 * math.cos(math.radians(lat_c)) / 2**Z   # meters per canvas px
 for fid, name, addr, flat, flon in FARMS:
     p = px(flat, flon)
+    # permitted VOC bubble (size ~ sqrt(tons/yr))
+    rpx = (12 * math.sqrt(VOC_TPY[fid])) / MPP
+    ax.add_patch(Circle((p[0], p[1]), rpx, facecolor=AMBER, alpha=0.20,
+                        edgecolor=AMBER, linewidth=1.0, zorder=5))
     ax.scatter([p[0]], [p[1]], c=AMBER, marker="*", s=420, edgecolors=TEXT, linewidths=0.9, zorder=8)
     dx, dy, ha = LABEL_POS[fid]
-    ax.annotate(f"{name}\n{addr}", (p[0], p[1]), textcoords="offset points",
+    ax.annotate(f"{name}\n{addr} \u00b7 {VOC_TPY[fid]:.0f} tpy", (p[0], p[1]), textcoords="offset points",
                 xytext=(dx, dy), ha=ha, va="center", fontsize=9.2, fontweight="bold",
                 color="white", zorder=9,
                 bbox=dict(boxstyle="round,pad=0.32", fc=FOREST, ec="white", lw=1.0, alpha=0.95),
@@ -219,12 +226,15 @@ fig.text(lx, 0.905, "", fontsize=1)
 
 items = [(FOREST,"s","Public school (7)"), (RED,"^","Child care (25)"),
          ("#7b2cbf","D","Senior housing (9)"), (AMBER,"*","Tank farm (6)"),
+         (AMBER,"bub","\u25cb Permitted VOC tpy (\u2192 bubble size)"),
          (AMBER,"ring","1-mile fence-line buffer"), (PINE,"v","DEP VOC monitor")]
 y = 0.895
 for c, m, label in items:
     axl = fig.add_axes([lx, y-0.012, 0.045, 0.024]); axl.axis("off"); axl.set_xlim(0,1); axl.set_ylim(0,1)
     if m == "ring":
         axl.add_patch(Circle((0.5,0.5), 0.42, fill=False, edgecolor=c, linewidth=1.6, linestyle=(0,(5,3))))
+    elif m == "bub":
+        axl.add_patch(Circle((0.5,0.5), 0.42, facecolor=c, alpha=0.25, edgecolor=c, linewidth=1.0))
     else:
         axl.scatter([0.5],[0.5], c=c, marker=m, s=150 if m=="*" else 120, edgecolors="white" if m=="v" else "none", linewidths=0.7)
     fig.text(lx+0.055, y, label, fontsize=11, va="center", color=TEXT)
@@ -245,7 +255,7 @@ for s in ["42 sensitive sites within 1 mile of a fence line:",
           "Kaler Elementary: 0.04 mi from Pipe Line parcel",
           "Betsy Ross House: adjacent to Gulf/Sunoco parcel",
           "Growing Learners childcare: on Sprague fence line",
-          "Licensed VOC caps: ~597 tons/yr (DEP orders)"]:
+          "Licensed VOC caps: ~594 tons/yr (DEP orders)"]:
     fig.text(lx, y, s, fontsize=9.6, color=TEXT); y -= 0.036
 
 

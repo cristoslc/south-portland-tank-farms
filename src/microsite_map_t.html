@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map — Protect South Portland</title>
+  <meta name="description" content="Interactive map of South Portland's oil tank farms, nearby schools, daycares, senior housing, and DEP air monitoring stations, with 1-mile fence-line buffer.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-256.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    /* page-local layout: full-bleed map between microsite header and footer */
+    #mapwrap { position: relative; }
+    #map { height: calc(100vh - 220px); min-height: 460px; }
+    @media (max-width: 768px) { #map { height: 70vh; min-height: 380px; } }
+    .mapnote { background: var(--green-bg); border-left: 4px solid var(--green-mid);
+               padding: .8rem 1.1rem; border-radius: 0 8px 8px 0; margin: 1rem 0; font-size: .92rem; }
+    /* legend card overlaid on map */
+    .leaflet-container { font: inherit; }
+    .mappanel { position: absolute; top: 14px; right: 14px; z-index: 1000;
+                background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+                padding: 12px 14px; max-width: 250px; box-shadow: var(--shadow); font-size: .82rem; }
+    .mappanel h2 { margin: 0 0 8px; font-size: .95rem; color: var(--green-dark); }
+    .mappanel .leg { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+    .mappanel .dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+    .mappanel .sq { width: 11px; height: 11px; flex: none; transform: rotate(45deg); }
+    .mappanel .ring { width: 14px; height: 14px; border: 2px dashed var(--amber); border-radius: 50%; flex: none; }
+    .mappanel .star { color: var(--amber); font-size: 1.1rem; flex: none; line-height: 1; }
+    .mappanel .facts { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border);
+                       font-size: .76rem; color: var(--text-muted); line-height: 1.5; }
+    .leaflet-popup-content { font-size: .85rem; line-height: 1.45; }
+    .leaflet-popup-content b { color: var(--green-dark); }
+    .farm-label { background: var(--green-dark); color: #fff; padding: 2px 7px; border-radius: 4px;
+                  font-weight: 700; font-size: .72rem; white-space: nowrap; border: none;
+                  box-shadow: 0 1px 4px rgba(0,0,0,.4); }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/psp-logo.png" alt="PSP Logo" onerror="this.style.display='none'">
+      Protect <span class="leaf">South</span> Portland
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="emissions.html">Tank Emissions</a></li>
+      <li><a href="map.html" class="active">Interactive Map</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Page Title -->
+<section style="background:var(--green-mid);color:#fff;padding:2rem 0;text-align:center">
+  <div class="container">
+    <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:.4rem">Tank Farms &amp; Sensitive Receptors</h1>
+    <p style="opacity:.85;font-size:.98rem">Fence-line distances · 1-mile fence-line buffer · DEP VOC monitors</p>
+  </div>
+</section>
+
+<!-- The Map -->
+<div id="mapwrap">
+  <div id="map"></div>
+  <div class="mappanel">
+    <h2>Legend</h2>
+    <div class="leg"><span class="sq" style="background:var(--green-dark)"></span>Storage tank (OSM)</div>
+    <div class="leg"><span class="sq" style="background:var(--green-mid)"></span>Oil parcel (OSM)</div>
+    <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
+    <div class="leg"><span class="dot" style="background:var(--green-dark)"></span>Public school (7)</div>
+    <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
+    <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
+    <div class="leg"><span class="star">&#9733;</span>Tank farm (6)</div>
+    <div class="leg"><span class="dot" style="background:var(--green-mid);border-radius:2px;transform:rotate(45deg)"></span>DEP VOC monitor (7)</div>
+    <div class="facts">
+      <b>42 sites</b> within 1 mile of a fence line:
+      all 7 public schools, 25 child care programs, 9 senior housing facilities.
+      Kaler Elementary is <b>0.04 mi</b> from the Pipe Line parcel; Betsy Ross House sits
+      adjacent to the Gulf/Sunoco parcel. Licensed VOC caps total <b>~594 tons/yr</b>.
+      <br><br>
+      <span style="font-size:.68rem">Straight-line distances to OSM-mapped fence lines, not walking
+      distances. Fence lines are community-mapped OSM data. Sources: Maine DEP air licenses,
+      OCFS Child Care Choices (9/24/2026), NCES, SPHA, OSM (ODbL).
+      Datasets: <a href="https://github.com/cristoslc/south-portland-tank-farms">GitHub</a>.
+      Research: <a href="https://cristoslc.github.io/south-portland-tank-farms/">full report</a>.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Explanation -->
+<section class="section">
+  <div class="container">
+    <div class="mapnote">
+      <strong>How to read this map.</strong> Shaded areas are the tank farm structures
+      (individual storage tanks and their parcels, mapped in OpenStreetMap). The dashed
+      amber boundary is the <strong>1-mile fence-line buffer</strong> — the union of all
+      tank/parcel outlines extended one statute mile. Every school, child care, and senior
+      housing marker inside that boundary is one of the 41 sites counted in the research
+      (42 counting one facility exactly at the boundary). Click any marker for measured
+      distances and permit details. Click the buffer polygon for its definition.
+    </div>
+    <p style="color:var(--text-muted);font-size:.88rem">
+      Click a <strong>star</strong> for facility name, address, license number, permitted VOC, and renewal window.
+      Click a <strong>school / child care / senior marker</strong> for its nearest fence line and distance.
+      Click the <strong>dashed boundary</strong> for the buffer definition.
+      Note the monitor stations (green diamonds) are placed at their named street locations and are approximate —
+      confirm with Maine DEP before relying on exact positions.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="images/psp-logo.png" alt="PSP Logo" class="footer-logo" onerror="this.style.display='none'">
+        <h4>Protect South Portland</h4>
+        <p style="color:rgba(255,255,255,0.6);font-size:.9rem;max-width:280px">
+          A 501(c)(3) nonprofit community organization advocating for clean air and a healthy environment in South Portland, Maine.
+        </p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="emissions.html">Tank Emissions</a></li>
+          <li><a href="map.html">Interactive Map</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/protectsouthportland/">Facebook</a></li>
+          <li><a href="mailto:protectsouthportland@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2013–2026 Protect South Portland. A 501(c)(3) nonprofit. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const FARM_DEFS = [
+  {id:"global", name:"Global Companies LLC", addr:"1 Clark Road", lat:43.634665, lon:-70.275381,
+   voc:21.9, lic:"A-432-71-S-R/M", renew:"Dec 2023 (10-yr) → ~2033"},
+  {id:"citgo", name:"CITGO Petroleum Corp.", addr:"102 Mechanic St", lat:43.637390, lon:-70.267687,
+   voc:117.3, lic:"A-460-70-H-R", renew:"Nov 2025 (5-yr) → ~2030"},
+  {id:"buckeye", name:"Buckeye / South Portland Terminal", addr:"170 Lincoln St", lat:43.636551, lon:-70.285118,
+   voc:135.4, lic:"A-282-70-G-R", renew:"2015 license, evergreen"},
+  {id:"gulf_sunoco", name:"Gulf / Sunoco Midstream", addr:"175 Front St", lat:43.650445, lon:-70.238583,
+   voc:49.9, lic:"A-390-71-P-R/M", renew:"Feb 2023 (10-yr) → ~2033"},
+  {id:"sprague", name:"Sprague Operating Resources", addr:"59 Main St", lat:43.637217, lon:-70.286403,
+   voc:49.9, lic:"A-179-71-P-R/M", renew:"Mar 2018 (10-yr) → ~2028"},
+  {id:"pplc", name:"Portland Pipe Line Corp.", addr:"30 Hill St", lat:43.629026, lon:-70.271068,
+   voc:220.0, lic:"A-197-70-H-R", renew:"Feb 2025 (5-yr) → ~2030 · marine renewal pending"}
+];
+const MONITOR_STATIONS = [
+  {code:"POG", name:"Portland – Ocean Gateway", lat:43.6561, lon:-70.2409},
+  {code:"PWC", name:"Portland – West Commercial St", lat:43.6598, lon:-70.2563},
+  {code:"SPCC", name:"South Portland – Cash Corner", lat:43.6292, lon:-70.2955},
+  {code:"SPFS", name:"South Portland – Front Street", lat:43.6518, lon:-70.2402},
+  {code:"SPMS", name:"South Portland – Mechanic St", lat:43.6386, lon:-70.2666},
+  {code:"SPPS", name:"South Portland – Pearl Street", lat:43.6389, lon:-70.2555},
+  {code:"SPRB", name:"South Portland – Red Bank", lat:43.6166, lon:-70.3245}
+];
+/* receptor + polygon data injected below by src/build_microsite_map.py */
+const RECEPTORS = __RECEPTORS__;
+const POLYGONS = __POLYGONS__;
+const BUFFER_RINGS = __BUFFER__;
+
+const map = L.map('map').setView([43.6335, -70.278], 14);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors (ODbL)'
+}).addTo(map);
+
+const icons = {
+  school: L.divIcon({className:'', html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize:[14,14], iconAnchor:[7,7]}),
+  childcare: L.divIcon({className:'', html:'<div style="width:12px;height:12px;background:#d62828;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize:[12,12], iconAnchor:[6,6]}),
+  senior: L.divIcon({className:'', html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize:[13,13], iconAnchor:[6,6]})
+};
+
+/* fence-line structures */
+POLYGONS.forEach(p => {
+  L.polygon(p.ring.map(c => [c[1], c[0]]), {
+    color: '#1b4332', weight: 0.7,
+    fillColor: p.kind === 'tank' ? '#1b4332' : '#2d6a4f', fillOpacity: 0.5
+  }).bindPopup(`<b>${p.kind === 'tank' ? 'Storage tank' : 'Oil parcel'}</b><br>Farm: ${p.farm}`).addTo(map);
+});
+
+/* 1-mile fence-line buffer */
+L.polygon(BUFFER_RINGS, {
+  color: '#f77f00', weight: 1.6, dashArray: '6 5',
+  fillColor: '#f77f00', fillOpacity: 0.06
+}).bindPopup('<b>1-mile fence-line buffer</b><br>Union of all tank/parcel polygons buffered one statute mile. Receptors inside this zone are the sites counted in the research.').addTo(map);
+
+/* facilities */
+FARM_DEFS.forEach(f => {
+  L.marker([f.lat, f.lon]).bindPopup(
+    `<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`
+  ).addTo(map);
+  L.marker([f.lat, f.lon], {
+    icon: L.divIcon({className:'', html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`, iconAnchor:[0,0]})
+  }).addTo(map);
+});
+
+/* receptors */
+FARM_DEFS.forEach(f => {
+  L.circle([f.lat, f.lon], {radius: 12*Math.sqrt(f.voc), color: "#f77f00", weight: 1, fillColor: "#f77f00", fillOpacity: 0.18})
+    .bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);
+});
+RECEPTORS.forEach(r => {
+  L.marker([r.lat, r.lon], {icon: icons[r.cat]}).bindPopup(
+    `<b>${r.name}</b><br>${r.cat === 'school' ? 'Public school' : r.cat === 'senior' ? 'Senior housing' : 'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`
+  ).addTo(map);
+});
+
+/* DEP monitors */
+MONITOR_STATIONS.forEach(m => {
+  L.marker([m.lat, m.lon], {
+    icon: L.divIcon({className:'', html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize:[12,12], iconAnchor:[6,6]})
+  }).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitoring station (location approximate)</i>`).addTo(map);
+});
+</script>
+</body>
+</html>

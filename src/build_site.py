@@ -79,7 +79,7 @@ index_body = f"""
 </div>
 <div class="cards">
   <div class="card"><h3>42 sensitive sites</h3><p>All 7 public schools, 25 licensed child care programs, and 9 senior housing facilities lie within one mile of a tank farm fence line.</p></div>
-  <div class="card"><h3>~597 tons VOC/yr</h3><p>Combined licensed VOC caps across the six facilities, taken from each facility's own DEP license order.</p></div>
+  <div class="card"><h3>~594 tons VOC/yr</h3><p>Combined licensed VOC caps across the six facilities, taken from each facility's own DEP license order.</p></div>
   <div class="card"><h3>Renewals: 2028–2033</h3><p>Sprague ~2028 · CITGO &amp; Pipe Line ~2030 · Global &amp; Gulf/Sunoco ~2033 · Pipe Line's marine renewal is pending now.</p></div>
 </div>
 <h2>Explore</h2>

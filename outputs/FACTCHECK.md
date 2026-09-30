@@ -31,9 +31,9 @@ Verification legend: ✅ verified against cited official document; ⚠️ verifi
 **Sources:** DEP order A-197-70-H-R (A0197HR.pdf); DEP Portland Pipe Line major-projects page, on file.
 **Direct evidence:** Order: "DONE AND DATED IN AUGUSTA, MAINE THIS 24th DAY OF FEBRUARY, 2025." / "The term of this license shall be five (5) years from the signature date above." / "Total Licensed Annual Emissions for the Facility … Facility-Wide … VOC 220.0 … Pollutant Tons/year Single HAP 9.9 Total HAP 24.9" / "A throughput limit of 11.0 billion gallons per year of crude oil." Project page: "The application was accepted for processing on August 11, 2025." — ✅
 
-**FC-1.7** — Section 1, aggregate — *Claim:* Sum of the six facilities' facility-wide VOC license limits ≈ 626.6 tpy; HAP ≈ 123.8 tpy.
-**Source:** arithmetic on refs 2,3,4,5,7,9 (21.9 + 117.3 + 135.4 + 49.9 + 49.9 + 220.0; HAP 14.1 + 5.0 + 24.9 + 24.9 + 24.9).
-**Direct evidence:** per-license figures in FC-1.1 through FC-1.6. Note: this is a sum of license caps at differing vintages, not a single official aggregate. — ✅ (arithmetic), ⚠️ (interpretive framing; superseded the earlier 671-ton figure which came from a non-official compilation)
+**FC-1.7** — Section 1, aggregate — *Claim:* Sum of the six facilities' facility-wide VOC license limits = 594.4 tpy; HAP = 103.7 tpy — consistent with the independently compiled 594/104 Falatko totals [1].
+**Source:** arithmetic on refs 2,3,4,5,7,9 (VOC 21.9 + 117.3 + 135.4 + 49.9 + 49.9 + 220.0 = 594.4; HAP 9.9 + 5.0 + 14.1 + 24.9 + 24.9 + 24.9 = 103.7).
+**Direct evidence:** per-license figures in FC-1.1 through FC-1.6. Note: this is a sum of license caps at differing vintages, not a single official aggregate — ✅ (arithmetic; independently corroborated by the 594/104 totals in the Falatko table [1]). Earlier drafts carried an erroneous 626.6/123.8 aggregate (arithmetic slip) and, before that, the non-official 671-ton combined-industry framing.
 
 **FC-1.8** — Section 1, Sunoco ownership — *Claim:* The 175 Front St terminal is now owned/operated by Sunoco Midstream LLC.
 **Source:** DEP transfer order (ch115/A0390RT.pdf).

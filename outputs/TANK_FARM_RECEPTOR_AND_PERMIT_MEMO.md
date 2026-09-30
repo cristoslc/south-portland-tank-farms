@@ -8,7 +8,7 @@
 
 # Executive Summary
 
-South Portland is home to six large oil storage terminals along its waterfront: Global, CITGO, Buckeye, Gulf (now owned by Sunoco), Sprague, and Portland Pipe Line. Each is licensed by the Maine DEP to emit VOCs — up to a combined **~626 tons per year** at current license limits [2][3][4][5][7][9] — and they sit among homes, not apart from them. Some are only feet away from houses, schools, daycares, and senior housing.
+South Portland is home to six large oil storage terminals along its waterfront: Global, CITGO, Buckeye, Gulf (now owned by Sunoco), Sprague, and Portland Pipe Line. Each is licensed by the Maine DEP to emit VOCs — up to a combined **~594 tons per year** at current license limits (each facility's own DEP cap) [2][3][4][5][7][9] — and they sit among homes, not apart from them. Some are only feet away from houses, schools, daycares, and senior housing.
 
 This report answers two questions. How many schools, daycares, and senior housing buildings are within one mile of the tank farms? And when are their state permits up for renewal?
 
@@ -43,7 +43,7 @@ All emission limits below are taken directly from each facility's most recent DE
 | Sprague Operating Resources | 59 Main St | A-179-71-P-R/M (SM) | **March 2018** (10-yr term) [7] | 49.9 [7] | 24.9 (single-HAP 9.9) [7] | App due ~Sep 2026–Sep 2027; expires **~Mar 2028** |
 | Portland Pipe Line Corp. | 30 Hill St | A-197-70-H-R | **Feb 24, 2025** (5-yr term) [2] | 220.0 [2] | 24.9 (single-HAP 9.9) [2] | Expires **~Feb 2030**. Marine terminal (ch.600) licenses O-000305/306-91-I-R: renewal application accepted **Aug 11, 2025** [10] — currently pending |
 
-Six-facility licensed VOC total at last issuance: **~596.6 tpy** (21.9 + 117.3 + 135.4 + 49.9 + 49.9 + 220.0). HAP total: **~123.8 tpy**. These are per-license official limits; note Buckeye's figures date from its 2015 license and PPLC's VOC figure dates from Feb 2025.
+Six-facility licensed VOC total at last issuance: **594.4 tpy** (21.9 + 117.3 + 135.4 + 49.9 + 49.9 + 220.0); HAP total: **103.7 tpy** — consistent with the independently compiled 594/104 figures in the Falatko table [1]. These are per-license official limits; note Buckeye's figures date from its 2015 license and PPLC's VOC figure dates from Feb 2025.
 
 - The Gulf tank farm is owned by **Sunoco Midstream LLC** (DEP-approved transfer; closing Aug 30, 2024) [6]. The "Gulf" label in any public-facing table should be updated to Sunoco Midstream.
 - PPLC's Feb 2025 renewal states a crude-oil **throughput limit of 11.0 billion gallons per year** [2].
