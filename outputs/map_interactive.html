@@ -29,6 +29,7 @@ header span{font-size:.85rem;opacity:.85}
   <div class="leg"><span class="sq" style="background:var(--forest)"></span>Tank (OSM)</div>
   <div class="leg"><span class="sq" style="background:var(--leaf)"></span>Parcel (OSM)</div>
   <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
+  <div class="leg"><span class="dot" style="background:#d62828;opacity:.35;border-color:#d62828"></span>Permitted VOC tpy (&rarr; bubble size)</div>
   <div class="leg"><span class="dot" style="background:var(--forest)"></span>School (7)</div>
   <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
   <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
@@ -58,7 +59,7 @@ L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f
 FARMS.forEach(f=>{
   L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
   L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`,iconAnchor:[0,0]})}).addTo(map);});
-FARMS.forEach(f=>{L.circle([f.lat,f.lon],{radius:12*Math.sqrt(f.voc),color:'#f77f00',weight:1,fillColor:'#f77f00',fillOpacity:0.18}).bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);});
+FARMS.forEach(f=>{L.circle([f.lat,f.lon],{radius:12*Math.sqrt(f.voc),color:'#d62828',weight:1,fillColor:'#d62828',fillOpacity:0.18}).bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);});
 RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
 MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[12,12],iconAnchor:[6,6]})}).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitoring station</i>`).addTo(map);});
 </script></body></html>

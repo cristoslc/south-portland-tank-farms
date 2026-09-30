@@ -72,6 +72,7 @@
     <div class="leg"><span class="sq" style="background:var(--green-dark)"></span>Storage tank (OSM)</div>
     <div class="leg"><span class="sq" style="background:var(--green-mid)"></span>Oil parcel (OSM)</div>
     <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
+    <div class="leg"><span class="dot" style="background:var(--red);opacity:.35"></span>Permitted VOC tpy (&rarr; bubble size)</div>
     <div class="leg"><span class="dot" style="background:var(--green-dark)"></span>Public school (7)</div>
     <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
     <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
@@ -218,7 +219,7 @@ FARM_DEFS.forEach(f => {
 
 /* receptors */
 FARM_DEFS.forEach(f => {
-  L.circle([f.lat, f.lon], {radius: 12*Math.sqrt(f.voc), color: "#f77f00", weight: 1, fillColor: "#f77f00", fillOpacity: 0.18})
+  L.circle([f.lat, f.lon], {radius: 12*Math.sqrt(f.voc), color: "#d62828", weight: 1, fillColor: "#d62828", fillOpacity: 0.18})
     .bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);
 });
 RECEPTORS.forEach(r => {

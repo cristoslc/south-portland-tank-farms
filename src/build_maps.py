@@ -183,8 +183,8 @@ for fid, name, addr, flat, flon in FARMS:
     p = px(flat, flon)
     # permitted VOC bubble (size ~ sqrt(tons/yr))
     rpx = (12 * math.sqrt(VOC_TPY[fid])) / MPP
-    ax.add_patch(Circle((p[0], p[1]), rpx, facecolor=AMBER, alpha=0.20,
-                        edgecolor=AMBER, linewidth=1.0, zorder=5))
+    ax.add_patch(Circle((p[0], p[1]), rpx, facecolor=RED, alpha=0.20,
+                        edgecolor=RED, linewidth=1.0, zorder=5))
     ax.scatter([p[0]], [p[1]], c=AMBER, marker="*", s=420, edgecolors=TEXT, linewidths=0.9, zorder=8)
     dx, dy, ha = LABEL_POS[fid]
     ax.annotate(f"{name}\n{addr} \u00b7 {VOC_TPY[fid]:.0f} tpy", (p[0], p[1]), textcoords="offset points",
@@ -234,7 +234,7 @@ for c, m, label in items:
     if m == "ring":
         axl.add_patch(Circle((0.5,0.5), 0.42, fill=False, edgecolor=c, linewidth=1.6, linestyle=(0,(5,3))))
     elif m == "bub":
-        axl.add_patch(Circle((0.5,0.5), 0.42, facecolor=c, alpha=0.25, edgecolor=c, linewidth=1.0))
+        axl.add_patch(Circle((0.5,0.5), 0.42, facecolor=RED, alpha=0.25, edgecolor=RED, linewidth=1.0))
     else:
         axl.scatter([0.5],[0.5], c=c, marker=m, s=150 if m=="*" else 120, edgecolors="white" if m=="v" else "none", linewidths=0.7)
     fig.text(lx+0.055, y, label, fontsize=11, va="center", color=TEXT)
