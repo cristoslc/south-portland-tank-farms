@@ -103,7 +103,6 @@ L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f
 FARMS.forEach(f=>{L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} &middot; VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
 L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`})}).addTo(map);});
 
-FARMS.forEach(f=>{L.circle([f.lat,f.lon],{radius:12*Math.sqrt(f.voc),color:'#d62828',weight:1,fillColor:'#d62828',fillOpacity:0.18}).bindPopup(`<b>Petroleum terminal</b><br>${f.name}<br>Petroleum VOC: <b>${f.voc} tons/yr</b>`).addTo(map);});
 RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
 
 MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:10px;height:10px;background:#2d6a4f;transform:rotate(45deg);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]})}).bindPopup(`<b>${m.code}</b> - ${m.name}<br><i>DEP VOC monitoring station (location approximate)</i>`).addTo(map);});
