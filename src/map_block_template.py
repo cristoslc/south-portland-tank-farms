@@ -22,6 +22,7 @@ MAP_BODY_TEMPLATE = """
 a.side-link{color:#2d6a4f;text-decoration:none;font-weight:600}
 a.side-link:hover{text-decoration:underline}
 .leaflet-container{font:inherit;background:#fff}
+.map-sidebar input[type=range]{width:100%;accent-color:#f77f00;cursor:pointer}
 .leaflet-popup-content{font-size:.85rem;line-height:1.45}
 .leaflet-popup-content b{color:#1b4332}
 .farm-label{background:#1b4332;color:#fff;padding:2px 7px;border-radius:4px;font-weight:700;font-size:.72rem;white-space:nowrap;border:none;box-shadow:0 1px 4px rgba(0,0,0,.4)}
@@ -35,10 +36,18 @@ a.side-link:hover{text-decoration:underline}
   <div class="map-frame"><div id="map"></div></div>
   <aside class="map-sidebar">
     <div class="side-sec">
+      <h3>Search radius</h3>
+      <input id="radius" type="range" min="0.1" max="1" step="0.1" value="1" list="radius-ticks"/>
+      <div id="radius-label" style="font-weight:800;color:#1b4332;margin:4px 0 6px">1.0 mi</div>
+      <div id="radius-counts" style="font-size:.8rem;line-height:1.45"></div>
+      <div class="side-note" style="margin-top:6px">Markers outside the radius are dimmed. Buffer is recomputed from the fence-line geometry at each step.</div>
+      <datalist id="radius-ticks"><option value="0.1"></option><option value="0.2"></option><option value="0.3"></option><option value="0.4"></option><option value="0.5"></option><option value="0.6"></option><option value="0.7"></option><option value="0.8"></option><option value="0.9"></option><option value="1.0"></option></datalist>
+    </div>
+    <div class="side-sec">
       <h3>Legend</h3>
       <div class="leg"><span class="sq" style="background:#1b4332"></span>Storage tank (OSM)</div>
       <div class="leg"><span class="sq" style="background:#2d6a4f"></span>Oil parcel (OSM)</div>
-      <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
+      <div class="leg"><span class="ring"></span>Fence-line buffer (radius slider)</div>
       <div class="leg"><span class="dot" style="background:#1b4332"></span>Public school (7)</div>
       <div class="leg"><span class="dot" style="background:#d62828"></span>Child care program (25)</div>
       <div class="leg"><span class="dot" style="background:#7b2cbf"></span>Senior housing (9)</div>
@@ -59,9 +68,10 @@ a.side-link:hover{text-decoration:underline}
       <h3>About this map</h3>
       <p><b>How to read it.</b> Shaded polygons are the tank farm structures mapped in OpenStreetMap
       (individual storage tanks and the parcels that contain them). The dashed amber boundary is the
-      <b>1-mile fence-line buffer</b> &mdash; the union of all tank/parcel outlines extended one statute mile;
-      receptors inside that zone are the sites counted in the research. Click any marker for measured
-      distances and permit details.</p>
+      <b>fence-line buffer</b> &mdash; the union of all tank/parcel outlines extended by the radius on the
+      slider above (default 1 statute mile, the research finding); the buffer is recomputed from the
+      fence-line geometry at each 0.1-mi step, and the site count updates live. Click any marker for
+      measured distances and permit details.</p>
       <p class="side-note">Distances are straight-line fence-line distances, not walking routes. Fence-line
       geometry is community-mapped OSM data; City of South Portland assessor parcels would be the
       parcel-exact upgrade. DEP monitor placements are approximate (named street locations). Basemap is faded
@@ -83,7 +93,7 @@ const FARMS = __FARMS__;
 const RECS = __RECS__;
 const MON = __MON__;
 const POLYS = __POLYS__;
-const BUFFER_RINGS = __BUFFER__;
+const RING_STEPS = __RSTEPS__;
 const map = L.map('map').setView([43.6335, -70.278], 14);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)'}).addTo(map);
 
@@ -93,19 +103,43 @@ const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;heigh
 
 /* fade basemap outside the buffer: white world-donut with the buffer as a hole, under data layers */
 const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
-L.polygon([WORLD, ...BUFFER_RINGS],{stroke:false,fillColor:'#ffffff',fillOpacity:0.70,interactive:false}).addTo(map);
+const DEFAULT_STEP = RING_STEPS[RING_STEPS.length-1];
+const fadeLayer = L.polygon([WORLD, ...DEFAULT_STEP.rings],{stroke:false,fillColor:'#ffffff',fillOpacity:0.70,interactive:false}).addTo(map);
 
 POLYS.forEach(p=>{const o=0.15+0.45*Math.min(1,(p.voc||0)/220);
 L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:'#d62828',fillOpacity:o}).bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}<br>Permitted VOC: <b>${p.voc} t/yr</b>`).addTo(map);});
 
-L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.05,interactive:false}).addTo(map);
+const bufferLayer = L.polygon(DEFAULT_STEP.rings,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.05,interactive:false}).addTo(map);
 
 FARMS.forEach(f=>{L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} &middot; VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
 L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`})}).addTo(map);});
 
-RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
+const recMarkers = RECS.map(r=>{const m=L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care program'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map); return m;});
 
 MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:10px;height:10px;background:#2d6a4f;transform:rotate(45deg);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]})}).bindPopup(`<b>${m.code}</b> - ${m.name}<br><i>DEP VOC monitoring station (location approximate)</i>`).addTo(map);});
+
+/* radius slider: buffer recomputed from fence-line geometry at each 0.1-mi step */
+const slider = document.getElementById('radius');
+const radiusLabel = document.getElementById('radius-label');
+const radiusCounts = document.getElementById('radius-counts');
+const CATS = [['school','schools'],['childcare','child care'],['senior','senior housing']];
+function stepFor(mi){const s=RING_STEPS.find(s=>Math.abs(s.r-mi)<0.001);
+  if(!s) throw new Error('no precomputed buffer for radius '+mi); return s;}
+function updateRadius(){
+  const mi = parseFloat(slider.value);
+  const s = stepFor(mi);
+  radiusLabel.textContent = mi.toFixed(1) + ' mi';
+  bufferLayer.setLatLngs(s.rings);
+  fadeLayer.setLatLngs([WORLD, ...s.rings]);
+  const inside = RECS.filter(r=>r.min <= mi + 1e-9);
+  recMarkers.forEach((m,i)=>{m.setOpacity(RECS[i].min <= mi + 1e-9 ? 1 : 0.18);});
+  const c = {school:0, childcare:0, senior:0};
+  inside.forEach(r=>c[r.cat]++);
+  const catsLine = CATS.map(([k,l])=>`${c[k]} ${l}`).join(' &middot; ');
+  radiusCounts.innerHTML = `<b>${inside.length}</b> receptor site${inside.length===1?'':'s'} within ${mi.toFixed(1)} mi of a fence line<br>${catsLine}`;
+}
+slider.addEventListener('input', updateRadius);
+updateRadius();
 
 /* invalidate size after layout settles so tiles fill the frame */
 setTimeout(()=>map.invalidateSize(), 250);

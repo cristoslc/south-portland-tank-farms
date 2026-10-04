@@ -2,6 +2,7 @@
 """Interactive map (self-contained HTML w/ Leaflet CDN): tank farms, receptors,
 monitoring stations, 1-mile rings. Styled to PSP brand."""
 import csv, json, math, os
+from collections import Counter
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
@@ -35,17 +36,14 @@ def hav(a,b,c,d):
     x=math.sin((p2-p1)/2)**2+math.cos(p1)*math.cos(p2)*math.sin(math.radians(d-b)/2)**2
     return 2*R*math.asin(math.sqrt(x))
 
-buffer_gj = json.load(open(os.path.join(HERE, "outputs", "gis", "tank_farm_1mile_buffer.geojson")))
-buffer_geom = buffer_gj["features"][0]["geometry"]
-# normalize to a list of [lat, lon] rings for Leaflet (works for Polygon and MultiPolygon)
-if buffer_geom["type"] == "Polygon":
-    BUFFER_RINGS = [buffer_geom["coordinates"][0]]
-else:
-    BUFFER_RINGS = [mp[0] for mp in buffer_geom["coordinates"]]
-BUFFER_RINGS = [[[c[1], c[0]] for c in ring] for ring in BUFFER_RINGS]
 import sys
 sys.path.insert(0, os.path.join(HERE, "src"))
+from buffer_geometry import buffer_geometry, leaflet_rings
 from farm_structures import load as fs_load
+STEPS = [i / 10 for i in range(1, 11)]  # radius slider steps: 0.1 .. 1.0 statute miles
+RING_STEPS = []
+for _r in STEPS:
+    RING_STEPS.append({"r": _r, "rings": leaflet_rings(buffer_geometry(_r))})
 _assigned, _excluded = fs_load(HERE)
 VOC_TPY = {"global": 21.9, "citgo": 117.3, "buckeye": 135.4, "gulf_sunoco": 49.9,
            "sprague": 49.9, "pplc": 220.0}  # from each DEP license order
@@ -64,7 +62,19 @@ for r in recs:
     grp, color = cat_group(r["category"])
     rec_js.append({"name": r["receptor"], "cat": grp, "color": color,
                    "lat": float(r["lat"]), "lon": float(r["lon"]),
-                   "min": r["min_dist_mi"], "near": r["nearest_farm"]})
+                   "min": float(r["min_dist_mi"]), "near": r["nearest_farm"]})
+
+# self-check: counts per selectable radius, straight from the master CSV
+def _bucket(c):
+    if c == "public school": return "school"
+    if c == "senior housing": return "senior"
+    return "childcare"
+print("radius self-check (master CSV):")
+for _r in STEPS:
+    ins = [rec for rec in rec_js if rec["min"] <= _r + 1e-9]
+    _c = Counter(rec["cat"] for rec in ins)
+    print(f"  {_r:.1f} mi: {len(ins)} total "
+          f"(schools {_c['school']} / child care {_c['childcare']} / senior {_c['senior']})")
 
 farm_js = [{"id": f["id"], "name": f["name"], "addr": f["addr"], "lat": f["lat"], "lon": f["lon"],
             "voc": f["voc"], "lic": f["lic"], "renew": f["renew"]} for f in FARMS]
@@ -93,14 +103,28 @@ header span{font-size:.85rem;opacity:.85}
 .leaflet-popup-content{font-size:.85rem;line-height:1.4}
 .leaflet-popup-content b{color:var(--forest)}
 .farm-label{background:var(--forest);color:#fff;padding:2px 7px;border-radius:4px;font-weight:700;font-size:.72rem;white-space:nowrap;border:none;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.radius-ctl{padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e0e0e0}
+.radius-ctl label{display:block;font-weight:700;color:var(--forest);font-size:.82rem;margin-bottom:4px}
+.radius-ctl input[type=range]{width:100%;accent-color:var(--amber);cursor:pointer}
+.radius-ctl .rcounts{margin-top:6px;font-size:.78rem;line-height:1.45;color:var(--text)}
+.radius-ctl .rcounts .cats{color:var(--muted);font-size:.72rem}
+.radius-ctl .dim-note{margin-top:4px;font-size:.68rem;color:var(--muted)}
 </style></head><body>
-<header><h1>South Portland Tank Farms &amp; Sensitive Receptors</h1><span>Fence-line distances · 1-mile fence-line buffer · DEP VOC monitors</span></header>
+<header><h1>South Portland Tank Farms &amp; Sensitive Receptors</h1><span>Fence-line distances · adjustable fence-line buffer · DEP VOC monitors</span></header>
 <div id="map"></div>
 <div class="panel">
+  <div class="radius-ctl">
+    <h2>Search radius</h2>
+    <input id="radius" type="range" min="0.1" max="1" step="0.1" value="1" list="radius-ticks"/>
+    <div id="radius-label" style="font-weight:700;color:var(--forest)">1.0 mi</div>
+    <div id="radius-counts" class="rcounts"></div>
+    <div class="dim-note">Markers outside the radius are dimmed.</div>
+    <datalist id="radius-ticks"><option value="0.1"></option><option value="0.2"></option><option value="0.3"></option><option value="0.4"></option><option value="0.5"></option><option value="0.6"></option><option value="0.7"></option><option value="0.8"></option><option value="0.9"></option><option value="1.0"></option></datalist>
+  </div>
   <h2>Legend</h2>
   <div class="leg"><span class="sq" style="background:var(--forest)"></span>Tank (OSM)</div>
   <div class="leg"><span class="sq" style="background:var(--leaf)"></span>Parcel (OSM)</div>
-  <div class="leg"><span class="ring"></span>1-mile fence-line buffer</div>
+  <div class="leg"><span class="ring"></span>Fence-line buffer (radius slider)</div>
   <div class="leg"><span style="display:inline-flex;gap:2px;flex:none"><span style="width:7px;height:11px;background:#d62828;opacity:.25"></span><span style="width:7px;height:11px;background:#d62828;opacity:.45"></span><span style="width:7px;height:11px;background:#d62828;opacity:.65"></span></span>Petroleum parcel shading &prop; permitted VOC (22&ndash;220 t/yr)</div>
   <div class="leg"><span class="dot" style="background:var(--forest)"></span>School (7)</div>
   <div class="leg"><span class="dot" style="background:var(--red)"></span>Child care (25)</div>
@@ -115,31 +139,55 @@ const FARMS = __FARMS__;
 const RECS = __RECS__;
 const MON = __MON__;
 const POLYS = __POLYS__;
-const BUFFER_RINGS = __BUFFER__;
+const RING_STEPS = __RSTEPS__;
 const map = L.map('map').setView([43.635, -70.275], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
 const icons = {school:L.divIcon({className:'',html:'<div style="width:14px;height:14px;background:#1b4332;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
  childcare:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#d62828;transform:rotate(45deg);border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[12,12],iconAnchor:[6,6]}),
  senior:L.divIcon({className:'',html:'<div style="width:13px;height:13px;background:#7b2cbf;border:1.5px solid #fff;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[13,13],iconAnchor:[6,6]})};
-/* fade basemap outside the buffer: white world-donut with the buffer as a hole */
+/* fence-line buffer layers, swapped by the radius slider */
 const WORLD = [[85,-179],[85,179],[-85,179],[-85,-179]];
-L.polygon([WORLD, ...BUFFER_RINGS], {stroke:false, fillColor:'#ffffff', fillOpacity:0.70, interactive:false}).addTo(map);
+const DEFAULT_STEP = RING_STEPS[RING_STEPS.length-1];
+const fadeLayer = L.polygon([WORLD, ...DEFAULT_STEP.rings], {stroke:false, fillColor:'#ffffff', fillOpacity:0.70, interactive:false}).addTo(map);
+const bufferLayer = L.polygon(DEFAULT_STEP.rings,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06,interactive:false}).addTo(map);
 
 POLYS.forEach(p=>{const o=0.15+0.45*Math.min(1,(p.voc||0)/220);
   L.polygon(p.ring.map(c=>[c[1],c[0]]),{color:'#1b4332',weight:0.7,fillColor:'#d62828',fillOpacity:o})
   .bindPopup(`<b>${p.kind==='tank'?'Storage tank':'Oil parcel'}</b><br>Farm: ${p.farm}<br>Permitted VOC: <b>${p.voc} t/yr</b>`).addTo(map);});
-L.polygon(BUFFER_RINGS,{color:'#f77f00',weight:1.6,dashArray:'6 5',fillColor:'#f77f00',fillOpacity:0.06,interactive:false}).addTo(map);
 FARMS.forEach(f=>{
   L.marker([f.lat,f.lon]).bindPopup(`<b>${f.name}</b><br>${f.addr}<br>License ${f.lic} · VOC cap ${f.voc} tpy<br>Renewal: ${f.renew}`).addTo(map);
   L.marker([f.lat,f.lon],{icon:L.divIcon({className:'',html:`<div class="farm-label">${f.name.split(' ')[0]}</div>`,iconAnchor:[0,0]})}).addTo(map);});
-RECS.forEach(r=>{L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map);});
+const recMarkers = RECS.map(r=>L.marker([r.lat,r.lon],{icon:icons[r.cat]}).bindPopup(`<b>${r.name}</b><br>${r.cat==='school'?'Public school':r.cat==='senior'?'Senior housing':'Child care'}<br><b>${r.min} mi</b> to ${r.near} fence line`).addTo(map));
 MON.forEach(m=>{L.marker([m.lat,m.lon],{icon:L.divIcon({className:'',html:'<div style="width:12px;height:12px;background:#2d6a4f;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',iconSize:[12,12],iconAnchor:[6,6]})}).bindPopup(`<b>${m.code}</b> — ${m.name}<br><i>DEP VOC monitoring station</i>`).addTo(map);});
+
+/* radius slider: buffer recomputed from fence-line geometry at each 0.1-mi step */
+const slider = document.getElementById('radius');
+const radiusLabel = document.getElementById('radius-label');
+const radiusCounts = document.getElementById('radius-counts');
+const CATS = [['school','schools'],['childcare','child care'],['senior','senior housing']];
+function stepFor(mi){const s=RING_STEPS.find(s=>Math.abs(s.r-mi)<0.001);
+  if(!s) throw new Error('no precomputed buffer for radius '+mi); return s;}
+function updateRadius(){
+  const mi = parseFloat(slider.value);
+  const s = stepFor(mi);
+  radiusLabel.textContent = mi.toFixed(1) + ' mi';
+  bufferLayer.setLatLngs(s.rings);
+  fadeLayer.setLatLngs([WORLD, ...s.rings]);
+  const inside = RECS.filter(r=>r.min <= mi + 1e-9);
+  recMarkers.forEach((m,i)=>{m.setOpacity(RECS[i].min <= mi + 1e-9 ? 1 : 0.18);});
+  const c = {school:0, childcare:0, senior:0};
+  inside.forEach(r=>c[r.cat]++);
+  const catsLine = CATS.map(([k,l])=>`${c[k]} ${l}`).join(' &middot; ');
+  radiusCounts.innerHTML = `<b>${inside.length}</b> receptor site${inside.length===1?'':'s'} within ${mi.toFixed(1)} mi of a fence line<br><span class="cats">${catsLine}</span>`;
+}
+slider.addEventListener('input', updateRadius);
+updateRadius();
 </script></body></html>"""
 
 html = html.replace("__FARMS__", json.dumps(farm_js))
 html = html.replace("__RECS__", json.dumps(rec_js))
 html = html.replace("__MON__", json.dumps(mon_js))
 html = html.replace("__POLYS__", json.dumps(polys))
-html = html.replace("__BUFFER__", json.dumps(BUFFER_RINGS))
+html = html.replace("__RSTEPS__", json.dumps(RING_STEPS))
 open(os.path.join(OUT, "map_interactive.html"), "w").write(html)
-print(f"interactive map: {len(rec_js)} receptors, {len(polys)} structures, {len(FARMS)} farms -> outputs/map_interactive.html")
+print(f"interactive map: {len(rec_js)} receptors, {len(polys)} structures, {len(FARMS)} farms, buffers 0.1–1.0 mi (11 steps) -> outputs/map_interactive.html")

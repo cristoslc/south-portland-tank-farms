@@ -184,10 +184,10 @@ FARMS_JS = _grab("FARMS")
 RECS_JS = _grab("RECS")
 MON_JS = _grab("MON")
 POLYS_JS = _grab("POLYS")
-BUFFER_JS = _grab("BUFFER_RINGS")
+RSTEPS_JS = _grab("RING_STEPS")
 
 # interactive map page: fill layer data into the site-chrome template
-_far = {"FARMS": FARMS_JS, "RECS": RECS_JS, "MON": MON_JS, "POLYS": POLYS_JS, "BUFFER": BUFFER_JS}
+_far = {"FARMS": FARMS_JS, "RECS": RECS_JS, "MON": MON_JS, "POLYS": POLYS_JS, "RSTEPS": RSTEPS_JS}
 _map_html = MAP_BLOCK_TEMPLATE
 for _k, _v in _far.items():
     _map_html = _map_html.replace("__" + _k + "__", _v)
