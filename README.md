@@ -65,13 +65,31 @@ report (search NCES/OCFS/SPHA, geocode, pull OSM fence lines via overpass-turbo.
 measure in QGIS, then permit research in DEP's license archive). Automated
 equivalents live in `src/`:
 
+### Dev environment setup
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Dependencies (pinned in `requirements.txt`): `shapely` for the fence-line buffer
+geometry (`src/buffer_geometry.py`, used by `build_buffer.py` and
+`build_interactive_map.py`), `markdown` for the docs site
+(`src/build_site.py`).
+
 ```bash
 python3 src/geocode.py "87 Thompson Street South Portland ME"   # cached geocoder
 export LD_LIBRARY_PATH=~/chrome-libs/usr/lib/x86_64-linux-gnu    # Chromium libs (see below)
 python3 src/ccc_union.py          # OCFS search x6 tank farms -> data/ccc_union.json
 python3 src/polygon_analysis.py   # fence-line distances -> outputs/polygon_results.txt
 python3 src/export_datasets.py    # -> outputs/receptor_fenceline_distances.csv
+python3 src/build_buffer.py       # -> outputs/gis/tank_farm_1mile_buffer.geojson
+python3 src/export_gis.py         # -> outputs/gis/* (points, long distances, structures)
+python3 src/build_maps.py         # -> outputs/south_portland_tank_farms_map.png, outputs/map.html
+python3 src/build_interactive_map.py  # -> outputs/map_interactive.html (radius slider)
 python3 src/build_binder.py       # -> outputs/SouthPortland_TankFarms_Binder.pdf
+python3 src/build_site.py         # -> docs/ (site: index, report, map, data files)
 ```
 
 **Chromium note (OCFS search only):** Playwright's bundled Chromium needs system
