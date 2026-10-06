@@ -1,0 +1,74 @@
+trove: sopo-tanks-permitted-vs-actual-emissions
+created: 2026-10-06
+refreshed: 2026-10-06
+tags:
+  - south-portland
+  - tank-farms
+  - voc-emissions
+  - air-licenses
+  - permitted-capacity
+  - dep
+  - fenceline-monitoring
+
+history:
+  - event: created
+    date: 2026-10-06
+    commit: "--"
+    sources: 13
+
+referenced-by:
+  - artifact: docs/musings/2026-10-06-permitted-vs-actual-emissions.md
+    commit: "--"
+
+sources:
+  - slug: a0197-pplc-renewal-2025
+    url: "https://www.maine.gov/dep/ftp/projects/portlandpipe/archive/A0197HR.pdf"
+    fetched: 2026-10-06T09:29:00Z
+
+  - slug: a0460-citgo-renewal-2025
+    url: "https://www.maine.gov/dep/ftp/AIR/licenses/titlev/A0460HR.pdf"
+    fetched: 2026-10-06T09:29:00Z
+
+  - slug: a0432-global-renewal-2023
+    url: "https://www.maine.gov/dep/ftp/AIR/licenses/ch115/A0432SRM.pdf"
+    fetched: 2026-10-06T09:29:00Z
+
+  - slug: a0390-gulf-renewal-2023
+    url: "https://www.maine.gov/dep/ftp/AIR/licenses/ch115/A0390PRM.pdf"
+    fetched: 2026-10-06T09:29:00Z
+
+  - slug: medep-tank-report-2021
+    url: "https://legislature.maine.gov/doc/5490"
+    fetched: 2026-10-06T09:30:00Z
+
+  - slug: cdc-6yr-voc-health-assessment
+    url: "https://www.maine.gov/dep/air/monitoring/docs/archive/South%20Portland%20-%20Portland%2024%20Hour%20VOC%20Air%20Monitoring%206yr%20Report%20Update_FINAL_09.08.26.pdf"
+    fetched: 2026-10-06T09:31:00Z
+
+  - slug: sp-caac-comments-2021
+    url: "https://go.boarddocs.com/me/sport/Board.nsf/files/BXPPPR659DFE/$file/Comments%20-%20DEP%20Report%20-%20Clean%20Air%20Advisory%20Committee.pdf"
+    fetched: 2026-10-06T09:31:00Z
+
+  - slug: dep-spo-voc-monitoring-project
+    url: "https://www11.maine.gov/dep/air/monitoring/spo-voc-monitor.html"
+    fetched: 2026-10-06T09:32:00Z
+
+  - slug: dep-ch171-fenceline-report-list
+    url: "https://www.maine.gov/dep/air/licensing/ch171fenceline.html"
+    fetched: 2026-10-06T09:32:00Z
+
+  - slug: dep-canister-sampling-data-2019-2026
+    url: "https://www.maine.gov/dep/air/monitoring/images/SoPo_VOC%20data_2026.05.18.xlsx"
+    fetched: 2026-10-06T09:32:00Z
+
+  - slug: epa-global-settlement-2019
+    url: "https://www.epa.gov/newsreleases/proposed-settlement-resolves-clean-air-act-claims-between-epa-and-south-portland-maine"
+    fetched: 2026-10-06T09:33:00Z
+
+  - slug: epa-sprague-settlement-2020
+    url: "https://www.epa.gov/enforcement/sprague-clean-air-act-settlement-information-sheet"
+    fetched: 2026-10-06T09:33:00Z
+
+  - slug: tank-farm-permit-memo
+    url: "outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md"
+    fetched: 2026-10-06T09:35:00Z
