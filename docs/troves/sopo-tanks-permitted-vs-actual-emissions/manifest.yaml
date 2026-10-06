@@ -17,6 +17,7 @@ history:
     sources: 13
   - event: extended
     date: 2026-10-06
+    commit: bbe320a
     reason: "Adversarial verification request falsified the 'no facility-level annual tonnage' claim; added EPA NEI/AirData annual facility summaries with VOC actuals vs caps for all six farms (2019/2020/2023)."
     sources: 14
 
