@@ -15,6 +15,10 @@ history:
     date: 2026-10-06
     commit: 95aa186
     sources: 13
+  - event: extended
+    date: 2026-10-06
+    reason: "Adversarial verification request falsified the 'no facility-level annual tonnage' claim; added EPA NEI/AirData annual facility summaries with VOC actuals vs caps for all six farms (2019/2020/2023)."
+    sources: 14
 
 referenced-by:
   - artifact: docs/musings/2026-10-06-permitted-vs-actual-emissions.md
@@ -72,3 +76,7 @@ sources:
   - slug: tank-farm-permit-memo
     url: "outputs/TANK_FARM_RECEPTOR_AND_PERMIT_MEMO.md"
     fetched: 2026-10-06T09:35:00Z
+
+  - slug: epa-nei-facility-summaries
+    url: "https://gaftp.epa.gov/air/nei/nei_facility_summaries/"
+    fetched: 2026-10-06T12:30:00Z
