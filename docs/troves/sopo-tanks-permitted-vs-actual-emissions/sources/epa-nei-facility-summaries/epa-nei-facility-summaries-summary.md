@@ -12,7 +12,7 @@
 
 This source overturns the working assumption that facility-level annual actual VOC tonnage is unavailable without FOAA. EPA publishes **annual**, facility-level emissions for the six South Portland tank farms, submitted by the operator through Maine DEP's ch. 137/CAERS pipeline (the CSV "program system code" column reads `MEDEP`, and the "agency facility id" column carries each facility's Maine air license ID: A-000179 Sprague, A-000197 PPLC, A-000282 Buckeye/South Portland Terminal LLC, A-000390 Gulf, A-000432 Global, A-000460 CITGO).
 
-Annual facility summaries exist for every year 2012–2023 in `nei_facility_summaries/` (annual point-source reporting under the 2016 AERR rule; pre-2017 files are AirData annuals).
+Annual facility summaries exist for every year 2012–2023 in `nei_facility_summaries/` (annual point-source reporting under the 2016 AERR rule; pre-2017 files are AirData annuals). **Coverage ceiling as of 2026-10-06: inventory year 2023** (the 2022/2023 files appeared 2026-09-29; the 2024 cycle is expected ~2027). RY2024 TRI data (released Nov 2025) carries near-zero VOC information — post-2022 the five filers report only trace HAPs (Sprague 0 lb air, Buckeye 4 lb, others none), mostly via sub-threshold Form A certifications; TRI lists toxic chemicals, not total VOC, so it cannot be converted to cap percentages. FOAA to DEP BAQ for the ch. 137/CAERS statements (CY2024 and CY2025) is the only way to get 2024–2025 tonnage before EPA publishes it.
 
 ## VOC actuals vs license caps (tpy VOC, operator-reported)
 
