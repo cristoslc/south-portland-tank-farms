@@ -13,12 +13,12 @@ tags:
 history:
   - event: created
     date: 2026-10-06
-    commit: "--"
+    commit: 95aa186
     sources: 13
 
 referenced-by:
   - artifact: docs/musings/2026-10-06-permitted-vs-actual-emissions.md
-    commit: "--"
+    commit: 95aa186
 
 sources:
   - slug: a0197-pplc-renewal-2025
